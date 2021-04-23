@@ -1,0 +1,31 @@
+{{ $page := .page }}
+{{ $site := .site }}
+<nav>
+  <ul class="md:flex md:flex-row md:items-center list-reset">
+    {{ range .menu }}
+    {{ $is := $page.IsMenuCurrent "main" . }}
+    {{ $has := $page.HasMenuCurrent "main" . }}
+    {{ if .HasChildren }}
+    <li class="">
+      <a href="{{ .Page.Permalink }}" class="no-underline  pb-1  xl:text-lg md:mx-4 has-dropdown text-grey-dark border-white {{ if $has }} text-blue {{ end }}  hover:border-b-4 hover:text-blue  ">
+        {{ .Name }} <i class="fal fa-angle-down ml-1"></i>
+      </a>
+      {{ $parent := . }}
+      <!-- If the menu item has children, include this partial template again (recursively) -->
+      {{ if $parent.Pre }}
+        {{ partial "components/nav/dropdown-large.html" (dict "menu" .Children "parent" $parent "page" $page "site" $site "dropdown" true) }}
+      {{ else }}
+        {{ partial "components/nav/dropdown.html" (dict "menu" .Children "parent" $parent "page" $page "site" $site "dropdown" true) }}
+      {{ end }}
+    </li>
+    {{ else }}
+    <li>
+      <a href="{{ .Page.Permalink }}" class="no-underline xl:text-lg md:mx-4 {{ if eq .Page.Permalink .URL }} text-blue {{ else }} text-grey-dark {{end}} hover:text-blue">
+        {{ .Name }}
+      </a>
+    </li>
+    {{ end }}
+    {{ end }}
+  </ul>
+  
+</nav>

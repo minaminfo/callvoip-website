@@ -1,0 +1,8 @@
+{{ $name := default "Provide input name" (.Get 0) }}
+
+<fieldset>
+  <legend class="mb-2 text-2xl font-semibold">{{ $name }}</legend>
+  <div class="bg-grey-lightest px-4 xl:px-8 py-4 xl:py-6 mb-6 rounded-lg">
+    {{.Inner | markdownify }}
+  </div>
+</fieldset>

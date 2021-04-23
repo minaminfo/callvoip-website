@@ -1,0 +1,32 @@
+{{ with .Params.kiezen }}
+
+<div class="bg-grey-dark  relative clearfix  pt-8 md:pt-20 ">
+  <div class="container px-4 pt-8 lg:pt-16">
+    <div class="text-center mb-16 text-white md:mb-24 lg:mb-32">
+      {{ with .title }}
+      <h2 class="text-3xl lg:text-4xl font-medium mb-4 md:mb-6 leading-tight">{{ . }}</h2>
+      {{ end }}
+      <p class="mx-auto max-w-xl lg:text-lg xl:text-xl font-medium opacity-75 mb-10">{{ .content }}</p>
+      {{ with .button }}
+      <p>
+        <a href="{{.link}}" class="button xl:text-lg hover:no-underline"></i>{{ .content }}</a>
+      </p>
+      {{ end }}
+    </div>
+    {{ with .items }}
+    <div class="md:flex md:flex-wrap md:-mx-4 xl:-mx-8 mb-16 lg:mb-24">
+      {{ range $index, $element := . }}
+      <div
+        class="{{if eq $index 2 }} hidden lg:flex  {{ else }} flex  {{ end }} md:w-1/2 lg:w-1/3 md:px-4 xl:px-8  items-center mb-6">
+        <div class="bg-blue-dark w-20 h-20 xl:w-24 xl:h-24 rounded-lg flex justify-center items-center mr-4 xl:mr-8">
+          <i class="fal text-3xl xl:text-4xl {{ .icon }} text-blue"></i>
+        </div>
+        <p class="text-white text-lg opacity-75 flex-1">{{ .content }}</p>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>
+
+{{ end }}

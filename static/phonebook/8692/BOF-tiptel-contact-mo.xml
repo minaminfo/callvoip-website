@@ -1,0 +1,198 @@
+<BOFIPPhoneDirectory>
+
+<DirectoryEntry>
+	<Name>Maarel, Loek (m)</Name>
+	<Telephone>0645509840</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Mahmoud, Mohammed (m</Name>
+	<Telephone>0684464624</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Meer, Mario van (m)</Name>
+	<Telephone>0653388359</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Meer, Walter vd (m)</Name>
+	<Telephone>0655300567</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Meester, J.P. de (m)</Name>
+	<Telephone>0622464197</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Meester, P.A. (m)</Name>
+	<Telephone>0651961020</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Meesters, Mario (m)</Name>
+	<Telephone>0611070293</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Meistrok, Adrie (m)</Name>
+	<Telephone>0620960737</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Meistrok, Ruud (m)</Name>
+	<Telephone>0653224872</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Minnaard, Peter (m)</Name>
+	<Telephone>0651784851</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Mulders, Jan (m)</Name>
+	<Telephone>0610699719</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Neelen, Eric (m)</Name>
+	<Telephone>0622783251</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Neelen, Nicole (m)</Name>
+	<Telephone>0642407767</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Neve, Wim de (m)</Name>
+	<Telephone>0622207687</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Nijkamp, Teun</Name>
+	<Telephone>517592772</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Noorland, Jan (m)</Name>
+	<Telephone>06216228742</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Noorland, Ton (m)</Name>
+	<Telephone>0651929292</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Oers, Ingrid van (m)</Name>
+	<Telephone>0627126412</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Oers, Ingrid van (m)</Name>
+	<Telephone>0627126412</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Oers, Joost van (m)</Name>
+	<Telephone>0651215951</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Oers, Joost van (m)</Name>
+	<Telephone>0651215951</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Olsthoorn, Niek (m)</Name>
+	<Telephone>0650553966</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Oosterom, Jan (m)</Name>
+	<Telephone>0653864156</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Oosterom, Miriam (m)</Name>
+	<Telephone>065181 9594</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Oosthoek, Corwin (m)</Name>
+	<Telephone>0615002693</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Oskam, Gert-Jan (m)</Name>
+	<Telephone>0621695767</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Overbeek, Cock (m)</Name>
+	<Telephone>0655836349</Telephone>
+</DirectoryEntry>
+
+<SoftKeyItem>
+	<Name>1</Name>
+	<URL>http://www.callvoip.nl/phonebook/8692/BOF-tiptel-contact.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>2</Name>
+	<URL>http://www.callvoip.nl/phonebook/8692/BOF-tiptel-contact-ac.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>3</Name>
+	<URL>http://www.callvoip.nl/phonebook/8692/BOF-tiptel-contact-df.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>4</Name>
+	<URL>http://www.callvoip.nl/phonebook/8692/BOF-tiptel-contact-gi.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>5</Name>
+	<URL>http://www.callvoip.nl/phonebook/8692/BOF-tiptel-contact-jl.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>6</Name>
+	<URL>http://www.callvoip.nl/phonebook/8692/BOF-tiptel-contact-mo.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>7</Name>
+	<URL>http://www.callvoip.nl/phonebook/8692/BOF-tiptel-contact-ps.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>8</Name>
+	<URL>http://www.callvoip.nl/phonebook/8692/BOF-tiptel-contact-tv.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>9</Name>
+	<URL>http://www.callvoip.nl/phonebook/8692/BOF-tiptel-contact-wz.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>*</Name>
+	<URL>http://www.callvoip.nl/phonebook/8692/BOF-tiptel-contact-special.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>0</Name>
+	<URL>http://www.callvoip.nl/phonebook/8692/BOF-tiptel-contact-09.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>#</Name>
+	<URL>http://www.callvoip.nl/phonebook/8692/BOF-tiptel-contact.xml</URL>
+</SoftKeyItem>
+
+</BOFIPPhoneDirectory>

@@ -1,0 +1,41 @@
+{{ with .Params.hero }}
+{{ $imagePosition := .image_position}}
+{{ $title := .Title }}
+{{ $disableImageOnMobile := .hero.disable_image_on_mobile }}
+{{$mobile := .Params.hero.mobile}}
+
+
+
+<div class="bg-grey-lightest clearfix mb-20">
+  <header class="container px-4 clearfix">
+    <div class="flex flex-col-reverse md:flex-row md:-mx-2  md:items-center pt-6 sm:pt-8 md:pt-12 md:pt-24 mb-12">
+      <div class="mb-6 md:mb-12 md:w-1/2 md:px-2">
+        {{ with .title }}
+        <h1 class="text-3xl lg:text-4xl xxl:text-4xl font-medium leading-tight mb-4 md:mb-6">{{ . }}</h1>
+        {{ end }}
+        {{ with .content }}
+        <div class="font-normal lg:text-lg xxl:text-xl max-w-md text-grey-dark mb-4 md:mb-8">{{ . | markdownify }}</div>
+        {{ end }}
+        {{ with .button }}
+        <a href="{{ .link }}" class="button md:text-lg">{{ .content }}</a>
+        {{ end }}
+      </div>
+
+      {{ with .image }}
+      <div class="md:w-1/2 md:px-2 mb-12 {{ if $imagePosition }} {{ if $disableImageOnMobile }} hidden md:flex justify-{{$imagePosition}} {{ end }}   {{ end }} {{ if $disableImageOnMobile }} hidden md:block {{ end }}">
+        
+        {{ if $mobile }}
+        <img data-src="{{ $.Site.Params.cloudinary_base_url }}/c_scale,f_auto,q_auto{{$mobile}}" class="h-full w-full cld-responsive block md:hidden" style="object-fit: cover;" alt="{{$title}}" />
+        <img data-src="{{ $.Site.Params.cloudinary_base_url }}/c_scale,f_auto,q_auto{{.}}" class="h-full w-full cld-responsive hidden md:block" style="object-fit: cover;" alt="{{$title}}" />
+        {{ else }}
+        <img src="{{ $.Site.Params.cloudinary_base_url }}/c_scale,f_auto,q_auto/{{.}}"
+          class="cld-responsive" alt="{{ $title }}" />
+        {{ end }}
+
+      </div>
+      {{ end }}
+
+    </div>
+  </header>
+</div>
+{{ end }}

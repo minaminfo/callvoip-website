@@ -1,0 +1,31 @@
+{{ $type := .type }}
+{{ $item := .item }}
+{{$ctx := .ctx}}
+{{ $title := .title }}
+{{ with $item }}
+{{ $link := $item.Params.website }}
+
+  <div class='flex items-center {{ if eq $type "light" }} flex-row-reverse bg-grey-dark text-white {{ else }} flex-row bg-grey-lightest {{ end }}  '>
+    <div class="w-1/2">
+      {{ with $item.Params.hero.image}}
+      <img data-src="{{ $ctx.Site.Params.cloudinary_base_url }}/w_auto,dpr_auto,c_scale,f_auto,q_auto/{{.}}" class="w-full cld-responsive"
+        style="object-fit: cover;" alt="{{ $item.Title }}" />
+    {{ end }}
+    </div>
+    <div class="w-1/2 p-12 xl:p-24">
+      {{ with $item.Params.logo }}
+      <a href="{{ $link }}" class="px-2">
+        <img data-src="{{ $ctx.Site.Params.cloudinary_base_url }}/w_auto,dpr_auto/{{.}}"
+          class="max-h-logo-small lg:max-h-logo cld-responsive block max-w-full mb-8 object-contain" alt="Client" />
+      </a>
+      {{ end }}
+      <div class="text-lg lg:text-xl xl:text-2xl mb-4">{{ $item.Content }}</div>
+      {{ with $item.Params.name }}
+      <p class=" lg:text-lg opacity-75 font-medium mb-8">{{ . }}</p>
+      {{ end }}
+      {{ with $item.Params.link }}
+        <a href="{{ . }}" class="button md:text-lg">Bekijk de oplossing</a>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

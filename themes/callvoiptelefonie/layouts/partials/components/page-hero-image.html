@@ -1,0 +1,46 @@
+{{ with .Params.hero }}
+{{ $title := .Title }}
+{{ $link := .link }}
+{{ $disableImageOnMobile := .hero.disable_image_on_mobile }}
+{{ $mobile := .Params.hero.mobile }}
+
+<div class="bg-grey-lightest clearfix">
+  <header class="clearfix ">
+
+      <div class="text-center container px-4 relative ">
+        <div class="absolute w-full pt-8 xxl:pt-16">
+          {{ with .title }}
+          <h1 class="text-3xl lg:text-4xl xxl:text-5xl font-medium leading-tight mb-4 xxl:mb-6">{{ . }}</h1>
+          {{ end }}
+          {{ with .content }}
+          <p class="lg:text-lg xxl:text-2xl  opacity-75 mb-4 xxl:mb-8  text-center">{{ . }}</p>
+          {{ end }}
+          {{ with .button }}
+          <a href="{{ .link }}" class="button md:text-lg">{{ .content }}</a>
+          {{ end }}
+        </div>
+      </div>
+
+
+      {{ with .image }}
+      <div class="{{ if $disableImageOnMobile }} hidden md:block {{ end }}">     
+         {{ if $link}}
+        <a href="{{$link}}"  target="_blank">
+      {{ end}}
+
+      {{ if $mobile }}
+  <img data-src="{{ $.Site.Params.cloudinary_base_url }}/c_scale,f_auto,q_auto{{$mobile}}" class="h-full w-full cld-responsive block md:hidden" style="object-fit: cover;" alt="{{$title}}" />
+  <img data-src="{{ $.Site.Params.cloudinary_base_url }}/c_scale,f_auto,q_auto{{.}}" class="w-full cld-responsive max-h-screen hidden md:block" style="object-fit: cover;" alt="{{$title}}" />
+  {{ else }}
+  <img data-src="{{ $.Site.Params.cloudinary_base_url }}/c_scale,f_auto,q_auto{{.}}" class="w-full cld-responsive max-h-screen" style="object-fit: cover;" alt="{{$title}}" />
+      {{ end }}
+
+          {{ if $link }}
+        </a>
+    {{ end }}
+      </div>
+      {{ end }}
+
+  </header>
+</div>
+{{ end }}

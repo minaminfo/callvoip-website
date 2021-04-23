@@ -1,0 +1,85 @@
+---
+label: Ondersteuning item
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+- name: weight
+  type: number
+  label: Weight
+  description: ''
+  default: 0
+  required: false
+  config:
+    min: 
+    max: 
+    step: 
+- name: seo
+  type: include
+  config: {}
+  template: seo
+  label: SEO
+  description: Seo
+- type: boolean
+  name: hideinsearch
+  label: Hide in Search
+- type: boolean
+  name: hideingoogle
+  label: Hide in Google
+- type: boolean
+  name: hidesocialshare
+  label: Hide Social Share options
+- type: boolean
+  name: Nieuw
+  label: nieuw
+- type: boolean
+  name: Update
+  label: update
+- name: pdf
+  type: text
+  config:
+    required: false
+  label: PDF
+pages:
+- content/ondersteuning/Apparatuurhandleidingen/fritz-box.md
+- content/ondersteuning/Apparatuurhandleidingen/gigaset-ip-pro-handmatig.md
+- content/ondersteuning/Apparatuurhandleidingen/gigaset-ip-pro-provisioning.md
+- content/ondersteuning/Apparatuurhandleidingen/yealink-t4x-serie.md
+- content/ondersteuning/Apparatuurhandleidingen/yealink-t4x-t5x-gebruikshandleiding.md
+- content/ondersteuning/Apparatuurhandleidingen/zoiper-softphone.md
+- content/ondersteuning/Integraties/click-to-dial-uitgebreide-handleiding.md
+- content/ondersteuning/Integraties/click-to-dial-yealink-adresboek.md
+- content/ondersteuning/Integraties/click-to-dial.md
+- content/ondersteuning/Integraties/handleiding-crm-lookup.md
+- content/ondersteuning/Integraties/handleiding-ms-teams.md
+- content/ondersteuning/Integraties/realtime-api.md
+- content/ondersteuning/Integraties/voip-cti-handleiding.md
+- content/ondersteuning/Integraties/voip-cti.md
+- content/ondersteuning/algemeen/contact.md
+- content/ondersteuning/algemeen/nieuwsbrieven-overzicht.md
+- content/ondersteuning/algemeen/overzicht-shortcodes-simmpl.md
+- content/ondersteuning/algemeen/overzicht-sip-statuscodes.md
+- content/ondersteuning/algemeen/storing.md
+- content/ondersteuning/call-pickup.md
+- content/ondersteuning/extra-features/snelstart-whatsapp-business.md
+- content/ondersteuning/fax-voicemail/fax-versturen-zonder-faxapparaat.md
+- content/ondersteuning/fax-voicemail/fax-versturen.md
+- content/ondersteuning/fax-voicemail/tips-voor-slagend-faxverkeer.md
+- content/ondersteuning/fax-voicemail/voicemail-instellen-afluisteren.md
+- content/ondersteuning/hulp-op-afstand.md
+- content/ondersteuning/internet/callvoip-business-adsl-instellen.md
+- content/ondersteuning/internet/callvoip-business-ftth-instellen.md
+- content/ondersteuning/internet/callvoip-business-vdsl-instellen.md
+- content/ondersteuning/meldteksten-wachtmuziek/wachtmuziek.md
+- content/ondersteuning/netwerk-ondersteuning/draytek-transparant-bridged-instellen.md
+- content/ondersteuning/netwerk-ondersteuning/eerste-hulp-bij-voip-problemen.md
+- content/ondersteuning/netwerk-ondersteuning/tips-bij-router-firewall-problemen.md
+- content/ondersteuning/simmpl-functionaliteiten/email-app.md
+- content/ondersteuning/simmpl-functionaliteiten/omleidings-app.md
+- content/ondersteuning/simmpl-functionaliteiten/prefix.md
+- content/ondersteuning/simmpl-functionaliteiten/qaller-app.md
+- content/ondersteuning/simmpl-functionaliteiten/tijdsconditie-app.md
+- content/ondersteuning/simmpl-functionaliteiten/wachtrij-app.md
+- content/ondersteuning/vast-mobiel/vast-mobiel-handleiding.md
+- content/ondersteuning/vast-mobiel/vast-mobiel-vamos-informatie.md

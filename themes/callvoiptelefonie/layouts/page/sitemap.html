@@ -1,0 +1,85 @@
+{{ define "main" }}
+<article class="mb-8 md:mb-24">
+  {{- partial "components/hero.html" . -}}
+  <div class="container px-4 pt-12  {{ if not .Params.hero.image}} {{ end }}">
+    <div class="max-w-lg mx-auto">
+      {{ with .Title }}
+      <h1 class="text-3xl lg:text-4xl font-medium mb-4 leading-tight">{{ . }}</h1>
+      {{ end }}
+
+      <div class="user-content text-grey-medium lg:text-lg font-medium leading-loose">
+        {{ $currentTitle := .Page.Title }}
+        <h5 class="text-2xl  mb-2">Pagina's</h5>
+        <ul class="list-reset mb-6">
+          {{range  (where (where .Site.Pages.ByTitle  "Kind" "page") "Type" "page") }}
+          {{ if ne .Title $currentTitle }}
+          {{ if ne .Params.hideingoogle true }}
+          <li>
+            <a href="{{.Permalink}}">{{.Title}}</a>
+          </li>
+          {{ end }}
+          {{ end }}
+          {{ end }}
+        </ul>
+
+        <h5 class="text-2xl  mb-2">Formulieren</h5>
+        <ul class="list-reset mb-6">
+          {{range  (where (where .Site.Pages.ByTitle  "Kind" "page") "Type" "formulier") }}
+          {{ if ne .Title $currentTitle }}
+          {{ if ne .Params.hideingoogle true }}
+          <li>
+            <a href="{{.Permalink}}">{{.Title}}</a>
+          </li>
+          {{ end }}
+          {{ end }}
+          {{ end }}
+        </ul>
+
+        <h5 class="text-2xl  mb-2">Nieuws</h5>
+        <ul class="list-reset mb-6">
+          {{range  (where (where .Site.Pages.ByTitle  "Kind" "page") "Type" "post") }}
+          {{ if ne .Title $currentTitle }}
+  
+          {{ if ne .Params.hideingoogle true }}
+          <li>
+            <a href="{{.Permalink}}">{{.Title}}</a>
+          </li>
+          {{ end }}
+          {{ end }}
+          {{ end }}
+        </ul>
+
+        <h5 class="text-2xl  mb-2">Ondersteuning</h5>
+        <ul class="list-reset mb-6">
+          {{range  (where (where .Site.Pages.ByTitle  "Kind" "page") "Type" "ondersteuning") }}
+          {{ if ne .Title $currentTitle }}
+  
+          {{ if ne .Params.hideingoogle true }}
+          <li>
+            <a href="{{.Permalink}}">{{.Title}}</a>
+          </li>
+          {{ end }}
+          {{ end }}
+          {{ end }}
+        </ul>
+
+        <h5 class="text-2xl  mb-2">Testimonials</h5>
+        <ul class="list-reset mb-6">
+          {{range  (where (where .Site.Pages.ByTitle  "Kind" "page") "Type" "testimonial") }}
+          {{ if ne .Title $currentTitle }}
+  
+          {{ if ne .Params.hideingoogle true }}
+          <li>
+            <a href="{{.Permalink}}">{{.Title}}</a>
+          </li>
+          {{ end }}
+          {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+
+      {{- partial "components/share.html" . -}}
+    </div>
+  </div>
+</article>
+{{ end }}

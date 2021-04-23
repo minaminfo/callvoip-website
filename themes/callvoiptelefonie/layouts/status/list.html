@@ -1,0 +1,78 @@
+{{ define "main" }}
+<article class="mb-8 md:mb-24">
+  {{- partial "components/hero.html" . -}}
+  <div class="container px-4 pt-12  {{ if not .Params.hero.image}} {{ end }}">
+    <div class="max-w-lg mx-auto">
+      {{ with .Title }}
+      <h1 class="text-3xl lg:text-4xl font-medium mb-4 leading-tight">{{ . }}</h1>
+      {{ end }}
+
+
+      {{ with .Params.contentTop }}
+      <div class="user-content text-grey-medium lg:text-lg font-medium leading-loose mb-6 ">
+        {{ . | markdownify }}
+      </div>
+      {{ end }}
+
+      <div class="mb-4">
+        {{ $paginator := .Paginate (where .Data.Pages.ByWeight "Type" "status")  12 }}
+
+        {{ if (eq ($paginator.Pages | len) 0) }}
+        <div class="bg-green text-white py-3 px-4 rounded-lg font-medium">Alle systemen zijn operationeel</div>
+        {{ else }}
+        {{ range $i, $item := $paginator.Pages }}
+        <div class="border-2 border-grey-lightest mb-4 rounded-lg">
+          <div class="flex flex-col md:flex-row-reverse justify-between pt-6 px-4 ">
+            {{ if .Params.error }}
+            <div class="bg-red py-2 px-4 text-white rounded text-sm mb-4 md:mb-0">Storing</div>
+            {{ else }}
+            <div class="bg-orange py-2 px-4 text-white rounded text-sm mb-4 md:mb-0">Melding</div>
+            {{ end }}
+            <h4 class="text-lg lg:text-xl font-medium">{{.Params.title}}</h4>
+
+          </div>
+          <div class="user-content text-grey-medium lg:text-lg font-medium leading-loose pt-2 pb-1 px-4">
+            {{ .Content }}
+          </div>
+        </div>
+        {{ end }}
+        {{ end }}
+      </div>
+
+
+      {{ with .Params.contentMiddle }}
+      <div class="user-content text-grey-medium lg:text-lg font-medium leading-loose mb-6 ">
+        {{ . | markdownify }}
+      </div>
+      {{ end }}
+
+
+
+      <div class="mt-6 border-2 border-grey-lightest rounded-lg">
+        <div class="bg-grey-lightest py-3 px-4">
+          <p class="font-medium lg:text-lg xxl:text-xl max-w-lg text-grey-medium">Status overview</p>
+        </div>
+        {{ with .Params.items }}
+        {{ range . }}
+        <div class="py-3 border-b border-grey-lightest px-4 flex justify-between">
+          <div class="font-medium">{{ .title }}</div>
+          {{ if .status }}
+          <i class="fal fa-check-circle text-2xl text-green"></i>
+          {{ else }}
+          <i class="fal fa-times-circle text-2xl text-red"></i>
+          {{ end }}
+        </div>
+        {{ end }}
+        {{ end }}
+      </div>
+
+      {{ with .Content }}
+      <div class="user-content text-grey-medium lg:text-lg font-medium leading-loose pt-6">
+        {{ . | markdownify }}
+      </div>
+      {{ end }}
+
+    </div>
+  </div>
+</article>
+{{ end }}

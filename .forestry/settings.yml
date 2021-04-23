@@ -1,0 +1,125 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: ''
+webhook_url: 
+sections:
+- type: heading
+  label: Losse Paginas
+- type: heading
+  label: Content
+- type: document
+  path: content/_index.md
+  label: Hompeage
+- type: document
+  path: content/aanbod.md
+  label: Aanbod
+- type: document
+  path: content/offerte.md
+  label: Offerte
+- type: document
+  path: content/calculator/_index.md
+  label: 'Calculator '
+- type: directory
+  path: content/bedank
+  label: Bedank pagina's
+  create: all
+  match: "**/*"
+  templates:
+  - clean-template
+- type: directory
+  path: content/telefonie
+  label: Telefonie
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/internet
+  label: Internet
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/oplossingen
+  label: Oplossingen
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/overons
+  label: Over ons
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/nieuws
+  label: Nieuws
+  create: all
+  match: "**/*"
+  templates:
+  - blog-post
+- type: directory
+  path: content
+  label: Legal
+  create: none
+  match: "**"
+  exclude: _index.md
+- type: directory
+  path: content/ondersteuning
+  label: Ondersteuning
+  create: documents
+  match: "**/*"
+  templates:
+  - ondersteuning-item
+- type: directory
+  path: content/testimonials
+  label: Testimonials
+  create: documents
+  match: "**/*"
+  templates:
+  - testimonial
+- type: directory
+  path: content/vacatures
+  label: Vacatures
+  create: documents
+  match: "**/*"
+- type: directory
+  path: content/formulier
+  label: Formulieren
+  create: documents
+  match: "**/*"
+  templates:
+  - formulier
+- type: directory
+  path: content/status
+  label: Status
+  create: all
+  match: "**/*"
+  templates:
+  - status-overzicht
+  - status-melding
+- type: directory
+  path: content/pages
+  label: Pages
+  create: documents
+  match: "**/*"
+- type: heading
+  label: Settings
+- type: document
+  path: data/footer.yaml
+  label: Footer
+- type: document
+  path: data/general.yaml
+  label: General
+upload_dir: ''
+public_path: https://res.cloudinary.com/callvoip/image/upload
+front_matter_path: ''
+use_front_matter_path: true
+file_template: ":filename:"
+build:
+  preview_env:
+  - HUGO_ENV=staging
+  - HUGO_VERSION=0.54.0
+  preview_output_directory: public
+  install_dependencies_command: npm install
+  preview_docker_image: forestryio/hugo:node10
+  mount_path: "/srv"
+  instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
+    -d public
+version: 0.54.0

@@ -1,0 +1,35 @@
+{{ define "main" }}
+<article class="mb-8 md:mb-24">
+  {{- partial "components/hero.html" . -}}
+  <div class="container px-4 pt-12  {{ if not .Params.hero.image}} {{ end }}">
+    <div class="max-w-lg mx-auto">
+      {{ with .Title }}
+      <h1 class="text-3xl lg:text-4xl font-medium mb-4 leading-tight">{{ . }}</h1>
+      {{ end }}
+      {{ with .Content }}
+      <div class="user-content text-grey-medium lg:text-lg font-medium leading-loose mb-8">
+        {{ . | markdownify }}
+      </div>
+      {{ end }}
+
+      {{ with .Params.items }}
+      <div class="pt-4">
+        {{ range . }}
+        <a href="{{ .link }}" class="xxl:flex mb-4 text-grey-dark no-underline hover:text-blue">
+          <div
+            class="rounded-full bg-grey-lightest h-16 w-16 lg:h-20 lg:w-20 flex justify-center items-center mb-2 xl:mb-4  mr-8">
+            <i class="fal text-3xl lg:fa-2x {{ .icon }} text-blue"></i>
+          </div>
+          <div class="flex-1 pt-2">
+            <h4 class="text-lg lg:text-xl font-medium">{{ .title }}</h4>
+            <div class="font-medium text-grey-medium leading-large lg:text-lg">{{ .content }}</div>
+          </div>
+        </a>
+        {{ end }}
+      </div>
+      {{ end }}
+
+    </div>
+  </div>
+</article>
+{{ end }}

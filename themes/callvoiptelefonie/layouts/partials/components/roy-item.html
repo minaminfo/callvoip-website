@@ -1,0 +1,32 @@
+{{ $type := .type }}
+{{ $item := .item }}
+{{$ctx := .ctx}}
+{{ $title := .title }}
+{{ with $item }}
+{{ $link := $item.Params.website }}
+
+<div class='flex items-center {{ if eq $type "light" }} flex-row-reverse bg-white text-grey-dark {{ else }} flex-row bg-grey-lightest {{ end }}  '>
+    <div class=' {{ if eq $type "light" }} w-1/3 {{ else }} w-1/3 {{ end }} '>
+        {{ with $item.Params.hero.image}}
+        <img data-src="{{ $ctx.Site.Params.cloudinary_base_url }}/c_scale,f_auto,q_auto/{{.}}" class="cld-responsive"
+             alt="{{ $item.Title }}" />
+        {{ end }}
+    </div>
+    
+    <div {{ if eq $type "light" }} class="p-12 xl:p-12 w-2/3" style="padding-left:250px" {{ else }} class="p-12 xl:p-12 w-2/3" {{ end }} >
+        {{ with $item.Params.logo }}
+        <a href="{{ $link }}" class="px-2">
+            <img data-src="{{ $ctx.Site.Params.cloudinary_base_url }}/w_auto,dpr_auto/{{.}}"
+                 class="max-h-logo-small lg:max-h-logo cld-responsive block max-w-full mb-8 object-contain" alt="Client" />
+        </a>
+        {{ end }}
+        <div class="text-lg lg:text-xl xl:text-l mb-4">{{ $item.Content }}</div>
+        {{ with $item.Params.name }}
+        <p class=" lg:text-lg opacity-75 font-medium mb-8">{{ . }}</p>
+        {{ end }}
+        {{ with $item.Params.link }}
+        <a href="{{ . }}" class="button md:text-lg">Lees meer over deze partner</a>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

@@ -1,0 +1,79 @@
+{{ define "main" }}
+<article>
+  {{ $sec := .Section }}
+  {{- partial "components/hero.html" . -}}
+  <div class="flex flex-col-reverse md:flex-col">
+    <div class="container px-4">
+      {{- partial "components/page-introroy.html" . -}}
+    </div>
+    <div class="mx-4 mb-8">
+      <div class="user-content text-grey-medium lg:text-lg font-medium leading-loose">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </div>
+      <div class="bg-grey-dark mx-auto p-4 py-8 md:px-8 rounded-lg">
+        <ul class="text-white flex-wrap flex mb-4">
+          <li class="w-full"><b>Suggestions:</b></li>
+          {{ range $i,$d := .Params.selected_tags }}
+          {{ if not (eq $i 0) -}}
+          , &nbsp;
+          {{ end -}}
+          <li><a href="/tags/{{.}}" class="text-white">{{humanize .}}</a></li>
+          {{ end }}
+        </ul>
+        <div class="relative">
+          <input type="text" class="w-full focus:outline-none bg-white rounded-lg p-4 relative z-30"
+            placeholder="Search for tags" id="tags-search">
+          <div class="absolute z-30 w-full">
+            <ul class="bg-white shadow-lg">
+            </ul>
+          </div>
+          <script>
+            var input = document.getElementById("tags-search"),
+              rlist = input.nextElementSibling.querySelector('ul'),
+              tags = `{{ $t := where .Site.Taxonomies.tags ".Page.Section" "programs" }}{{ range $t }}{{ .Page.Title  }}{{ end }}`,
+              arr = tags.replaceAll('"', ' ').trim();
+
+            input.addEventListener("keyup", function (e) {
+              var pat = new RegExp('\\w*' + e.target.value + '\\w*', 'gi'),
+                result = arr.match(pat);
+              rlist.innerHTML = ''
+              if (input.value.length > 0) {
+                result.forEach(e => {
+                  var newli = document.createElement('li');
+                  newli.innerHTML = '<a href="/tags/' + e + '" class="p-4 hover:bg-grey-lightest block capitalize">' + e + '</a>';
+                  rlist.appendChild(newli)
+                })
+              }
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+    <div style="max-width: 2600px" class="mx-auto">
+      {{ $pageVar := . }}
+      {{ $cloudinary := .Site.Params.cloudinary_base_url }}
+      {{ $paginator := .Paginate .Pages 6 }}
+      {{ range $i, $item := $paginator.Pages -}}
+      {{ $title := .Title }}
+      <div
+        class="md:flex items-center p-8 lg:p-0 {{ if not (modBool $i 2) }}bg-white text-grey-dark{{ else }}bg-grey-lightest{{- end }}">
+        <div class="md:w-1/3">
+          {{ with .Params.logo -}}
+          <img data-src="{{ $cloudinary }}/c_scale,f_auto,q_auto,w-300{{.}}" class="cld-responsiveb w-64" style="background: none;"
+            alt="logo of {{$title}}" />
+          {{ end -}}
+        </div>
+        <div class="lg:p-12 md:w-2/3">
+          <h3 class="text-3xl mb-2">{{.Title}}</h3>
+          <div class="text-lg lg:text-xl xl:text-l mb-6 space-y-4">{{ $item.Content }}</div>
+          {{ with $item.Params.link }}
+          <a href="{{ .url }}" class="button md:text-lg">{{.text}}</a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end -}}
+    </div>
+    {{ template "_internal/pagination.html" . -}}
+  </div>
+</article>
+{{ end }}

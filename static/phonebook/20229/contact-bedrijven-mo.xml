@@ -1,0 +1,201 @@
+﻿<BloembedrijvenIPPhoneDirectory>
+
+<DirectoryEntry>
+<Name>Madurodam</Name>
+	<Telephone>0704162400</Telephone>
+	<Telephone></Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+<Name>Mahle Industrial Filtration Benelux B.V.</Name>
+	<Telephone>0573297777</Telephone>
+	<Telephone></Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+<Name>Make Your Mark B.V.</Name>
+	<Telephone>0704277600</Telephone>
+	<Telephone></Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+<Name>Met ID B.V.</Name>
+	<Telephone>0703115060</Telephone>
+	<Telephone></Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+<Name>Metabo B.V.</Name>
+	<Telephone></Telephone>
+	<Telephone>0346217950</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+<Name>Meurs HRM</Name>
+	<Telephone>0348487500</Telephone>
+	<Telephone>0348487500</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+<Name>Moba B.V.</Name>
+	<Telephone></Telephone>
+	<Telephone>0342455613</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+<Name>Mooij Vastgoed B.V.</Name>
+	<Telephone>0648169700</Telephone>
+	<Telephone></Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+<Name>Mulders Cleaning</Name>
+	<Telephone>0614791788</Telephone>
+	<Telephone></Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+<Name>Multiple Choice.nl B.V</Name>
+	<Telephone>0182639709</Telephone>
+	<Telephone>0655511987</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+<Name>MW Consult</Name>
+	<Telephone>0135700589</Telephone>
+	<Telephone></Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+<Name>Na Stahl BV</Name>
+	<Telephone>0108448522</Telephone>
+	<Telephone></Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+<Name>NCR Nederland B.V.</Name>
+	<Telephone></Telephone>
+	<Telephone>0207151423</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+<Name>Nedasco</Name>
+	<Telephone>0334670860</Telephone>
+	<Telephone></Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+<Name>Nederlands Incasso Consortium</Name>
+	<Telephone></Telephone>
+	<Telephone>0105212988</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+<Name>Neoderma Hettinga</Name>
+	<Telephone>0703634025</Telephone>
+	<Telephone></Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+<Name>Newtec Company</Name>
+	<Telephone>003237806503</Telephone>
+	<Telephone></Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+<Name>Nicolai Advocatuur</Name>
+	<Telephone>0708917636</Telephone>
+	<Telephone></Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+<Name>NIP</Name>
+	<Telephone></Telephone>
+	<Telephone>0308201500</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+<Name>Nolet Advocaten</Name>
+	<Telephone>0703470111</Telephone>
+	<Telephone>0622475618</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+<Name>NPB</Name>
+	<Telephone></Telephone>
+	<Telephone>0235384844</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+<Name>OOM Verzekeringen N.V.</Name>
+	<Telephone>0703532163</Telephone>
+	<Telephone></Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+<Name>Orange Business Netherlands B.V.</Name>
+	<Telephone>0206069100</Telephone>
+	<Telephone></Telephone>
+</DirectoryEntry>
+
+<SoftKeyItem>
+	<Name>1</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-bedrijven.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>2</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-bedrijven-ac.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>3</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-bedrijven-df.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>4</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-bedrijven-gi.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>5</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-bedrijven-jl.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>6</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-bedrijven-mo.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>7</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-bedrijven-ps.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>8</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-bedrijven-tv.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>9</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-bedrijven-wz.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>*</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-bedrijven.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>0</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-bedrijven-09.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>#</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-bedrijven.xml</URL>
+</SoftKeyItem>
+
+</BloembedrijvenIPPhoneDirectory>

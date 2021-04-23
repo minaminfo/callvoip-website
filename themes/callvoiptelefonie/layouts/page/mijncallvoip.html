@@ -1,0 +1,63 @@
+{{ define "main" }}
+<article>
+
+  <div class="container px-4 lg:pb-6 pt-16">
+    <div class="text-center mb-12 xl:mb-16">
+      {{ with .Title }}
+      <h2 class="text-3xl lg:text-4xl font-normal mb-4 leading-tight">{{ . }}</h2>
+      {{ end }}
+      {{ with .Content }}
+      <div class="mx-auto max-w-xl lg:text-lg xl:text-xl font-normal user-content">{{ . }}</div>
+      {{ end }}
+    </div>
+  </div>
+
+
+
+  <div class="container px-4 pb-16">
+    {{ range .Params.usps }}
+    <div
+      class="xl:flex xl:-mx-8 mb-12 md:mb-16  bg-grey-lightest pt-12  md:pt-20 pb-4 md:pb-8 px-4 sm:px-8 rounded-lg">
+      <div class="xl:w-2/5 xl:px-8 ">
+        {{ with .title }}
+        <h3 class="text-3xl font-normal mb-2 xxl:mb-6 leading-tight">{{ . | markdownify }}</h3>
+        {{ end }}
+        {{ with .content }}
+        <div class="xl:mx-auto max-w-xl lg:text-lg xl:text-xl font-normal text-grey-medium mb-10 lg:mb-12 user-content">
+          {{ . | markdownify }} </div>
+        {{ end }}
+      </div>
+      <div class="xl:w-3/5 xl:px-8">
+        <div class="flex flex-col md:flex-row flex-wrap md:-mx-8 xl:-mx-4">
+          {{ range .items }}
+          <div class="md:w-1/2 md:px-8 xl:px-4  mb-8 lg:mb-12">
+            {{ with .title }}
+            <h4 class="text-lg lg:text-2xl font-normal mb-2 block">{{ . | markdownify }}</h4>
+            {{ end }}
+            {{ with .items }}
+              <ul>
+              {{ range . }}
+              <li>
+                  <a href="{{ .link }}"
+                    class="font-normal text-grey-medium leading-large lg:text-lg border-b border-grey-lightest block pb-2 mb-2 text hover:text-blue">
+                    <i class="fal fa-file mr-2"></i>
+                    {{ .title }}
+                  </a>
+                </li>
+              {{ end }}
+            </ul>
+
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+
+
+
+
+</article>
+{{ end }}

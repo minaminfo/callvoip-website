@@ -1,0 +1,46 @@
+---
+baseURL: https://www.callvoip.nl
+LanguageCode: nl
+title: Callvoip
+theme: callvoiptelefonie
+enableEmoji: true
+enableRobotsTXT: true
+MetaDataFormat: yaml
+params:
+  cloudinary_base_url: https://res.cloudinary.com/callvoip/image/upload
+taxonomies:
+  category: categories
+  onderdeel: onderdelen
+  tag: tags
+menu:
+  top:
+  - url: "/ondersteuning"
+    name: Support
+    weight: 4
+  - pre: external
+    url: https://panel.callvoip.nl/login/panel
+    name: Login
+    weight: 5
+  - url: "/status"
+    name: Status
+    weight: 1
+  footer:
+  - pre: external
+    url: http://files.callvoip.nl/downloads/CallVoip_telefonie_aanvraagformulier.pdf
+    name: Direct klant worden
+    weight: 2
+  - pre: external
+    url: http://support.callvoip.nl:8040/
+    name: Help
+    post: fa-window-restore
+    weight: 1
+outputs:
+  home:
+  - HTML
+  - JSON
+markup:
+  defaultMarkdownHandler: blackfriday
+  blackfriday:
+    footnoteReturnLinkContents: ↩
+  highlight:
+    noClasses: false

@@ -1,0 +1,17 @@
+---
+label: SEO
+hide_body: true
+fields:
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+- name: images
+  type: image_gallery
+  config: {}
+  label: Images

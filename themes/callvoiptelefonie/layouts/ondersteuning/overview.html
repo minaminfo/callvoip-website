@@ -1,0 +1,62 @@
+{{ define "main" }}
+<article class="mb-8 md:mb-24">
+    <div class="container px-4 pt-12 mb-16  {{ if not .Params.hero.image}} {{ end }}">
+        <div class="flex flex-row -mx-4">
+          <div class="px-4 w-2/3 ">
+            {{ with .Title }}
+            <h1 class="text-3xl lg:text-4xl font-medium mb-4 leading-tight">{{ . }}</h1>
+            {{ end }}
+            {{ with .Content }}
+            <div class="user-content text-grey-medium lg:text-lg ">
+              {{ . | markdownify }}
+            </div>
+            {{ end }}
+            <div class="pt-4">
+            {{ range .Pages }}
+            <a href="{{ .Permalink }}" class="block lg:flex bg-white items-center font-medium shadow no-underline py-6  px-4 lg:px-8 rounded-lg text-grey-dark mb-6 lg:mb-8">
+                <div class="flex-1">
+                  <span class="font-medium text-lg xxl:text-2xl block mb-2">{{ .Title }}</span>
+                </div>
+                <span class="hidden xl:block ml-6"><i class="fal fa-3x fa-angle-right text-blue"></i></span>
+              </a>
+            {{ end }}
+            </div>
+            {{- partial "components/share.html" . -}}
+          </div>
+          <div class="px-4 w-1/3">
+
+            <div class="bg-white py-6 lg:py-8 px-4 lg:px-8 rounded-lg text-grey-dark ">
+
+              <div class="mb-8">
+                <h4 class="text-lg lg:text-2xl font-medium mb-2">Je vraag niet beantwoord?</h4>
+                <p class="font-medium opacity-75 leading-large  mb-6">Heb je na het lezen van dit artikel nog vragen? Bel ons dan tijdens kantoor uren op <a class="text-blue" href="tel:+31508200000">050 – 820 00 00</a>, stuur ons een e-mail op <a class="text-blue" href="mailto:callvoip@callvoip.nl">callvoip@callvoip.nl</a> of stel jouw vraag via onze chat.  </p>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+  {{- partial "components/helpdesk.html" . -}}
+</article>
+{{ end }}
+{{ define "footer-scripts" }}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.5.1/vue-resource.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/2.5.0/vuex.min.js"></script>
+<script src="https://unpkg.com/vuex-i18n@1.3.2/dist/vuex-i18n.min-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/2.6.2/fuse.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js"></script>
+
+{{ $searchjs := resources.Get "js/search.js" }}
+
+{{ with $searchjs }}
+{{ $secureJS := . | resources.Fingerprint }}
+<script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"
+	crossorigin="anonymous" defer></script>
+{{ end }}
+
+{{ end }}

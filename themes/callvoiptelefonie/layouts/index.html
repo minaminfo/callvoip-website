@@ -1,0 +1,141 @@
+{{ define "main" }}
+<article>
+
+  {{ with .Params.hero }}
+  <header class="container px-4 clearfix">
+    <div class="md:flex md:-mx- lg:-mx-12 md:items-center pt-6 sm:pt-8 md:pt-12 md:pt-16 mb-12">
+      <div class="mb-12 md:w-1/2 md:px-4 lg:px-12">
+        {{ with .title }}
+        <h1 class="text-3xl lg:text-4xl xxl:text-5xl font-medium leading-tight mb-4 md:mb-6">{{ . | emojify }}</h1>
+        {{ end }}
+        {{ with .content }}
+        <div class="font-medium lg:text-lg xxl:text-xl max-w-lg text-grey-medium mb-4 md:mb-8 lg:leading-loose">{{ . | markdownify | emojify }}</div>
+        {{ end }}
+        {{ with .button }}
+        <a href="{{ .link }}" class="button md:text-lg">{{ .content | emojify  }}</a>
+        {{ end }}
+      </div>
+      {{ with .items }}
+      <div class="md:w-1/2 md:px-4 lg:px-12">
+        {{ range . }}
+          {{- partial "components/card.html" . -}}
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </header>
+  {{ end }}
+
+  {{ with .Params.intro }}
+  <div class="lg:mt-8 xl:mb-12">
+    {{ with .image }}
+    <div class="container px-4">
+      <img data-src="{{ $.Site.Params.cloudinary_base_url }}/c_scale,f_auto,q_auto{{.}}" class="mx-auto block relative z-10 cld-responsive"
+             alt="Callvoip Applicatie" />
+    </div>
+    {{ end }}
+
+    <div class="bg-grey-dark mt-24 relative clearfix -mt-40 pt-40 mb-20 lg:mb-30">
+      <div class="container px-4 pt-8 lg:pt-16">
+        <div class="text-center mb-16 text-white md:mb-24 lg:mb-32">
+          {{ with .title }}
+          <h2 class="text-3xl lg:text-4xl font-medium mb-4 md:mb-6 leading-tight">{{ . }}</h2>
+          {{ end }}
+          <p class="mx-auto max-w-xl lg:text-lg xl:text-xl font-medium opacity-75 mb-10">{{ .content }}</p>
+          {{ with .button }}
+          <p><a href="{{ .link }}" class="button lg:text-lg">{{ .content }}</a></p>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+  
+    {{ with .Params.options}}
+  <div class="container px-4 mb-18 lg:pb-12">
+    <div class="text-center mb-12 xl:mb-16">
+      {{ with .title }}
+        <h2 class="text-3xl lg:text-4xl font-medium mb-4 leading-tight">{{ . }}</h2>
+      {{ end }}
+      {{ with .content }}
+      <p class="mx-auto max-w-xl lg:text-lg xl:text-xl font-medium opacity-75">{{ . }}</p>
+      {{ end }}
+    </div>
+    {{ with .items }}
+    <div class="md:flex md:flex-wrap md:-mx-4 lg:-mx-8">
+      {{ range . }}
+      <div class="md:w-1/2 md:px-4 lg:px-8">
+        {{- partial "components/card.html" . -}}
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+  {{ with .image }}
+  <img data-src="{{ $.Site.Params.cloudinary_base_url }}/c_scale,f_auto,q_auto{{.}}" class="mb-12 mx-auto block md:mb-16 cld-responsive max-w-full lg:max-w-2xl" alt="Callvoip - Functionaliteiten" />
+  {{ end }}
+  {{ end }}
+
+
+  <div class="container px-4">
+    {{ range .Params.usps }}
+    <div class="xl:flex xl:-mx-8 mb-12 md:mb-16 xxl:mb-32 bg-grey-lightest pt-12  md:pt-20 pb-4 md:pb-8 px-4 sm:px-8 rounded-lg">
+      <div class="xl:w-1/3 xl:px-8 ">
+        {{ with .title }}
+        <h3 class="text-3xl font-medium mb-2 xxl:mb-6 leading-tight">{{ . }}</h3>
+        {{ end }}
+        {{ with .content }}
+        <div class="xl:mx-auto max-w-xl lg:text-lg xl:text-xl font-medium text-grey-medium mb-10 lg:mb-12 user-content">{{ . | markdownify }} </div>
+        {{ end }}
+      </div>
+      <div class="xl:w-2/3 xl:px-8">
+        <div class="flex flex-wrap md:-mx-8 xl:-mx-4">
+          {{ range .items }}
+          <div class="md:w-1/2 md:px-8 xl:px-4 xxl:flex mb-8 lg:mb-12">
+            <div class="rounded-full bg-white h-16 w-16 lg:h-20 lg:w-20 flex justify-center items-center mb-2 xl:mb-4  mr-8">
+              <i class="fal text-3xl lg:fa-2x {{ .icon }} text-blue"></i>
+            </div>
+            <div class="flex-1 pt-2">
+              {{ with .title }}
+              <h4 class="text-lg text-grey-dark lg:text-2xl font-medium mb-2">{{ . | markdownify }} </h4>
+              {{ end }}
+              {{ with .content }}
+              <p class="font-normal text-grey-dark leading-large lg:text-lg">{{ . | markdownify }} </p>
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+
+  <div class="bg-grey-lightest clearfix pt-12 md:pt-20">
+    <div class="container px-4 pt-8">
+      {{ with .Params.prefooter }}
+      <div class="text-center mb-16">
+        {{ with .title }}
+        <h2 class="text-3xl lg:text-4xl font-medium mb-4 md:mb-6 leading-tight">{{ . }}</h2>
+        {{ end }}
+        {{ with .content }}
+        <p class="mx-auto max-w-xl lg:text-lg xl:text-xl font-medium opacity-75">{{ . | markdownify }}</p>
+        {{ end }}
+      </div>
+      {{ end }}
+      <div class="mb-20 bg-cover bg-center max-w-xl mx-auto" style="background-image: url('/images/beoordeling.svg'); height: 188px;">
+        &nbsp;
+      </div>
+
+      {{- partial "components/testimonial.html" . -}}
+
+
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  {{ .Content }}
+  <!-- End FAQ -->
+
+</article>
+{{ end }}

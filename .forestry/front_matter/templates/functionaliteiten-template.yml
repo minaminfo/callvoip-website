@@ -1,0 +1,93 @@
+---
+label: functionaliteiten template
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+- name: seo
+  type: include
+  config: {}
+  template: seo
+  label: SEO
+  description: SEO
+- type: boolean
+  name: hideinsearch
+  label: Hide in Search
+- type: boolean
+  name: hideingoogle
+  label: Hide in Google
+- type: boolean
+  name: hidesocialshare
+  label: Hide Social Share options
+- type: text
+  name: type
+  label: type
+  hidden: true
+  description: page
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+  description: default
+- type: field_group
+  name: hero
+  label: Hero
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: link
+    label: Link
+  - name: disable_image_on_mobile
+    type: boolean
+    label: Disable image on mobile
+    default: false
+- name: usps
+  label: Usps
+  type: field_group_list
+  fields:
+  - name: title
+    label: Title
+    type: text
+    hidden: false
+    default: ''
+  - name: content
+    label: Content
+    type: text
+    hidden: false
+    default: ''
+  - name: items
+    label: Items
+    type: field_group_list
+    fields:
+    - name: title
+      label: Title
+      type: text
+      hidden: false
+      default: ''
+    - name: content
+      label: Content
+      type: textarea
+      hidden: false
+      default: ''
+    - name: image
+      type: file
+      config:
+        maxSize: 250
+      label: Image
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
+- type: field_group
+  name: intro
+  label: Intro
+  fields:
+  - type: text
+    name: title
+    label: Title
+  - type: textarea
+    name: content
+    label: Content

@@ -1,0 +1,35 @@
+---
+label: general
+hide_body: true
+fields:
+- name: seo
+  type: include
+  config: {}
+  template: seo
+  label: SEO
+  description: SEO
+- type: boolean
+  name: hideinsearch
+  label: Hide in Search
+- type: boolean
+  name: hideingoogle
+  label: Hide in Google
+- type: boolean
+  name: hidesocialshare
+  label: Hide Social Share options
+- type: field_group
+  name: clients
+  label: Clients
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: field_group_list
+    name: items
+    label: items
+    fields:
+    - type: file
+      name: image
+      label: image
+pages:
+- data/general.yaml

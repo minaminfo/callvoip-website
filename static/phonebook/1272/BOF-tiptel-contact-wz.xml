@@ -1,0 +1,183 @@
+<BOFIPPhoneDirectory>
+
+<DirectoryEntry>
+	<Name>Weel, Jack (m)</Name>
+	<Telephone>0613747902</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Weel, Peter (m)</Name>
+	<Telephone>0651086683</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Wel, Ben van de (m)</Name>
+	<Telephone>0653999277</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Westeinde, André van</Name>
+	<Telephone>0625080268</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Westeinde, Rinus van</Name>
+	<Telephone>0653874337</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Wezenberg - de Vries</Name>
+	<Telephone>0613797210</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Wezenberg, Bart (m)</Name>
+	<Telephone>0653784156</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Wiel, Kees van de (m</Name>
+	<Telephone>0653645623</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Wijk, Frits van (m)</Name>
+	<Telephone>0651382625</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Wijnen, Jan (m)</Name>
+	<Telephone>0653713788</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Wijnen, Piet (m)</Name>
+	<Telephone>0613103283</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Wilt, Jorg van der (</Name>
+	<Telephone>0654760345</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Winter, Michel de (m</Name>
+	<Telephone>0655773934</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Wit, Bas de (m)</Name>
+	<Telephone>0620985730</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Wit, Dennis de (m)</Name>
+	<Telephone>0646037898</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Wubben, Ard (m)</Name>
+	<Telephone>0653790513</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Zeinstra, Frans (m)</Name>
+	<Telephone>0629051128</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Zuidgeest, Henk (m)</Name>
+	<Telephone>0620137936</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Zuidgeest, Marco (m)</Name>
+	<Telephone>0653558132</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Zwinkels, Aad (m)</Name>
+	<Telephone>0651820056</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Zwinkels, Peter (m)</Name>
+	<Telephone>0637173953</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Zwinkels, Robert (m)</Name>
+	<Telephone>0651206775</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Zwinkels, Ruud (m)</Name>
+	<Telephone>0625033254</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Zwinkels, Vasco (m)</Name>
+	<Telephone>0612997767</Telephone>
+</DirectoryEntry>
+
+<SoftKeyItem>
+	<Name>1</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>2</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact-ac.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>3</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact-df.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>4</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact-gi.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>5</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact-jl.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>6</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact-mo.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>7</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact-ps.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>8</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact-tv.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>9</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact-wz.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>*</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact-special.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>0</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact-09.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>#</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact.xml</URL>
+</SoftKeyItem>
+
+</BOFIPPhoneDirectory>

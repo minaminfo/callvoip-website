@@ -1,0 +1,16 @@
+{{ define "main" }}
+<article class="mb-8 md:mb-24 smooth-scroll">
+  <div id="page" class="pt-12">
+    {{- partial "components/aanbod.html" . -}}
+    {{- partial "components/usps.html" . -}}
+    {{- partial "components/kiezen.html" . -}}
+    {{- partial "components/page-inline-intro.html" . -}}
+    {{- partial "components/user-content.html" . -}}
+    {{- partial "components/prijzen.html" . -}}
+    {{- partial "components/logos.html" . -}}
+    <div class="pt-12 xl:pt-24">
+      {{- partial "components/content-blocks.html" . -}}
+    </div>
+  </div>
+</article>
+{{ end }}

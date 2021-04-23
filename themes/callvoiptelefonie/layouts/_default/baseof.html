@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode}}">
+
+  <head>
+    {{- block "head" . -}}
+      <title>{{ block "title" . }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+      {{- partial "head" . -}}
+    {{- end -}}
+    {{- block "head-scripts" . }}{{- end }}
+
+  </head>
+
+  <body class='text-base font-sans leading-normal text-grey-dark overflow-x-hidden'>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NK98RJ5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="app" class="bg-no-repeat bg-right-top" {{ if .IsHome }} style="background-image:url('/images/site-bg.svg')"
+      {{ end }}>
+      {{- block "header" . }}{{- partial "components/header.html" . -}} {{ end }}
+      <div id="stickybar" class="sticky top-0 left-0 z-50 stickybar hidden-forced">
+        <div class="hidden lg:block bg-white pt-3 pb-4 shadow ">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-end">
+            <div class="flex items-center">
+              <p class="">
+
+                <a href="tel:+31508200000"
+                  class="text-grey-dark no-underline text-lg font-medium flex items-center justify-center ">
+                  <span class="mr-2">Zullen we even bellen?</span>
+                  <i
+                    class="fal fa-phone sm:mr-2 fa-flip-horizontal relative"
+                    style="font-size: 1.6rem; top: .2rem; transform: rotate(97deg); "></i>
+                  <span class="hidden sm:block">050 – 820 00 00</span></a></p>
+              <div class="hidden lg:block">
+                <a href="/klantworden" class="button-outline button-outline-tertiary button-small ml-6 text-lg">Klant worden?</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div id="content">
+        {{- block "main" . }}{{- end }}
+      </div>
+  
+      {{- partial "components/footer.html" . -}}
+    </div>
+    {{- partial "scripts.html" . -}}
+    {{- block "footer-scripts" . }}{{- end }}
+  </body>
+</html>

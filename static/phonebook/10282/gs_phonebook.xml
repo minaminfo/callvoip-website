@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AddressBook xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Contact>
+		<LastName>ABC Solutions</LastName>
+		<Phone>
+			<phonenumber>0302257670</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>ABW</LastName>
+		<FirstName> H. Mackor</FirstName>
+		<Phone>
+			<phonenumber>0786104683</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>ABW</LastName>
+		<FirstName> H. Mackor mobiel</FirstName>
+		<Phone>
+			<phonenumber>0651236823</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Adfo Movere</LastName>
+		<Phone>
+			<phonenumber>0503171111</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Adfo Movere</LastName>
+		<FirstName> H. Hamming mobiel</FirstName>
+		<Phone>
+			<phonenumber>0653180559</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Adviesbureau Meppelink</LastName>
+		<Phone>
+			<phonenumber>0503119191</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Adviesbureau Meppelink</LastName>
+		<FirstName> W. Meppelink mobiel</FirstName>
+		<Phone>
+			<phonenumber>0613238619</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Akkermans Architecten</LastName>
+		<Phone>
+			<phonenumber>0519295050</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>ARBO Pompen &amp; Filters</LastName>
+		<Phone>
+			<phonenumber>0592430310</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>ARBO Pompen &amp; Filters</LastName>
+		<Phone>
+			<phonenumber>0592430315</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Bakker Metaal</LastName>
+		<Phone>
+			<phonenumber>0517341551</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Ballast &amp; Bonekamp</LastName>
+		<Phone>
+			<phonenumber>0503184032</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Binderij Steen</LastName>
+		<Phone>
+			<phonenumber>0503130310</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Boekbinderij</LastName>
+		<FirstName> A. v Zanten</FirstName>
+		<Phone>
+			<phonenumber>0503121196</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Boekbinderij</LastName>
+		<FirstName> A. v Zanten mobiel</FirstName>
+		<Phone>
+			<phonenumber>0615383809</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Bureau Meteau</LastName>
+		<Phone>
+			<phonenumber>0503118755</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Bureau Meteau</LastName>
+		<FirstName> M. Keupink mobiel</FirstName>
+		<Phone>
+			<phonenumber>0655342391</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Business IT Rent</LastName>
+		<Phone>
+			<phonenumber>0528261200</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Business IT Rent</LastName>
+		<FirstName> L. Kwakernaak mobiel</FirstName>
+		<Phone>
+			<phonenumber>0648086612</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Confidio</LastName>
+		<Phone>
+			<phonenumber>0591714701</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Confidio</LastName>
+		<FirstName> F. Zwaneveld mobiel</FirstName>
+		<Phone>
+			<phonenumber>0610351523</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>CreaBind</LastName>
+		<Phone>
+			<phonenumber>0591633224</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>CreaBind</LastName>
+		<FirstName> J. v Beek mobiel</FirstName>
+		<Phone>
+			<phonenumber>0651542827</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Cura XL</LastName>
+		<Phone>
+			<phonenumber>0505420066</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Cura XL</LastName>
+		<FirstName> J. Gossen mobiel</FirstName>
+		<Phone>
+			<phonenumber>0610304167</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Bogers</LastName>
+		<FirstName> Dick</FirstName>
+		<Phone>
+			<phonenumber>0613408866</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Edobode Staalwerk</LastName>
+		<Phone>
+			<phonenumber>0503142615</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Edobode Staalwerk</LastName>
+		<FirstName> J.P. Bode mobiel</FirstName>
+		<Phone>
+			<phonenumber>0651533165</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Richter </LastName>
+		<FirstName> Erik mobiel</FirstName>
+		<Phone>
+			<phonenumber>0651649576</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Europa Werkstatt</LastName>
+		<Phone>
+			<phonenumber>0503119191</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Europa Werkstatt</LastName>
+		<FirstName> A. Hollemans mobiel</FirstName>
+		<Phone>
+			<phonenumber>0654663647</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Focus ICT</LastName>
+		<Phone>
+			<phonenumber>0528261006</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Focus ICT</LastName>
+			<FirstName> H. Klein mobiel</FirstName>
+		<Phone>
+			<phonenumber>0612112341</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>GAWA</LastName>
+		<FirstName> W. Elgersma</FirstName>
+		<Phone>
+			<phonenumber>0515460180</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>GAWA</LastName>
+		<FirstName> W. Elgersma mobiel</FirstName>
+		<Phone>
+			<phonenumber>0653974944</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Grafisch Huis</LastName>
+		<Phone>
+			<phonenumber>0503183333</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Grafisch Huis</LastName>
+		<FirstName> A.J. Swierstra mobiel</FirstName>
+		<Phone>
+			<phonenumber>0651598240</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>HR Copyservice</LastName>
+		<Phone>
+			<phonenumber>0591621519</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>HR Copyservice</LastName>
+		<FirstName> H. Hendriks mobiel</FirstName>
+		<Phone>
+			<phonenumber>0653753232</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Boersbroek</LastName>
+		<FirstName> Iris</FirstName>
+		<Phone>
+			<phonenumber>0387851139</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Boersbroek</LastName>
+		<FirstName> Iris mobiel</FirstName>
+		<Phone>
+			<phonenumber>0636588857</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Kopieerwinkel</LastName>
+		<FirstName> Dhr. Omlo</FirstName>
+		<Phone>
+			<phonenumber>0517396116</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Kor Fidder</LastName>
+		<Phone>
+			<phonenumber>0617787585</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>MWO</LastName>
+		<Phone>
+			<phonenumber>0591514940</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>MWO</LastName>
+		<FirstName> Dhr. Hoek mobiel</FirstName>
+		<Phone>
+			<phonenumber>0610919263</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Nedichin</LastName>
+		<Phone>
+			<phonenumber>0503610910</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Nedichin</LastName>
+		<FirstName> Y.P. Zhu mobiel</FirstName>
+		<Phone>
+			<phonenumber>0646162088</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Postmus Reparatie/Constructie</LastName>
+		<Phone>
+			<phonenumber>0519561571</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Raven Producties</LastName>
+		<Phone>
+			<phonenumber>0592656170</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Raven Producties</LastName>
+		<FirstName> Dhr. Raven mobiel</FirstName>
+		<Phone>
+			<phonenumber>0655860013</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Scholte Advisering </LastName>
+		<Phone>
+			<phonenumber>0591612163</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Scholte Advisering </LastName>
+		<FirstName> G. Scholte mobiel</FirstName>
+		<Phone>
+			<phonenumber>0653280845</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Studio Frank&amp;Lisa</LastName>
+		<Phone>
+			<phonenumber>0503133594</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Studio Frank&amp;Lisa</LastName>
+		<FirstName> F. Schaap mobiel</FirstName>
+		<Phone>
+			<phonenumber>0623659435</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Studio Frank &amp; Lisa</LastName>
+		<FirstName> L. Sportel mobiel</FirstName>
+		<Phone>
+			<phonenumber>0620954195</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Tijdhof Consulting</LastName>
+		<FirstName> M. Timmer</FirstName>
+		<Phone>
+			<phonenumber>0505264933</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Van Dijk Autom.</LastName>
+		<FirstName> J. v Dijk</FirstName>
+		<Phone>
+			<phonenumber>0511453537</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>van Dijk Autom.</LastName>
+		<FirstName> J. v Dijk mobiel</FirstName>
+		<Phone>
+			<phonenumber>0653933128</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Verbion</LastName>
+		<Phone>
+			<phonenumber>0597422600</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Natenstedt</LastName>
+		<FirstName> Vincent mobiel</FirstName>
+		<Phone>
+			<phonenumber>0624695902</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Witting</LastName>
+		<FirstName> H. Witting</FirstName>
+		<Phone>
+			<phonenumber>0598396811</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Witting</LastName>
+		<FirstName> H. Witting mobiel</FirstName>
+		<Phone>
+			<phonenumber>0653143890</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Vos</LastName>
+		<FirstName> Yvonne, mobiel</FirstName>
+		<Phone>
+			<phonenumber>0642115939</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+	<Contact>
+		<LastName>Vos</LastName>
+		<FirstName> Yvonne</FirstName>
+		<Phone>
+			<phonenumber>0355233399</phonenumber>
+			<accountindex>0</accountindex>
+		</Phone>
+	</Contact>
+</AddressBook>

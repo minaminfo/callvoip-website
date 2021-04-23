@@ -1,0 +1,22 @@
+{{ $page := .page }}
+{{ $site := .site }}
+
+<nav class="flex flex-wrap justify-end">
+    {{ range .menu }}
+    {{ $is := $page.IsMenuCurrent "main" . }}
+    {{ $has := $page.HasMenuCurrent "main" . }}
+    {{ $pre := printf "%s" .Pre }}
+    {{ $post := printf "%s" .Post }}
+    
+    <a href="{{.URL}}" {{ if eq $pre "external" }} target="_blank" {{ end }}
+        class="uppercase text-xs font-medium text-grey-dark no-underline mr-3 md:mr-0 md:ml-6 hover:text-blue">
+        {{ if $post }}
+            <i class="fal {{ $post }}"></i>
+        {{ end }}
+        {{ .Name }}
+    </a>
+    {{ end }}
+    <a href="/zoeken" class=" mr-3 md:mr-0 md:ml-6">
+        <i class="fal fa-search relative" style="top: -2px;"></i>
+    </a>
+</nav>

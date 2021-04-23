@@ -1,0 +1,28 @@
+{{ $title := .Title }}
+{{ $url := printf "%s" .URL | absLangURL }}
+{{ $body := print $title ", by " .Site.Title "\n" .Params.description "\n\n" $url "\n" }}
+{{ if .Params.hidesocialshare}}
+
+{{ else }}
+<div class="flex flex-wrap text-lg font-medium opacity-75 pt-6">
+  <a href="https://www.facebook.com/sharer.php?u={{ $url }}" class="border-2 border-grey-lightest mb-4 hover:bg-grey-lightest flex  w-full justify-center text-center md:w-auto items-center px-8 py-3 text-grey-dark rounded mr-4" aria-label="share on Facebook" target="_blank">
+    <i class="fab fa-facebook-f mr-2"></i> facebook
+  </a>
+
+  <a href="https://twitter.com/share?url={{ $url }}&text={{ $title }}&via={{with .Site.Social.twitter }}{{ . }}{{ end }}"
+  class="border-2 border-grey-lightest mb-4 hover:bg-grey-lightest flex items-center px-8 py-3 text-grey-dark rounded mr-4  w-full justify-center text-center md:w-auto" aria-label="share on Twitter" target="_blank">
+  <i class="fab fa-twitter mr-2"></i> twitter
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ $url }}&title={{ $title }}&summery={{.Params.description}}&srouce={{.Site.Title}}"
+  class="border-2 border-grey-lightest mb-4 hover:bg-grey-lightest flex items-center px-8 py-3 text-grey-dark rounded mr-4 w-full justify-center text-center md:w-auto" aria-label="share on Twitter" target="_blank">
+    <i class="fab fa-linkedin-in mr-2"></i> linkedin
+  </a>
+
+  <a href="mailto:?subject=Check%20out%20{{ $title }}.&body={{ $body }}" class="border-2 mb-4 border-grey-lightest hover:bg-grey-lightest flex  w-full justify-center text-center md:w-auto items-center px-8 py-3 text-grey-dark rounded mr-4" aria-label="share on Email" target="_blank">
+      <i class="fal fa-envelope mr-2"></i> email
+  </a>
+</div>
+{{ end }}
+
+

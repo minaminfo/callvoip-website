@@ -1,0 +1,216 @@
+---
+label: Calculator
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: type
+  label: type
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+- type: boolean
+  name: hidesocialshare
+  label: Hide Social Share options
+- type: field_group
+  name: hero
+  label: hero
+  fields:
+  - type: file
+    name: image
+    label: image
+  - name: disable_image_on_mobile
+    type: boolean
+    label: Disable image on mobile
+    default: false
+- type: list
+  name: outputs
+  label: outputs
+  hidden: true
+- type: field_group_list
+  name: basic
+  label: basic
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: description
+    label: description
+  - type: number
+    name: min
+    label: min
+  - type: number
+    name: max
+    label: max
+  - type: number
+    name: price_monthly
+    label: price_monthly
+  - type: number
+    name: price_onetime
+    label: price_onetime
+  - type: boolean
+    name: required
+    label: required
+- type: field_group
+  name: callminutes
+  label: callminutes
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: description
+    label: description
+  - type: field_group_list
+    name: items
+    label: items
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: number
+      name: value
+      label: value
+    - type: number
+      name: price_monthly
+      label: price_monthly
+    - type: number
+      name: price_onetime
+      label: price_onetime
+    - type: boolean
+      name: required
+      label: required
+- type: field_group
+  name: options
+  label: options
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: description
+    label: description
+  - type: field_group_list
+    name: items
+    label: items
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: text
+      name: description
+      label: description
+    - type: number
+      name: min
+      label: min
+    - type: number
+      name: max
+      label: max
+    - type: number
+      name: price_monthly
+      label: price_monthly
+    - type: number
+      name: price_onetime
+      label: price_onetime
+    - type: boolean
+      name: required
+      label: required
+- type: field_group
+  name: callrecording
+  label: callrecording
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: description
+    label: description
+  - type: field_group_list
+    name: items
+    label: items
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: number
+      name: min
+      label: min
+    - type: number
+      name: max
+      label: max
+    - type: number
+      name: price_monthly
+      label: price_monthly
+    - type: number
+      name: price_onetime
+      label: price_onetime
+    - type: boolean
+      name: required
+      label: required
+- type: field_group
+  name: security
+  label: security
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: description
+    label: description
+  - type: field_group_list
+    name: items
+    label: items
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: number
+      name: value
+      label: value
+    - type: number
+      name: price_monthly
+      label: price_monthly
+    - type: number
+      name: price_onetime
+      label: price_onetime
+    - type: boolean
+      name: required
+      label: required
+- type: field_group_list
+  name: crm
+  label: crm
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: number
+    name: min
+    label: min
+  - type: number
+    name: max
+    label: max
+  - type: number
+    name: price_monthly
+    label: price_monthly
+  - type: number
+    name: price_onetime
+    label: price_onetime
+  - type: boolean
+    name: required
+    label: required
+- type: field_group
+  name: offerte
+  label: offerte
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+pages:
+- content/calculator.md

@@ -1,0 +1,16 @@
+{{$tab := .tab }}
+
+<a href="{{ .link }}" {{ if $tab }} target="_blank" {{ end}} {{ with .id}} id="{{.}}" {{ end}} class="block lg:flex bg-white items-center font-medium shadow no-underline py-6 sm:py-8 px-4 sm:px-8  rounded-lg text-grey-dark mb-6 lg:mb-8">
+  <span class="hidden lg:block w-20 ">
+    {{ if .iconimage }}
+    <img src="{{.iconimage}}" class="w-full" style="max-width: 64px;" alt="">
+    {{ else }}
+    <i class="fal fa-3x {{ .icon }} text-blue pointer-events-none"></i>
+    {{ end }}
+  </span>
+  <div class="flex-1 pointer-events-none">
+    <span class="font-medium text-lg xxl:text-2xl block mb-2">{{ .title | emojify }}</span>
+    <span class="text-grey-medium lg:text-lg">{{ .content | emojify }}</span>
+  </div>
+  <span class="hidden xl:block ml-6 pointer-events-none"><i class="fal fa-3x fa-angle-right text-blue"></i></span>
+</a>

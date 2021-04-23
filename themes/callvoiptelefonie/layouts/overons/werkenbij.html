@@ -1,0 +1,73 @@
+{{ define "main" }}
+<article>
+  {{- partial "components/hero.html" . -}}
+  <div class="flex flex-col-reverse md:flex-col">
+    {{- partial "components/nav/onpage.html" . -}}
+    <div>
+      <div class="container px-4">
+        {{- partial "components/page-intro.html" . -}}
+        <div>
+          {{ range .Params.blocks }}
+          <div
+            class="flex flex-col-reverse md:flex-row items-center {{ if eq .position "image_left"}} md:flex-row-reverse {{ end }} md:-mx-8 user-content mb-8 md:mb-24">
+            <div class="md:w-1/2 md:px-8">
+              {{ $title := .title }}
+
+              {{/* ADD THIS */}}
+              {{ $zoom := "" }}
+              {{if eq .zooming true}}
+              {{ $zoom = "zoom" }}
+              {{end}}
+              {{/* TILL NOW */}}
+
+              {{ with $title}}
+              <h2 class="font-medium text-lg xxl:text-2xl block mb-1">{{ . }}</h2>
+              {{ end }}
+              {{ with .content }}
+              <div class="lg:text-lg mb-4 font-medium leading-loose">
+                {{ . | markdownify }}
+              </div>
+              {{ end }}
+            </div>
+            <div class="md:w-1/2 md:px-8 mb-6">
+              {{ with .image}}
+              {{/* ADD VARIABLE IN CLASS */}}
+              <img data-src="{{ $.Site.Params.cloudinary_base_url }}/c_scale,f_auto,q_auto/{{.}}"
+                class="cld-responsive {{$zoom}}" alt="{{ $title }}" />
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      <div class="bg-grey-lightest clearfix">
+        <div class="container px-4 pt-12 md:pt-24">
+          <h2 class="text-3xl lg:text-4xl font-medium mb-8 leading-tight">Huidige vacatures</h2>
+          <div class="md:flex md:-mx-2 lg:-mx-4">
+            {{range (where (where .Site.Pages "Kind" "page") "Type" "vacatures") | first 2 }}
+            <div class="md:w-1/2 md:px-2 lg:px-4">
+              <a href="{{.Permalink}}"
+                class="block bg-white font-medium shadow no-underline py-6 lg:py-12 px-6 lg:px-8 xl:px-10 rounded-lg text-grey-dark mb-6 lg:mb-8">
+                {{ with .Params.tag }}
+                <span class="block text-grey-medium lg:text-lg mb-4 lg:mb-6">
+                  {{ . }}
+                </span>
+                {{ end }}
+                {{ with .Params.title }}
+                <span class="block font-medium text-lg xxl:text-2xl block mb-2">{{ . }}</span>
+                {{ end }}
+                {{ with .Params.excerpt }}
+                <span class="block text-grey-medium lg:text-lg mb-4 lg:mb-8">{{ . }}</span>
+                {{ end }}
+                <span class="button">Bekijk vacature</span>
+              </a>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+{{ end }}

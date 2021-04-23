@@ -1,0 +1,13 @@
+{{ $currentTitle := .Page.Title }}
+<h2 class="text-2xl  mb-2">Pagina's</h2>
+<ul class="list-reset mb-6">
+    {{range  (where (where .Site.Pages.ByTitle  "Kind" "page") "Type" "page") }}
+    {{ if ne .Title $currentTitle }}
+      {{ if ne .Params.seo.index "noindex" }}
+      <li>
+        <a href="{{.Permalink}}">{{.Title}}</a>
+      </li>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</ul>

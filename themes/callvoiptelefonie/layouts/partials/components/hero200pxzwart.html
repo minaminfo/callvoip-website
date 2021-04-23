@@ -1,0 +1,39 @@
+{{$title := .Title }}
+{{$link := .Params.hero.link }}
+{{$disableImageOnMobile := .Params.hero.disable_image_on_mobile}}
+{{$mobile := .Params.hero.mobile}}
+{{ $showContent := .Params.hero.showContent }}
+{{ $heroContent := .Params.hero.content }}
+
+
+{{ with .Params.hero.image}}
+
+
+
+<header class="relative h-40 md:h-48 xxl:h-48 bg-grey-lightest {{ if $disableImageOnMobile }} hidden md:block {{ end }}">
+    {{ if $link}}
+    <a href="{{$link}}">
+    {{ end}}
+    {{ if $mobile }}
+  <img data-src="{{ $.Site.Params.cloudinary_base_url }}/c_scale,f_auto,q_auto{{$mobile}}" class="h-full w-full cld-responsive block md:hidden" style="object-fit: cover;" alt="{{$title}}" />
+  <img data-src="{{ $.Site.Params.cloudinary_base_url }}/c_scale,f_auto,q_auto{{.}}" class="h-full w-full cld-responsive hidden md:block" style="object-fit: cover;" alt="{{$title}}" />
+  {{ else }}
+  <img data-src="{{ $.Site.Params.cloudinary_base_url }}/c_scale,f_auto,q_auto{{.}}" class="h-full w-full cld-responsive " style="object-fit: cover;" alt="{{$title}}" />
+      {{ end }}
+  {{ if $link }}
+      </a>
+  {{ end }}
+
+  {{ with $heroContent }}
+  <div class="absolute top-0 left-0 right-0 bottom-0 text-white" {{ if .overlay}} style="background: rgba(32, 52, 118, 0.25);" {{ end }}>
+      <div class="container px-4 py-4 h-full flex flex-col items-{{.align}} justify-center">
+            <h2 class="text-3xl lg:text-4xl text-grey-dark font-medium leading-tight mb-4">{{ .title | markdownify }}</h2>
+            {{ with .text }}
+            <div class="font-medium text-grey-dark lg:text-lg xxl:text-xl max-w-lg  mb-4 md:mb-8 lg:leading-loose">{{ . | markdownify }}</div>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+    
+</header>
+{{ end }}

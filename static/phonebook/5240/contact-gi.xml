@@ -1,0 +1,163 @@
+<BosmaverschuurIPPhoneDirectory>
+
+<DirectoryEntry>
+	<Name>Gansewinkel</Name>
+	<Telephone>08000130</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Generali accountm.</Name>
+	<Telephone>886680830</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Generali</Name>
+	<Telephone>0206604444</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Gortmaker/ IMD, Kees</Name>
+	<Telephone>0651192234</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Goudse verzekering</Name>
+	<Telephone>0182544544</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Grommel, Eric</Name>
+	<Telephone>0612418947</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Hannover</Name>
+	<Telephone>0793166855</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Harms autoschade</Name>
+	<Telephone>0598393150</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Harmsen, Wim</Name>
+	<Telephone>0651266908</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>HDS</Name>
+	<Telephone>0204873737</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Heijdeman, Michiel</Name>
+	<Telephone>0204305593</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Heuvelman, Claudia</Name>
+	<Telephone>0205618390</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Hoogkamer, Raymond</Name>
+	<Telephone>0683643248</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Hoogstraten, Tonny</Name>
+	<Telephone>0654327173</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Houwing-Hagendoorn</Name>
+	<Telephone>0597414701</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Hulzinga, Sicco</Name>
+	<Telephone>0622540805</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Hut, Ronald</Name>
+	<Telephone>0595441098</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Interbank</Name>
+	<Telephone>0203125125</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Interpolis</Name>
+	<Telephone>0134629111</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Iteb</Name>
+	<Telephone>01825694902</Telephone>
+</DirectoryEntry>
+
+<SoftKeyItem>
+	<Name>1</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>2</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-ac.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>3</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-df.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>4</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-gi.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>5</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-jl.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>6</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-mo.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>7</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-ps.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>8</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-tv.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>9</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-wz.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>*</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>0</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-09.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>#</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact.xml</URL>
+</SoftKeyItem>
+
+</BosmaverschuurIPPhoneDirectory>

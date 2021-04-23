@@ -1,0 +1,19 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core-shrinkwrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+{{ $icons := resources.Get "js/icons.bundle.js" }}
+{{ $main := resources.Get "js/main.js" }}
+{{ $js := slice $icons $main | resources.Concat "js/bundle.js" }}
+
+{{ with $js }}
+{{ $secureJS := . | resources.Fingerprint }}
+<script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"
+	crossorigin="anonymous" defer></script>
+{{ end }}
+
+
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"
+	integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+<script>
+mediumZoom('.zoom', {background: 'rgba(32,52,118,.9)',margin:10,  container: {top: 65,}, })
+</script>

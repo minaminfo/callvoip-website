@@ -1,0 +1,28 @@
+[
+  {{ with .Site.GetPage "/ondersteuning" }}
+  {{ range $index, $page := .Sections.ByWeight }}
+  {{- if ne $page.Type "json" -}}
+  {{- if and $index (gt $index 0) -}},{{- end }}
+  {
+    "uri": "{{ $page.Permalink }}",
+    "title": "{{ htmlEscape $page.Title}}",
+    "description": "{{ htmlEscape $page.Description}}",
+    "items" : [
+      {{ if or (.Sections) (.Pages) }}
+      {{ $child_pages := union .Sections .Pages }}
+      {{ range $index, $page := $child_pages.ByWeight }}
+      {{- if ne $page.Type "json" -}}
+      {{- if and $index (gt $index 0) -}},{{- end }}
+      {
+        "uri": "{{ $page.Permalink }}",
+        "title": "{{ htmlEscape $page.Title}}",
+        "description": "{{ htmlEscape $page.Description}}"
+      }
+      {{ end }}
+      {{ end }}
+      {{ end }}
+    ]
+  }
+  {{- end -}}
+  {{- end -}}
+  {{- end -}}]

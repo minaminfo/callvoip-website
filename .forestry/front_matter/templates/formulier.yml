@@ -1,0 +1,63 @@
+---
+label: Formulier
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- type: boolean
+  name: hideinsearch
+  label: Hide in Search
+- type: boolean
+  name: hideingoogle
+  label: Hide in Google
+- type: boolean
+  name: hidesocialshare
+  label: Hide Social Share options
+- name: url
+  type: text
+  config:
+    required: false
+  label: URL
+pages:
+- content/formulier/0800-servicenummer-aanvragen.md
+- content/formulier/088-nummerblok-activatie-aanvragen.md
+- content/formulier/0900-servicenummer-aanvragen.md
+- content/formulier/aanvraag-verzonden.md
+- content/formulier/aanvragen-nummer.md
+- content/formulier/aanvragen-overzicht.md
+- content/formulier/abonnement-opzeggen.md
+- content/formulier/belbundel-aanvragen.md
+- content/formulier/belbundel-opzeggen.md
+- content/formulier/calculator-offerte-aanvraag-verzonden.md
+- content/formulier/callvoipdsl-of-callvoipftth-opzeggen.md
+- content/formulier/conference-service-aanvragen.md
+- content/formulier/conference-service-opzeggen.md
+- content/formulier/contact.md
+- content/formulier/gidsvermelding-aanvragen.md
+- content/formulier/gidsvermelding-wijzigen.md
+- content/formulier/importeren-telefoonboek-click-to-dial-aanvragen.md
+- content/formulier/internationaal-nummer-aanvragen.md
+- content/formulier/klantgegevens-wijzigen.md
+- content/formulier/managed-4g-verbinding-aanvragen.md
+- content/formulier/mijn-callvoip.md
+- content/formulier/nummer-opzeggen.md
+- content/formulier/nummerportering-aanvragen.md
+- content/formulier/opzeggen-overzicht.md
+- content/formulier/opzegging-verzonden.md
+- content/formulier/postcodecheck-verzonden.md
+- content/formulier/rekeningnummer-wijzigen.md
+- content/formulier/serviceplus-aanvragen.md
+- content/formulier/serviceplus-opzeggen.md
+- content/formulier/splitsing-10-blok-aanvragen.md
+- content/formulier/srtp-vesleutelde-gesprekken-aanvragen.md
+- content/formulier/srtp-vesleutelde-gesprekken-opzeggen.md
+- content/formulier/vast-mobiel-vamos-aanvragen.md
+- content/formulier/vast-mobiel-vamos-opzeggen.md
+- content/formulier/verhuisbericht-doorgeven.md
+- content/formulier/voip-cti-koppeling-met-uw-crm-pakket-aanvragen.md
+- content/formulier/voip-cti-koppeling-met-uw-crm-pakket-opzeggen.md
+- content/formulier/wijzigen-overzicht.md
+- content/formulier/wijziging-verzonden.md

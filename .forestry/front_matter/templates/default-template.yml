@@ -1,0 +1,249 @@
+---
+label: Default template
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+- name: seo
+  type: include
+  config: {}
+  template: seo
+  label: SEO
+  description: SEO
+- type: boolean
+  name: hideinsearch
+  label: Hide in Search
+- type: boolean
+  name: hideingoogle
+  label: Hide in Google
+- type: boolean
+  name: hidesocialshare
+  label: Hide Social Share options
+- type: text
+  name: type
+  label: type
+  hidden: true
+  description: page
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+  description: default
+- type: boolean
+  name: logos
+  label: Client logos
+- type: field_group
+  name: hero
+  label: Hero
+  fields:
+  - type: text
+    name: title
+    label: Title
+  - type: textarea
+    name: content
+    label: Content
+  - type: field_group
+    name: button
+    label: Button
+    fields:
+    - type: text
+      name: content
+      label: Content
+    - type: text
+      name: link
+      label: Link
+  - type: file
+    name: image
+    label: Image
+  - type: file
+    name: mobile
+    label: Mobile Image
+  - name: image_position
+    type: select
+    default: start
+    config:
+      required: true
+      options:
+      - start
+      - center
+      - end
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Image position
+  - name: disable_image_on_mobile
+    type: boolean
+    label: Disable image on mobile
+    default: false
+- type: field_group
+  name: double_content
+  label: Double content with BG
+  fields:
+  - type: field_group
+    name: left
+    label: Left
+    fields:
+    - type: boolean
+      field: background
+      label: Show background
+    - type: text
+      field: background_color
+      label: Background color (hex format)
+    - type: text
+      field: title
+      label: Title
+    - type: textarea
+      field: ontent
+      label: Content
+  - type: field_group
+    name: right
+    label: Right
+    fields:
+    - type: boolean
+      field: background
+      label: Show background
+    - type: text
+      field: background_color
+      label: Background color (hex format)
+    - type: text
+      field: title
+      label: Title
+    - type: textarea
+      field: ontent
+      label: Content
+- type: field_group_list
+  name: blocks
+  label: Blocks
+  fields:
+  - type: text
+    name: title
+    label: Title
+  - type: file
+    name: image
+    label: Image
+  - name: image_position
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - start
+      - center
+      - end
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Image position
+  - type: textarea
+    name: content
+    label: Content
+  - name: position
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - image_left
+      - image_right
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Position
+  config:
+    labelField: title
+- type: field_group
+  name: usps
+  label: Usps
+  fields:
+  - type: text
+    name: title
+    label: Title
+  - type: textarea
+    name: content
+    label: Content
+  - type: field_group_list
+    name: items
+    label: Items
+    fields:
+    - type: text
+      name: icon
+      label: Icon
+    - type: text
+      name: title
+      label: Title
+    - type: textarea
+      name: content
+      label: Content
+- type: field_group
+  name: intro
+  label: Intro
+  fields:
+  - type: text
+    name: title
+    label: Title
+  - type: textarea
+    name: content
+    label: Content
+- type: field_group_list
+  name: prijzen
+  label: Prijzen
+  fields:
+  - type: text
+    name: title
+    label: Title
+  - type: text
+    name: content
+    label: Content
+  - type: field_group
+    name: button
+    label: Button
+    fields:
+    - type: text
+      name: title
+      label: Title
+    - type: text
+      name: link
+      label: Link
+  - type: field_group
+    name: tarieven
+    label: Tarieven
+    fields:
+    - type: text
+      name: title
+      label: Title
+    - type: text
+      name: footer
+      label: Footer
+    - type: field_group_list
+      name: items
+      label: Items
+      fields:
+      - type: text
+        name: title
+        label: Title
+      - type: number
+        name: price
+        label: Price
+pages:
+- content/internet/dsl.md
+- content/internet/glasvezel.md
+- content/internet/kabel.md
+- content/internet/managed-4g-oplossing.md
+- content/oplossingen/branches.md
+- content/oplossingen/mkb.md
+- content/oplossingen/trunk.md
+- content/oplossingen/zelfstandigen.md
+- content/telefonie/bereikbaarheidsmonitor.md
+- content/telefonie/clicktodial.md
+- content/telefonie/hostedvoip.md
+- content/telefonie/integratiemetcrm.md
+- content/telefonie/operator-console.md
+- content/telefonie/qaller.md
+- content/telefonie/vastmobielintegratie.md

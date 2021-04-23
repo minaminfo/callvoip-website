@@ -1,0 +1,50 @@
+---
+label: Testimonial
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: type
+  label: type
+  hidden: true
+  default: testimonial
+- type: boolean
+  name: hidesocialshare
+  label: Hide Social Share options
+- type: field_group
+  name: hero
+  label: hero
+  fields:
+  - type: file
+    name: image
+    label: image
+- type: boolean
+  name: headless
+  label: headless
+  default: true
+  hidden: true
+- type: boolean
+  name: hideinsearch
+  label: Hide in Search
+- type: boolean
+  name: hideingoogle
+  label: Hide in Google
+- type: text
+  name: link
+  label: link
+- type: file
+  name: logo
+  label: logo
+- type: text
+  name: name
+  label: name
+- type: number
+  name: weight
+  label: Weight
+- name: website
+  type: text
+  config:
+    required: false
+  label: Website

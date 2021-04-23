@@ -1,0 +1,53 @@
+{{ define "main" }}
+<article>
+
+
+  {{- partial "components/hero.html" . -}}
+  <div class="container px-4">
+    {{- partial "components/page-intro.html" . -}}
+  </div>
+  <div class="container px-4">
+    {{ range .Params.usps }}
+    <div class="xl:flex xl:-mx-8 mb-12 md:mb-16 xxl:mb-32 bg-grey-lightest pt-12  md:pt-20 pb-4 md:pb-8 px-4 sm:px-8 rounded-lg">
+      <div class="xl:w-1/3 xl:px-8 ">
+        {{ with .title }}
+        <h3 class="text-3xl font-medium mb-2 xxl:mb-6 leading-tight">{{ . | markdownify }}</h3>
+        {{ end }}
+        {{ with .content }}
+        <div class="xl:mx-auto max-w-xl lg:text-lg xl:text-xl font-medium text-grey-medium mb-10 lg:mb-12 user-content">{{ . | markdownify }} </div>
+        {{ end }}
+      </div>
+      <div class="xl:w-2/3 xl:px-8">
+        <div class="flex flex-wrap md:-mx-8 xl:-mx-4">
+          {{ range .items }}
+          {{ $title := .title }}
+          {{ $link := .link }}
+          <div class="md:w-1/2 md:px-8 xl:px-4 xxl:flex mb-8 lg:mb-12">
+            {{ with .image }}
+            <div class="rounded-full bg-white h-16 w-16 lg:h-20 lg:w-20 flex justify-center items-center mb-2 xl:mb-4  mr-8">
+              <img src="{{ $.Site.Params.cloudinary_base_url }}/c_scale,f_auto,q_auto{{.}}" class="w-12" style="object-fit: cover;" alt="{{$title}}" />
+            </div>
+            {{ end }}
+            <div class="flex-1 pt-2">
+              {{ with .title }}
+              {{ with $link }}
+              <a href="{{.}}">
+              {{ end }}
+              <h4 class="text-lg lg:text-2xl font-medium mb-2">{{ . }}</h4>
+              {{ end }}
+              {{ with $link }} </a> {{ end }}
+              {{ with .content }}
+              <p class="font-medium text-grey-medium leading-large lg:text-lg">{{ . | markdownify }} </p>
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+
+
+</article>
+{{ end }}

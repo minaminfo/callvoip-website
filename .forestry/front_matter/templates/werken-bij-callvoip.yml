@@ -1,0 +1,92 @@
+---
+label: Werken bij callvoip
+hide_body: true
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: seo
+  type: include
+  config: {}
+  template: seo
+  label: SEO
+  description: SEO
+- type: boolean
+  name: hideinsearch
+  label: Hide in Search
+- type: boolean
+  name: hideingoogle
+  label: Hide in Google
+- type: boolean
+  name: hidesocialshare
+  label: Hide Social Share options
+- name: intro
+  label: Intro
+  type: field_group
+  fields:
+  - name: title
+    label: Title
+    type: text
+    hidden: false
+    default: ''
+  - name: content
+    label: Content
+    type: textarea
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
+- name: hero
+  label: Hero
+  type: field_group
+  fields:
+  - name: image
+    label: Image
+    type: file
+    hidden: false
+    default: ''
+  - name: disable_image_on_mobile
+    type: boolean
+    label: Disable image on mobile
+    default: false
+  hidden: false
+  default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: true
+  default: werkenbij
+- name: blocks
+  label: Blocks
+  type: field_group_list
+  fields:
+  - name: title
+    label: Title
+    type: text
+    hidden: false
+    default: ''
+  - name: content
+    label: Content
+    type: textarea
+    hidden: false
+    default: ''
+  - name: image
+    label: Image
+    type: file
+    hidden: false
+    default: ''
+  - type: select
+    name: position
+    config:
+      source:
+        type: simple
+      options:
+      - image_left
+      - image_right
+    label: Position
+  hidden: false
+  default: ''
+pages:
+- content/overons/werkenbij.md

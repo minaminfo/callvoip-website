@@ -1,0 +1,316 @@
+<?xml version='1.0'?>
+<AddressBook>
+<Contact>
+<LastName>Winkel Zwolle</LastName>
+<FirstName>01</FirstName>
+<Phone>
+<phonenumber>0077720001805</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Winkel Arnhem</LastName>
+<FirstName>02</FirstName>
+<Phone>
+<phonenumber>0077720001806</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Winkel Enschede</LastName>
+<FirstName>03</FirstName>
+<Phone>
+<phonenumber>0077720001807</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Winkel Amsterdam</LastName>
+<FirstName>04</FirstName>
+<Phone>
+<phonenumber>0077720001808</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Winkel Roermond</LastName>
+<FirstName>05</FirstName>
+<Phone>
+<phonenumber>0077720001809</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Winkel Haarlem</LastName>
+<FirstName>06</FirstName>
+<Phone>
+<phonenumber>0077720001810</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Winkel Dordrecht</LastName>
+<FirstName>07</FirstName>
+<Phone>
+<phonenumber>0077720001811</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Winkel Emmen</LastName>
+<FirstName>08</FirstName>
+<Phone>
+<phonenumber>0077720001812</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Winkel Den Bosch</LastName>
+<FirstName>09</FirstName>
+<Phone>
+<phonenumber>0077720001813</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Winkel Dusseldorf</LastName>
+<FirstName>2</FirstName>
+<Phone>
+<phonenumber>0077720001814</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Winkel TopShoe</LastName>
+<FirstName>51</FirstName>
+<Phone>
+<phonenumber>0077720001815</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>01</LastName>
+<FirstName>WSZ</FirstName>
+<Phone>
+<phonenumber>0889746701</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>02</LastName>
+<FirstName>WSA</FirstName>
+<Phone>
+<phonenumber>0889746702</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>03</LastName>
+<FirstName>WSE</FirstName>
+<Phone>
+<phonenumber>0889746703</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>04</LastName>
+<FirstName>WSX</FirstName>
+<Phone>
+<phonenumber>0889746704</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>05</LastName>
+<FirstName>WSR</FirstName>
+<Phone>
+<phonenumber>0889746705</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>06</LastName>
+<FirstName>WSH</FirstName>
+<Phone>
+<phonenumber>0889746706</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>07</LastName>
+<FirstName>WSD</FirstName>
+<Phone>
+<phonenumber>0889746707</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>08</LastName>
+<FirstName>WSM</FirstName>
+<Phone>
+<phonenumber>0889746708</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>09</LastName>
+<FirstName>WSS</FirstName>
+<Phone>
+<phonenumber>0889746709</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>20</LastName>
+<FirstName>DWSD</FirstName>
+<Phone>
+<phonenumber>0889746720</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>51</LastName>
+<FirstName>TopShoe</FirstName>
+<Phone>
+<phonenumber>0889746751</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+
+<Contact>
+<LastName>Zwart</LastName>
+<FirstName>Mark</FirstName>
+<Phone>
+<phonenumber>0622236415</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Geemen</LastName>
+<FirstName>Tom van</FirstName>
+<Phone>
+<phonenumber>0653179565</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Besten</LastName>
+<FirstName>Annet den</FirstName>
+<Phone>
+<phonenumber>0629300482</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Boeve</LastName>
+<FirstName>Maarten</FirstName>
+<Phone>
+<phonenumber>0638071028</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Olst</LastName>
+<FirstName>Naira van</FirstName>
+<Phone>
+<phonenumber>0644482278</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Tielbeke</LastName>
+<FirstName>Carla</FirstName>
+<Phone>
+<phonenumber>0620445079</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Wolky Houten BV</LastName>
+<FirstName> </FirstName>
+<Phone>
+<phonenumber>0306381222</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Wolky Nieuwegein</LastName>
+<FirstName> </FirstName>
+<Phone>
+<phonenumber>0306054047</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>FenJ Webdesign</LastName>
+<FirstName> </FirstName>
+<Phone>
+<phonenumber>0384533974</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>GLS Klantenservice</LastName>
+<FirstName> </FirstName>
+<Phone>
+<phonenumber>0384577560</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>TNT TrackTrace</LastName>
+<FirstName> </FirstName>
+<Phone>
+<phonenumber>0582333382</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Van Hessen</LastName>
+<FirstName> </FirstName>
+<Phone>
+<phonenumber>0180442800</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Van Hessen Helpdesk</LastName>
+<FirstName> </FirstName>
+<Phone>
+<phonenumber>0180442750</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>HZ Automatisering</LastName>
+<FirstName> </FirstName>
+<Phone>
+<phonenumber>0384672770</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Koster Techniek</LastName>
+<FirstName> </FirstName>
+<Phone>
+<phonenumber>0522462529</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Oomens Lederhandel</LastName>
+<FirstName> </FirstName>
+<Phone>
+<phonenumber>0384215258</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Etos Duitsland</LastName>
+<FirstName> </FirstName>
+<Phone>
+<phonenumber>004923899270215</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+</AddressBook>

@@ -1,0 +1,30 @@
+{{ $disableImageOnMobile := .Params.hero.disable_image_on_mobile }}
+
+<header class="h-64 md:h-96 bg-grey-lightest relative">
+  {{ if .Params.hero.image }}
+  {{ with .Params.hero.image}}
+  <div class="bg-white opacity-25 {{ if $disableImageOnMobile }} hidden md:block {{ end }}">
+  <img data-src="{{ $.Site.Params.cloudinary_base_url }}/w_auto,dpr_auto,c_scale,f_auto,q_auto/{{.}}"
+          class="w-full h-64 md:h-96  cld-responsive" style="object-fit: cover;" />
+        </div>
+  {{ end }}
+  {{ else }}
+  {{ with .Params.image_uitgelicht}}
+  <div class="bg-white opacity-25 {{ if $disableImageOnMobile }} hidden md:block {{ end }}">
+  <img data-src="{{ $.Site.Params.cloudinary_base_url }}/w_auto,dpr_auto,c_scale,f_auto,q_auto/{{.}}"
+          class="w-full h-64 md:h-96  cld-responsive" style="object-fit: cover;" />
+        </div>
+  {{ end }}
+  {{ end }}
+  <div class="absolute top-0 w-full h-full">
+    <div class="bg-white-25 h-full">
+      <div class="container px-4 h-full  flex flex-col justify-center">
+        <div class="max-w-md">
+          <p class="opacity-75 text-xl font-medium mb-4">Uitgelicht</p>
+          <h3 class="text-3xl lg:text-4xl font-medium mb-6 leading-tight">{{ .Title }}</h3>
+          <a href="{{.Permalink}}" class="button">Lees verder</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

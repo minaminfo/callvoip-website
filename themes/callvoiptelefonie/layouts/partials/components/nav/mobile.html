@@ -1,0 +1,36 @@
+<nav class="relative z-20   w-full  clearfix top-0 left-0  pb-6 hidden" id="mobileNavigation">
+  <div class=" mx-auto">
+    <ul>
+      {{ range .Site.Menus.main }}
+      {{ if .HasChildren }}
+      <li>
+        <a href="{{ .Page.Permalink }}" class="no-underline flex w-full pt-3 pb-1 no-underline items-center font-medium text-lg flex justify-between has-dropdown">
+          <span>
+            {{ .Name }}
+          </span>
+          <span>
+            <i class="fal fa-angle-down"></i>
+          </span>
+        </a>
+        <ul class="is-dropdown hidden">
+          {{ range .Children }}
+            <li>
+              <a href="{{ .Page.Permalink }}" class="no-underline flex w-full py-2 no-underline ">
+                  {{ .Name }}
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </li>
+      {{ else }}
+      <li>
+        <a href="{{ .Page.Permalink }}" class="no-underline flex w-full py-3 no-underline items-center font-medium">
+          {{ .Name }}
+        </a>
+      </li>
+      {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+  <a href="/klantworden" class="button-outline button-outline-tertiary button-center text-lg cursor-pointer mt-4 w-full">Klant worden?</a>
+</nav>

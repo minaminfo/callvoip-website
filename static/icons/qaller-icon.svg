@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="213.083" height="218.664" viewBox="0 0 213.083 218.664">
+  <g id="Component_1_1" data-name="Component 1 – 1" transform="translate(4.039 4.002)">
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(29.128 24.404)" fill="none" stroke="#2069f3" stroke-width="8">
+      <rect width="63" height="145" rx="26" stroke="none"/>
+      <rect x="4" y="4" width="55" height="137" rx="22" fill="none"/>
+    </g>
+    <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(102.128 37.404)" fill="none" stroke="#2069f3" stroke-width="7">
+      <rect width="87" height="38" rx="11" stroke="none"/>
+      <rect x="3.5" y="3.5" width="80" height="31" rx="7.5" fill="none"/>
+    </g>
+    <rect id="Rectangle_4" data-name="Rectangle 4" width="16" height="16" transform="translate(112.128 88.404)" fill="#2069f3"/>
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="16" height="16" transform="translate(136.128 88.404)" fill="#2069f3"/>
+    <rect id="Rectangle_6" data-name="Rectangle 6" width="15" height="16" transform="translate(159.128 88.404)" fill="#2069f3"/>
+    <rect id="Rectangle_7" data-name="Rectangle 7" width="16" height="15" transform="translate(112.128 112.404)" fill="#2069f3"/>
+    <rect id="Rectangle_8" data-name="Rectangle 8" width="16" height="15" transform="translate(136.128 112.404)" fill="#2069f3"/>
+    <rect id="Rectangle_9" data-name="Rectangle 9" width="15" height="15" transform="translate(159.128 112.404)" fill="#2069f3"/>
+    <rect id="Rectangle_10" data-name="Rectangle 10" width="16" height="16" transform="translate(112.128 135.404)" fill="#2069f3"/>
+    <rect id="Rectangle_11" data-name="Rectangle 11" width="16" height="16" transform="translate(136.128 135.404)" fill="#2069f3"/>
+    <rect id="Rectangle_12" data-name="Rectangle 12" width="15" height="16" transform="translate(159.128 135.404)" fill="#2069f3"/>
+    <path id="Path_1" data-name="Path 1" d="M497.908,728.381v42.877s9.76-14.552,22.064-23.506,21.724-10.5,27.154-12.31,36.207-1.448,42-2.9,27.968-4.163,37.653-16.292,10.138-24.446,10.138-24.446V606.55c0-5.069-2.535-17.288-14.482-28.6s-31.266-15.894-37.329-16.654-87.942-1.087-93.735,0-24.348,3.167-39.1,14.481a54.492,54.492,0,0,0-19.913,30.775c-1.086,4.707,0,74.221,0,74.221s1.086,23.986,14.12,38.378,38.017,19.19,38.017,19.19V728.106" transform="translate(-431.872 -560.596)" fill="none" stroke="#2069f3" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+  </g>
+</svg>

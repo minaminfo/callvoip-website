@@ -1,0 +1,26 @@
+{{ define "main" }}
+<article class="mb-8 md:mb-24">
+  {{ $title := .Title }}
+
+  {{- partial "components/hero.html" . -}}
+  <div class="container px-4 pt-12  {{ if not .Params.hero.image}} {{ end }}">
+    <div class="max-w-lg mx-auto">
+      {{ if .Params.hero.title }}
+        <h1 class="text-3xl lg:text-4xl font-medium mb-4 leading-tight">{{ .Params.hero.title  }}</h1>
+      {{ else }}
+        <h1 class="text-3xl lg:text-4xl font-medium mb-4 leading-tight">{{ .Title  }}</h1>
+      {{ end }}
+      {{ if .Date }}
+      <span class="font-medium block mb-4 text-grey-medium mb-4 -mt-2">Geplaatst op: {{ .Date.Format "2/1/2006" }}</span>
+      {{ end }}
+      {{ with .Content }}
+      <div class="user-content text-grey-medium lg:text-lg font-medium leading-loose">
+        
+        {{ . | markdownify }}
+      </div>
+      {{ end }}
+      {{- partial "components/share.html" . -}}
+    </div>
+  </div>
+</article>
+{{ end }}

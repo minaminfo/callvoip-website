@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<AddressBook>
+<Contact>
+   <LastName>Tijdhof</LastName>
+   <FirstName> Robert</FirstName>
+   <Phone>
+     <phonenumber>11</phonenumber>
+     <accountindex>0</accountindex>
+   </Phone>
+</Contact>
+<Contact>
+   <LastName>Akker</LastName>
+   <FirstName> Bauke van den</FirstName>
+   <Phone>
+     <phonenumber>13</phonenumber>
+     <accountindex>0</accountindex>
+   </Phone>
+</Contact>
+<Contact>
+   <LastName>Pathuis</LastName>
+   <FirstName> Leon</FirstName>
+   <Phone>
+     <phonenumber>14</phonenumber>
+     <accountindex>0</accountindex>
+   </Phone>
+</Contact>
+<Contact>
+   <LastName>Breezz</LastName>
+   <FirstName> Support</FirstName>
+   <Phone>
+     <phonenumber>0852733960</phonenumber>
+     <accountindex>0</accountindex>
+   </Phone>
+</Contact>
+<Contact>
+   <LastName>Unet</LastName>
+   <FirstName> Wholesale xDSL</FirstName>
+   <Phone>
+     <phonenumber>0368454544</phonenumber>
+     <accountindex>1</accountindex>
+   </Phone>
+</Contact>
+<Contact>
+   <LastName>Mobiel</LastName>
+   <FirstName> Leon</FirstName>
+   <Phone>
+     <phonenumber>0641246378</phonenumber>
+     <accountindex>1</accountindex>
+   </Phone>
+</Contact>
+<Contact>
+   <LastName>Mobiel 2</LastName>
+   <FirstName> Leon</FirstName>
+   <Phone>
+     <phonenumber>0634368176</phonenumber>
+     <accountindex>1</accountindex>
+   </Phone>
+</Contact>
+<Contact>
+   <LastName>Mobiel</LastName>
+   <FirstName> Robert</FirstName>
+   <Phone>
+     <phonenumber>0653697081</phonenumber>
+     <accountindex>1</accountindex>
+   </Phone>
+</Contact>
+<Contact>
+   <LastName>XS4ALL</LastName>
+   <FirstName> Resellerdesk</FirstName>
+   <Phone>
+     <phonenumber>0203987659</phonenumber>
+     <accountindex>1</accountindex>
+   </Phone>
+</Contact>
+<Contact>
+   <LastName>UNET</LastName>
+   <FirstName> Wholesale</FirstName>
+   <Phone>
+     <phonenumber>0368454500</phonenumber>
+     <accountindex>1</accountindex>
+   </Phone>
+</Contact>
+</AddressBook>

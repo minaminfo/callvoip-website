@@ -1,0 +1,10 @@
+---
+label: Status melding
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Ttle
+- type: boolean
+  name: error
+  label: error

@@ -1,0 +1,17 @@
+<div v-if="search" @click.self="toggleSearch()" class="fixed opacity-0" v-bind:class="[search ? 'animated fadeIn z-30 pin bg-grey-75 opacity-100' : '',]" >
+  <div class="animated fadeInDown bg-white py-4 px-4 flex w-full items-center" style="height: 74px;">
+    <div class="flex flex-1 flex-row max-w-2xl xl:max-w-3xl mx-auto">
+      <span class="mr-6">
+        <i class="fal fa-search"></i>
+      </span>
+      <span class="flex-1">
+        <input type="text" class="w-full" placeholder="Vul uw zoekterm in...">
+      </span>
+      <span>
+      <button @click="toggleSearch()">
+          <i class="fal fa-times"></i>
+      </button>
+      </span>
+    </div>
+  </div>
+</div>

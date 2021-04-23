@@ -1,0 +1,24 @@
+{{ define "main" }}
+<article>
+  {{- partial "components/hero.html" . -}}
+  <div class="flex flex-col-reverse md:flex-col">
+    {{- partial "components/nav/onpage.html" . -}}
+    <div class="mb-12 md:mb-24">
+      <div class="container px-4">
+        {{- partial "components/page-intro.html" . -}}
+      </div>
+      <div style="max-width: 2600px" class="mx-auto">
+        {{ $paginator := .Paginate (where .Data.Pages.ByWeight "Type" "testimonial")  6 }}
+        {{ range $i, $item := $paginator.Pages }}
+        {{if not (modBool $i 2)}}
+        {{- partial "components/testimonial-item.html" (dict "item" . "ctx" $ "type" "light") -}}
+        {{ else }}
+        {{- partial "components/testimonial-item.html" (dict "item" . "ctx" $ "type" "dark") -}}
+        {{ end }}
+        {{ end }}
+      </div>
+      {{ template "_internal/pagination.html" . }}
+    </div>
+  </div>
+</article>
+{{ end }}

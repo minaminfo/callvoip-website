@@ -1,0 +1,163 @@
+---
+label: Aanbod
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- name: seo
+  type: include
+  config: {}
+  template: seo
+  label: SEO
+  description: SEO
+- type: text
+  name: slug
+  label: slug
+  hidden: true
+- type: text
+  name: type
+  label: type
+  hidden: true
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+- type: boolean
+  name: hideinsearch
+  label: Hide in Search
+- type: boolean
+  name: hideingoogle
+  label: Hide in Google
+- type: boolean
+  name: hidesocialshare
+  label: Hide Social Share options
+- type: boolean
+  name: logos
+  label: logos
+- type: field_group
+  name: kiezen
+  label: kiezen
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: content
+    label: content
+  - type: field_group
+    name: button
+    label: button
+    fields:
+    - type: text
+      name: content
+      label: content
+  - type: field_group_list
+    name: items
+    label: items
+    fields:
+    - type: text
+      name: icon
+      label: icon
+    - type: text
+      name: content
+      label: content
+- type: field_group
+  name: aanbod
+  label: aanbod
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: field_group_list
+    name: items
+    label: items
+    fields:
+    - type: field_group
+      name: tab
+      label: tab
+      fields:
+      - type: text
+        name: title
+        label: title
+      - type: text
+        name: content
+        label: content
+      - type: text
+        name: icon
+        label: icon
+    - type: field_group
+      name: item
+      label: item
+      fields:
+      - type: text
+        name: title
+        label: title
+      - type: textarea
+        name: content
+        label: content
+      - type: file
+        name: image
+        label: image
+      - type: field_group
+        name: button
+        label: button
+        fields:
+        - type: text
+          name: content
+          label: content
+        - type: text
+          name: link
+          label: link
+- type: field_group
+  name: intro
+  label: intro
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: content
+    label: content
+- type: field_group_list
+  name: prijzen
+  label: prijzen
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: content
+    label: content
+  - type: field_group
+    name: button
+    label: button
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: text
+      name: link
+      label: link
+  - type: field_group
+    name: tarieven
+    label: tarieven
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: text
+      name: footer
+      label: footer
+    - type: field_group_list
+      name: items
+      label: items
+      fields:
+      - type: text
+        name: title
+        label: title
+      - type: number
+        name: price
+        label: price
+pages:
+- content/aanbod.md

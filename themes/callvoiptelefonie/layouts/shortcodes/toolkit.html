@@ -1,0 +1,31 @@
+<div class="container px-4 pt-8">
+  <div class="text-center mb-2">
+  </div>
+
+  <div class="flex flex-wrap">
+    <div class="faq-section md:pb-6 xl:pb-10 xxl:pb-12 ">
+      <div class="accrodion-grp faq-accrodion" data-grp-name="faq-accrodion">
+        
+        <div class="accrodion">
+          {{  range $.Page.Params.faq }}
+          <div class="accrodion-item">
+            <div class="accrodion-item-header {{ .class }}">
+              <h4>{{ .question | markdownify}}</h4>
+            </div>
+            <div class="accrodion-item-body">
+              <div class="accrodion-item-body-content">
+                <p>{{ .answer | markdownify}}</p>
+                
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+       
+      </div>
+    </div>
+<div class="lg:text-lg xl:text-xl mb-4 leading-loose user-content ">
+<p>We noemen er 5, maar er zijn meer functionaliteiten natuurlijk. Ben je naar iets gericht op zoek, laat het ons weten of kijk eens op onze <a href="/telefonie/functionaliteiten/">overzichtspagina</a> van alle kunstjes die onze centrale kent.</p>
+    </div>
+  </div>
+</div>

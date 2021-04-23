@@ -1,0 +1,89 @@
+<div class="bg-blue pt-12 md:pt-32 pb-12 md:pb-24">
+  <div class="container px-4 text-center">
+
+    <h4 class="text-3xl lg:text-3xl font-normal mb-8 leading-tight  text-white ">Waarmee kunnen we je helpen?</h4>
+
+    <div id="pagesearch" v-cloak>
+      <div class="bg-grey-dark pb-4 pt-8 px-4 md:px-8  rounded-lg">
+        <form @submit.prevent="submit" ref="form">
+          <div class="mb-4  mx-auto relative">
+            <input type="text" id="globalsearchinput" name="globalsearch" placeholder="Type uw zoekterm in..."
+              class="w-full border border-grey-light focus:outline-none bg-white rounded-lg px-4 py-4 relative z-30"
+              v-model="filter" autocomplete="off"   @keyup.enter.stop="onEnter(event)">
+            <button type="button" class="absolute inset-y-0 right-0 mr-2 flex items-center px-2 text-gray-700">
+              <i class="fal fa-search"></i>
+            </button>
+            <div v-if="showInlineResults" class="bg-white absolute rounded-b-lg w-full z-20 shadow-lg -mt-2 pt-1 text-left max-h-small-screen overflow-y-scroll" >
+                <div v-for="posts in getPosts" class="border-t border-grey-light py-3">
+                  <h5 class="text-lg lg:text-xl font-medium mb-1 px-4">{{ " {{ posts.title | markdownify }}" }}</h5>
+    
+                  <div v-for="(post, i) in posts.items" class="">
+
+                    <a :href='post.uri' :class="{ 'bg-grey-lightest text-blue': i === arrowCounter }" class="block w-full px-4 py-1 font-medium text-grey-medium mb-1 hover:text-blue hover:bg-grey-lightest">
+                    {{ " {{ post.title }}" }}
+                   </a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </form>
+      </div>
+
+      <div v-if="!showPageResults" class="mt-8">
+        <div id="results">
+        <h2 class="text-lg lg:text-2xl font-medium mb-4">Zoekresultaten voor {{ " {{ searchQuery }}" }}</h2>
+        <div v-for="posts in getPosts" class="border-t border-grey-light py-3 bg-white">
+            <h5 class="text-lg lg:text-xl font-medium mb-1 px-4">{{ " {{ posts.title | markdownify }}" }}</h5>
+
+            <div v-for="(post, i) in posts.items" class="">
+
+              <a :href='post.uri' :class="{ 'bg-grey-lightest text-blue': i === arrowCounter }" class="block w-full px-4 py-1 font-medium text-grey-medium mb-1 hover:text-blue hover:bg-grey-lightest">
+              {{ " {{ post.title }}" }}
+             </a>
+            </div>
+          </div>
+        <div v-if="!getPosts.length">Geen resultaten, probeer een andere zoekterm</div>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{{ with .Site.GetPage "/ondersteuning" }}
+<div class="container px-4 pt-12 lg: pt-24">
+  <div class="flex flex-wrap flex-row sm:-mx-4 xl:-mx-8">
+    {{ range .Sections.ByWeight }}
+    {{ if ne .Title "Posts" }}
+    <div class="w-full sm:w-1/2 lg:w-1/3 px-4 xl:px-8 mb-8 lg:mb-16">
+      <h4 class="text-lg lg:text-2xl font-normal mb-4">
+        <a href="{{.Permalink}}">{{ .Title }}
+          {{ $child_pages := union .Sections .Pages }}
+          <span class="opacity-50 text-lg">({{ len $child_pages }})</span>
+        </a>
+      </h4>
+      {{ if or (.Sections) (.Pages) }}
+      {{ $child_pages := union .Sections .Pages }}
+      <ul>
+        {{ range $child_pages.ByWeight }}
+        <li>
+          <a href="{{ .Permalink }}"
+            class="font-normal text-grey-medium leading-large lg:text-lg border-b border-grey-lightest block pb-2 mb-2 hover:text-blue">
+            <i class="fal fa-file mr-2"></i>
+            {{ .Title }}
+            {{ if .Params.update }}
+            <span class="text-xs bg-orange text-white px-1 py-1 rounded-lg uppercase">Update</span>
+            {{ end }}
+            {{ if .Params.nieuw }}
+            <span class="text-xs bg-green text-white px-1 py-1 rounded-lg uppercase">Nieuw</span>
+            {{ end }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}

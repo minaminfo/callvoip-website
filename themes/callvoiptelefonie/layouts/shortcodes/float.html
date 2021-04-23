@@ -1,0 +1,7 @@
+
+{{ $float := default "left" (.Get 0) }}
+{{ $width := default "100%" (.Get 1) }}
+{{ $mobile := default false (.Get 2) }}
+<p class='{{ with $float }}{{if $mobile}}float-{{.}}{{ else }}md:float-{{.}} {{ if eq $float "left"}}md:mr-6{{ end }} {{ if eq $float "right"}}md:ml-6{{ end }} {{ if eq $float "center"}}md:mx-6{{ end }} {{ end }} {{ if eq $float "left"}}mr-6{{ end }} {{ if eq $float "right"}}ml-6{{ end }} {{ if eq $float "center"}}mx-6{{ end }} {{end }}' style="{{ with $width }} max-width:{{.}}; {{end}}">
+    {{.Inner | markdownify }}
+</p>

@@ -1,0 +1,227 @@
+---
+label: Landing Template
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+- name: seo
+  type: include
+  config: {}
+  template: seo
+  label: SEO
+  description: SEO
+- type: boolean
+  name: hideinsearch
+  label: Hide in Search
+- type: boolean
+  name: hideingoogle
+  label: Hide in Google
+- type: boolean
+  name: hidesocialshare
+  label: Hide Social Share options
+- type: text
+  name: type
+  label: type
+  hidden: true
+  description: page
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+  description: default
+- type: field_group
+  name: hero
+  label: Hero
+  fields:
+  - type: file
+    name: image
+    label: Image
+  - type: text
+    name: link
+    label: Link
+  - name: disable_image_on_mobile
+    type: boolean
+    label: Disable image on mobile
+    default: false
+  - type: field_group
+    name: content
+    label: Content
+    fields:
+    - type: text
+      name: title
+      label: Title
+    - type: text
+      name: text
+      label: Text
+    - name: align
+      type: select
+      default: []
+      config:
+        required: false
+        options:
+        - start
+        - center
+        - end
+    - name: overlay
+      type: boolean
+      label: Overlay
+      default: false
+- type: field_group_list
+  name: blocks
+  label: Blocks
+  fields:
+  - type: text
+    name: title
+    label: Title
+  - type: file
+    name: image
+    label: Image
+  - type: field_group
+    name: extra
+    label: Extra
+    fields:
+    - type: text
+      name: title
+      label: Title
+    - type: text
+      name: content
+      label: Content
+  - name: image_position
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - start
+      - center
+      - end
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Image position
+  - type: textarea
+    name: content
+    label: Content
+  - name: position
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - image_left
+      - image_right
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Position
+  config:
+    labelField: title
+- type: field_group_list
+  name: textblocks
+  label: Text Blocks
+  fields:
+  - name: show_vshape
+    type: boolean
+    label: Show vshape
+    default: false
+  - type: text
+    name: top_title
+    label: Top Title
+  - type: textarea
+    name: top_content
+    label: Top Content
+  - type: text
+    name: title1
+    label: Title 1
+  - type: textarea
+    name: content1
+    label: Content 1
+    config:
+      wysiwyg: true
+      schema:
+        format: html-blocks
+  - type: text
+    name: title2
+    label: Title 2
+  - type: textarea
+    name: content2
+    label: Content 2
+  - type: text
+    name: title3
+    label: Title 3
+  - type: textarea
+    name: content3
+    label: Content 3
+    config:
+      wysiwyg: true
+      schema:
+        format: html-blocks
+  config:
+    labelField: title
+- type: field_group_list
+  name: textblocksfooter
+  label: Text Blocks Footer
+  fields:
+  - name: show_vshape
+    type: boolean
+    label: Show vshape
+    default: false
+  - type: text
+    name: top_title
+    label: Top Title
+  - type: textarea
+    name: top_content
+    label: Top Content
+  - type: text
+    name: title1
+    label: Title 1
+  - type: textarea
+    name: content1
+    label: Content 1
+    config:
+      wysiwyg: true
+      schema:
+        format: html-blocks
+  - type: text
+    name: title2
+    label: Title 2
+  - type: textarea
+    name: content2
+    label: Content 2
+  - type: text
+    name: title3
+    label: Title 3
+  - type: textarea
+    name: content3
+    label: Content 3
+    config:
+      wysiwyg: true
+      schema:
+        format: html-blocks
+  config:
+    labelField: title
+- type: field_group
+  name: intro
+  label: Intro
+  fields:
+  - type: text
+    name: title
+    label: Title
+  - type: textarea
+    name: content
+    label: Content
+- type: field_group
+  name: intro_top
+  label: Intro Top
+  fields:
+  - type: text
+    name: title
+    label: Title
+  - type: textarea
+    name: content
+    label: Content

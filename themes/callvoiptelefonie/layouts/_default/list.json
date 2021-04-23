@@ -1,0 +1,9 @@
+{{- $.Scratch.Add "index" slice -}}
+{{- range .Site.RegularPages -}}
+    {{- if .Params.hideinsearch -}}
+
+    {{- else -}}
+    {{- $.Scratch.Add "index" (dict "title" .Title "permalink" .Permalink "description" .Description "usps" .Params.usps "searchtags" .Params.searchtags "content" .Content "blocks" .Params.blocks) -}}
+    {{end }}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}

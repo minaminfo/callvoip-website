@@ -1,0 +1,189 @@
+{{ define "main" }}
+<article class="mb-8 md:mb-24">
+  <div class="container px-4 pt-12  {{ if not .Params.hero.image}} {{ end }}">
+    <div class="max-w-2xl mx-auto">
+
+      <div class="lg:hidden">
+        <div class="rounded-lg overflow-hidden shadow-md bg-grey-lightest  max-w-md mx-auto mb-8">
+          <div class="px-5 py-5 bg-blue-dark">
+            <h2 class="font-semibold text-white text-center text-lg leading-tight">Doorverbinden naar mobiel
+            </h2>
+          </div>
+
+          <div>
+            <table class="w-full">
+              <thead>
+                <tr>
+                  <th colspan="2"
+                    class="border-t border-gray-200 bg-blue text-white bg-gray-100 px-3 py-3 uppercase tracking-wide text-xs font-semibold text-gray-700 text-left">
+                    Algemeen
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border-t border-grey-light  text-sm sm:text-base px-3 py-5 w-1/2 align-top">Omschrijving
+                    controleren </td>
+                  <td class="border-t  border-l border-grey-light  px-12 text-center text-sm py-4 "> Schakel door naar
+                    mobiel met de doorverbind-app van Simmpl</td>
+                </tr>
+                <tr>
+                  <td class="border-t border-grey-light  text-sm sm:text-base px-3 py-5 w-1/2 align-top">Kosten éénmalig
+                    (ex BTW) </td>
+                  <td class="border-t  border-l border-grey-light  px-12 text-center text-sm py-4 "> &euro;0,-</td>
+                </tr>
+                <tr>
+                  <td class="border-t border-grey-light  text-sm sm:text-base px-3 py-5 w-1/2 align-top">Kosten per
+                    maand (ex BTW) </td>
+                  <td class="border-t  border-l border-grey-light  px-12 text-center text-sm py-4 "> &euro;0,-</td>
+                </tr>
+                <tr>
+                  <th colspan="2"
+                    class="border-t border-gray-200 bg-blue text-white bg-gray-100 px-3 py-3 uppercase tracking-wide text-xs font-semibold text-gray-700 text-left">
+                    Algemeen
+                  </th>
+                </tr>
+                <tr>
+                  <td class="border-t border-grey-light  text-sm sm:text-base px-3 py-5 w-1/2 align-top">Abonnement zelf op Simmpl aan/uit te zetten? </td>
+                  <td class="border-t  border-l border-grey-light  px-12 text-center text-sm py-4 "> n.v.t.</td>
+                </tr>
+                <tr>
+                  <td class="border-t border-grey-light  text-sm sm:text-base px-3 py-5 w-1/2 align-top">Kostenloos bellen naar collega's? </td>
+                  <td class="border-t  border-l border-grey-light  px-12 text-center text-sm py-4 "><i class="fal fa-times-circle text-red text-xl"></i></td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="hidden lg:block   lg:rounded-lg bg-grey-lightest   ">
+        <table class="w-full">
+          <colgroup>
+            <col class="w-2/5">
+            <col class="w-1/5">
+            <col class="w-1/5 ">
+            <col class="w-1/5">
+          </colgroup>
+          <tbody>
+            <tr>
+              <td class=" border-grey-light bg-blue-dark rounded-tl-lg">
+                &nbsp;
+              </td>
+              <td class="border-l border-grey-light bg-blue-dark">
+                <div class="px-5 py-6">
+                  <h2 class="font-semibold text-white text-center text-lg leading-tight">Doorverbinden naar mobiel
+                  </h2>
+                </div>
+              </td>
+              <td class="border-l border-grey-light bg-blue-dark">
+                <div class="px-5 py-6">
+                  <h2 class="font-semibold text-white text-center text-lg leading-tight">Qaller Plus App</h2>
+                </div>
+              </td>
+              <td class="border-l border-grey-light bg-blue-dark rounded-tr-lg">
+                <div class="px-5 py-6">
+                  <h2 class="font-semibold text-white text-center text-lg leading-tight">Vamos Vast-Mobiel SIM
+                  </h2>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="4"
+                class="border-t border-grey-light bg-blue px-5 py-3 uppercase tracking-wide text-xs font-semibold text-white text-left">
+                Algemeen
+              </td>
+            </tr>
+            <tr>
+              <td class="border-t border-grey-light text-sm sm:text-base px-5 py-5 align-top">Omschrijving
+                controleren
+              </td>
+              <td class="border-t border-l  border-grey-light px-4 text-sm text-center py-3">Schakel door naar mobiel
+                met de doorverbind-app van Simmpl
+              </td>
+              <td class="border-t border-l  border-grey-light px-4 text-sm text-center py-3">met Qaller Plus app wordt
+                uw mobiel een kantoortoestel. Bellen en gebeld worden met vast nummer
+              </td>
+              <td class="border-t border-l  border-grey-light px-4 text-sm text-center py-3">
+                met Vamos komt
+                uw mobiele
+                nummer op de
+                Simmpl centrale
+                geen apps nodig,
+                altijd alle keuze
+              </td>
+            </tr>
+            <tr>
+              <td class="border-t border-grey-light text-sm sm:text-base px-5 py-5 align-top">Kosten éénmalig (ex BTW)
+              </td>
+              <td class="border-t border-l  border-grey-light px-4 text-sm text-center py-3">
+                &euro;0,-
+              </td>
+              <td class="border-t border-l  border-grey-light px-4 text-sm text-center py-3">
+                &euro;5,- éénmalig
+              </td>
+              <td class="border-t border-l  border-grey-light px-4 text-sm text-center py-3">
+                &euro;25,- éénmalig
+              </td>
+            </tr>
+            <tr>
+              <td class="border-t border-grey-light text-sm sm:text-base px-5 py-5 align-top">Kosten per maand (ex BTW)
+              </td>
+              <td class="border-t border-l  border-grey-light px-4 text-sm text-center py-3">
+                &euro;0,-
+              </td>
+              <td class="border-t border-l  border-grey-light px-4 text-sm text-center py-3">
+                &euro;4,-
+              </td>
+              <td class="border-t border-l  border-grey-light px-4 text-sm text-center py-3">
+                onbeperkt bellen + <br>
+                2GB: &euro;39,-<br>
+                5GB: &euro;45,-<br>
+                10GB: &euro;49,-
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4"
+                class="border-t border-grey-light bg-blue px-5 py-3 uppercase tracking-wide text-xs font-semibold text-white text-left">
+                Algemeen
+              </td>
+            </tr>
+            <tr>
+              <td class="border-t border-grey-light text-sm sm:text-base px-5 py-5 align-top">Abonnement zelf op Simmpl
+                aan/uit te zetten? </td>
+              <td class="border-t border-l  border-grey-light px-4 text-sm text-center py-3">
+                n.v.t.
+              </td>
+              <td class="border-t border-l  border-grey-light px-4 text-sm text-center py-3">
+                <i class="fal fa-check-circle text-green text-xl"></i>
+              </td>
+              <td class="border-t border-l  border-grey-light px-4 text-sm text-center py-3">
+                <i class="fal fa-times-circle text-red text-xl"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="border-t border-grey-light text-sm sm:text-base px-5 py-5 align-top">Kostenloos bellen naar
+                collega's? </td>
+              <td class="border-t border-l  border-grey-light px-4 text-sm text-center py-3">
+                <i class="fal fa-times-circle text-red text-xl"></i>
+              </td>
+              <td class="border-t border-l  border-grey-light px-4 text-sm text-center py-3">
+                <i class="fal fa-check-circle text-green text-xl"></i>
+              </td>
+              <td class="border-t border-l  border-grey-light px-4 text-sm text-center py-3">
+                <i class="fal fa-check-circle text-green text-xl"></i>
+              </td>
+            </tr>
+
+
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</article>
+{{ end }}

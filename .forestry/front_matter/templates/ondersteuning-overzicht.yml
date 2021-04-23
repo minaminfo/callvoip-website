@@ -1,0 +1,85 @@
+---
+label: Ondersteuning overzicht
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: Title
+- name: weight
+  type: number
+  label: Weight
+  description: ''
+  default: 0
+  required: false
+  config:
+    min: 
+    max: 
+    step: 
+- name: seo
+  type: include
+  config: {}
+  template: seo
+  label: SEO
+  description: SEO
+- type: boolean
+  name: hideinsearch
+  label: Hide in Search
+- type: boolean
+  name: hideingoogle
+  label: Hide in Google
+- type: boolean
+  name: hidesocialshare
+  label: Hide Social Share options
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  default: overview
+  hidden: true
+- name: hero
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Content
+  - name: image
+    type: file
+    config:
+      maxSize: 250
+    label: Image
+  - name: disable_image_on_mobile
+    type: boolean
+    label: Disable image on mobile
+    default: false
+  - name: button
+    type: field_group
+    config: {}
+    fields:
+    - name: content
+      type: text
+      config:
+        required: false
+      label: Content
+    - name: link
+      type: text
+      config:
+        required: false
+      label: Link
+    label: Button
+  label: Hero
+pages:
+- content/ondersteuning/_index.md
+- content/ondersteuning/algemeen/_index.md

@@ -1,0 +1,22 @@
+{{ $title := .Params.title }}
+{{ $site := .Site }}
+
+<div class="lg:mb-8 xl:mb-16">
+  <div class="max-w-xl mx-auto">
+    <div class="bg-white rounded-lg py-12 px-4 sm:px-8  md:flex items-center shadow">
+      {{ with .Params.testimonial.image}}
+      <img data-src="{{ $site.Params.cloudinary_base_url }}/w_auto,dpr_auto,c_scale,f_auto,q_auto{{.}}"
+        class="rounded-full w-24 h-24 lg:w-32 lg:h-32 mr-10 mb-4 cld-responsive" style="object-fit: cover;"
+        alt="{{ $title }}" />
+        {{ end }}
+      <div>
+        {{ with .Params.testimonial.content }}
+        <p class="text-lg lg:text-xl xl:text-2xl mb-4">“{{ . | markdownify }}</p>
+        {{ end }}
+        {{ with .Params.testimonial.title }}
+        <p class=" lg:text-lg opacity-75 font-medium">{{ . | markdownify }}</p>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>

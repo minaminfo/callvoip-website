@@ -1,0 +1,36 @@
+---
+label: Vacature
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: tag
+  label: tag
+- type: boolean
+  name: hidesocialshare
+  label: Hide Social Share options
+- type: textarea
+  name: excerpt
+  label: excerpt
+- type: field_group
+  name: card
+  label: card
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: content
+    label: content
+  - type: field_group
+    name: link
+    label: link
+    fields:
+    - type: text
+      name: url
+      label: url
+    - type: text
+      name: content
+      label: content

@@ -1,0 +1,39 @@
+---
+label: Status Overzicht
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: boolean
+  name: hidesocialshare
+  label: Hide Social Share options
+- type: textarea
+  name: contentTop
+  label: Content Top
+- type: textarea
+  name: contentMiddle
+  label: Content Middle
+- type: field_group
+  name: hero
+  label: hero
+  fields:
+  - type: file
+    name: image
+    label: image
+  - name: disable_image_on_mobile
+    type: boolean
+    label: Disable image on mobile
+    default: false
+- type: field_group_list
+  name: items
+  label: items
+  fields:
+  - type: text
+    name: title
+    label: Title
+  - type: boolean
+    name: status
+    label: status
+pages:
+- content/status/_index.md

@@ -1,0 +1,34 @@
+<html>
+
+<link rel="stylesheet" href="jquery.dad.css">
+
+
+<div id="daddy" class="dad dad-container">
+        
+        <div class="dads-children" style="visibility: visible;">
+            <div>1</div>
+        </div><div class="dads-children" style="visibility: visible;">
+            <div>2</div>
+        </div>
+        
+        <div class="dads-children">
+            <div>4</div>
+        </div><div class="dads-children" style="visibility: visible;">
+            <div>3</div>
+        </div>
+        <div class="dads-children" style="visibility: visible;">
+            <div>5</div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="jquery.dad.js"></script>
+
+
+<script>
+        $(function(){
+            $('.dad').dad();
+        })
+    </script>
+
+</html>

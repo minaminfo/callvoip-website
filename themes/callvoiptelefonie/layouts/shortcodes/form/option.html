@@ -1,0 +1,2 @@
+{{ $name := default "Provide input name" (.Get 0) }}
+<option value="{{ $name | urlize }}">{{ $name }}</option>

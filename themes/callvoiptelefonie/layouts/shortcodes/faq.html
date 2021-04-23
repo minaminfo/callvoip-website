@@ -1,0 +1,30 @@
+<div class="container px-4 pt-8">
+  <div class="text-center mb-2">
+    <h2 class="text-3xl lg:text-4xl font-medium mb-4 md:mb-6 leading-tight">De vaste stappen</h2>
+     <div class="mx-auto max-w-xl lg:text-lg xl:text-xl font-medium text-grey-medium">Iedere situatie is anders, maar er zijn toch wat vaste stappen die elke overstap doorloopt.</div>
+  </div>
+
+  <div class="flex flex-wrap">
+    <div class="faq-section md:pb-6 xl:pb-10 xxl:pb-12 ">
+      <div class="accrodion-grp faq-accrodion" data-grp-name="faq-accrodion">
+        
+        <div class="accrodion">
+          {{  range $.Page.Params.faq }}
+          <div class="accrodion-item">
+            <div class="accrodion-item-header {{ .class }}">
+              <h4>{{ .question | markdownify}}</h4>
+            </div>
+            <div class="accrodion-item-body">
+              <div class="accrodion-item-body-content">
+                <p>{{ .answer | markdownify}}</p>
+                
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</div>

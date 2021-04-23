@@ -1,0 +1,10 @@
+{{ $name := default "Provide input name" (.Get 0) }}
+
+<input
+    type="hidden"
+    id="formto"
+    name="formto"
+    value="{{ $name }}"
+    class="hidden">
+
+

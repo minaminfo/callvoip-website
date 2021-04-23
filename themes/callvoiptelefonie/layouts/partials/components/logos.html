@@ -1,0 +1,21 @@
+{{ if .Params.logos }}
+{{ with .Site.Data.general.clients }}
+<div class="bg-blue pt-12 md:pt-32 pb-12 md:pb-24">
+  <div class="container px-4 text-white text-center">
+    {{ with .title }}
+    <h4 class="text-3xl lg:text-3xl font-medium mb-8 md:mb-12 leading-tight">{{ . }}</h4>
+    {{ end }}
+    <div class="flex flex-col md:flex-row items-center justify-center flex-wrap lg:flex-no-wrap">
+      {{ range .items }}
+      {{ with .image }}
+      <div class="px-2">
+        <img data-src="{{ $.Site.Params.cloudinary_base_url }}/w_auto,dpr_auto/{{.}}"
+          class="max-h-logo-small lg:max-h-logo cld-responsive mx-6 block max-w-full mb-8 object-contain" alt="Client" />
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
+{{ end }}

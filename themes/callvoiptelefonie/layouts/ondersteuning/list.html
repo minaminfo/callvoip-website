@@ -1,0 +1,54 @@
+{{ define "main" }}
+<article class="mb-8 md:mb-24">
+  {{ with .Params.hero }}
+  {{ $imagePosition := .image_position}}
+  {{ $title := .Title }}
+  <div class="bg-grey-lightest clearfix">
+    <header class="container px-4 clearfix">
+      <div class="flex flex-col-reverse md:flex-row md:-mx-2  md:items-center pt-6 sm:pt-8 md:pt-12 md:pt-24 mb-12">
+        <div class="mb-6 md:mb-12 md:w-1/2 md:px-2">
+          {{ with .title }}
+          <h1 class="text-3xl lg:text-4xl xxl:text-5xl leading-tight mb-4 md:mb-6">{{ . }}</h1>
+          {{ end }}
+          {{ with .content }}
+          <p class="lg:text-lg xxl:text-xl max-w-md opacity-75 mb-4 md:mb-8 ">{{ . }}</p>
+          {{ end }}
+          {{ with .button }}
+          <p>
+            <a href="{{.link}}"  class="button button-icon chat-button xl:text-lg"><i class="fal fa-desktop-alt fa-2x mr-4"></i>{{ .content }}</a>
+          </p>
+          {{ end }}
+        </div>
+        {{ with .image }}
+        <div class="md:w-1/2 md:px-2 mb-12 {{ if $imagePosition }} flex justify-{{$imagePosition}} {{ end }}">
+          <img data-src="{{ $.Site.Params.cloudinary_base_url }}/c_scale,f_auto,q_auto/{{.}}"
+            class="cld-responsive" style="object-fit: cover;" alt="{{ $title }}" />
+        </div>
+        {{ end }}
+      </div>
+    </header>
+  </div>
+  {{ end }}
+
+  {{- partial "components/helpdesk.html" . -}}
+</article>
+{{ end }}
+
+{{ define "footer-scripts" }}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.5.1/vue-resource.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/2.5.0/vuex.min.js"></script>
+<script src="https://unpkg.com/vuex-i18n@1.3.2/dist/vuex-i18n.min-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/2.6.2/fuse.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js"></script>
+
+{{ $searchjs := resources.Get "js/search.js" }}
+
+{{ with $searchjs }}
+{{ $secureJS := . | resources.Fingerprint }}
+<script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"
+	crossorigin="anonymous" defer></script>
+{{ end }}
+
+{{ end }}

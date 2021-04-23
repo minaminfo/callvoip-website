@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<AddressBook>
+<Contact>
+   <LastName>mobiel</LastName>
+   <FirstName>toestel</FirstName>
+   <Phone>
+     <phonenumber>001</phonenumber>
+     <accountindex>0</accountindex>
+   </Phone>
+</Contact>
+<Contact>
+   <LastName>Selten</LastName>
+   <FirstName>Ton</FirstName>
+   <Phone>
+     <phonenumber>002</phonenumber>
+     <accountindex>0</accountindex>
+   </Phone>
+</Contact>
+<Contact>
+   <LastName>van Olffen</LastName>
+   <FirstName>Matthieu</FirstName>
+   <Phone>
+     <phonenumber>003</phonenumber>
+     <accountindex>0</accountindex>
+   </Phone>
+</Contact>
+<Contact>
+   <LastName>Veldhuis</LastName>
+   <FirstName>Sjouke</FirstName>
+   <Phone>
+     <phonenumber>004</phonenumber>
+     <accountindex>0</accountindex>
+   </Phone>
+</Contact>
+<Contact>
+   <LastName>Jaarsma</LastName>
+   <FirstName>Yvonne</FirstName>
+   <Phone>
+     <phonenumber>005</phonenumber>
+     <accountindex>0</accountindex>
+   </Phone>
+ </Contact>
+<Contact>
+   <LastName>Blaauw</LastName>
+   <FirstName>Gonny</FirstName>
+   <Phone>
+     <phonenumber>006</phonenumber>
+     <accountindex>0</accountindex>
+   </Phone>
+</Contact>
+<Contact>
+   <LastName>Bakhuis</LastName>
+   <FirstName>Elizabeth</FirstName>
+   <Phone>
+     <phonenumber>007</phonenumber>
+     <accountindex>0</accountindex>
+   </Phone>
+</Contact>
+<Contact>
+   <LastName>de Vries</LastName>
+   <FirstName>Arjen</FirstName>
+   <Phone>
+     <phonenumber>008</phonenumber>
+     <accountindex>0</accountindex>
+   </Phone>
+ </Contact>
+<Contact>
+   <LastName>Miedema</LastName>
+   <FirstName>Eelco</FirstName>
+   <Phone>
+     <phonenumber>009</phonenumber>
+     <accountindex>0</accountindex>
+   </Phone>
+</Contact>
+<Contact>
+   <LastName>Timmerman</LastName>
+   <FirstName>Edwin</FirstName>
+   <Phone>
+     <phonenumber>010</phonenumber>
+     <accountindex>0</accountindex>
+   </Phone>
+</Contact>
+<Contact>
+   <LastName>Verbeke</LastName>
+   <FirstName>Charlotte</FirstName>
+   <Phone>
+     <phonenumber>011</phonenumber>
+     <accountindex>0</accountindex>
+   </Phone>
+</Contact>
+<Contact>
+   <LastName>Roemeling</LastName>
+   <FirstName>Johan</FirstName>
+   <Phone>
+     <phonenumber>012</phonenumber>
+     <accountindex>0</accountindex>
+   </Phone>
+</Contact>
+<Contact>
+   <LastName>Postema</LastName>
+   <FirstName>Jan</FirstName>
+   <Phone>
+     <phonenumber>013</phonenumber>
+     <accountindex>0</accountindex>
+   </Phone>
+</Contact>
+<Contact>
+   <LastName>Boer</LastName>
+   <FirstName>Be</FirstName>
+   <Phone>
+     <phonenumber>015</phonenumber>
+     <accountindex>0</accountindex>
+   </Phone>
+</Contact>
+</AddressBook>

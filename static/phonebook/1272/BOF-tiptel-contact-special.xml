@@ -1,0 +1,78 @@
+<BOFIPPhoneDirectory>
+
+<DirectoryEntry>
+	<Name>, Monique (m)</Name>
+	<Telephone>0652185304</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>, Shanta (m)</Name>
+	<Telephone>0618744780</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>, Shanta (m)</Name>
+	<Telephone>0618744780</Telephone>
+</DirectoryEntry>
+
+<SoftKeyItem>
+	<Name>1</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>2</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact-ac.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>3</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact-df.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>4</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact-gi.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>5</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact-jl.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>6</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact-mo.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>7</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact-ps.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>8</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact-tv.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>9</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact-wz.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>*</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact-special.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>0</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact-09.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>#</Name>
+	<URL>http://www.callvoip.nl/phonebook/1272/BOF-tiptel-contact.xml</URL>
+</SoftKeyItem>
+
+</BOFIPPhoneDirectory>

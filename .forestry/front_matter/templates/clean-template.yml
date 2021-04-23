@@ -1,0 +1,88 @@
+---
+label: Clean template
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+- name: seo
+  type: include
+  config: {}
+  template: seo
+  label: SEO
+  description: SEO
+- type: boolean
+  name: hideinsearch
+  label: Hide in Search
+- type: boolean
+  name: hideingoogle
+  label: Hide in Google
+- type: boolean
+  name: hidesocialshare
+  label: Hide Social Share options
+- type: text
+  name: slug
+  label: Slug
+- type: field_group
+  name: hero
+  label: Hero
+  fields:
+  - type: file
+    name: image
+    label: image
+  - name: disable_image_on_mobile
+    type: boolean
+    label: Disable image on mobile
+    default: false
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+- type: text
+  name: type
+  label: type
+  default: page
+  hidden: true
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+pages:
+- content/bedank/offerte-aanvraag-ontvangen.md
+- content/bedank/opzegging-verzonden.md
+- content/bedank/wijziging-verzonden.md
+- content/offerte.md
+- content/oplossingen/Branches/advocatuur.md
+- content/oplossingen/Branches/assurantie.md
+- content/oplossingen/Branches/autodealer.md
+- content/oplossingen/Branches/fysiotherapie.md
+- content/oplossingen/Branches/ict.md
+- content/oplossingen/Branches/kapsalon.md
+- content/oplossingen/Branches/makelaardij.md
+- content/oplossingen/Branches/marketingbureau.md
+- content/oplossingen/Branches/recruitment.md
+- content/oplossingen/Branches/reisbureau.md
+- content/oplossingen/Branches/tandartspraktijk.md
+- content/oplossingen/Branches/webshop.md
+- content/telefonie/Functionaliteiten/belgroep-huntgroup.md
+- content/telefonie/Functionaliteiten/busy-lamp-field-blf.md
+- content/telefonie/Functionaliteiten/call-pickup.md
+- content/telefonie/Functionaliteiten/doorverbinden.md
+- content/telefonie/Functionaliteiten/e-mail.md
+- content/telefonie/Functionaliteiten/fax.md
+- content/telefonie/Functionaliteiten/gespreksopname.md
+- content/telefonie/Functionaliteiten/keuzemenu-ivr.md
+- content/telefonie/Functionaliteiten/meldtekst.md
+- content/telefonie/Functionaliteiten/omleiding-flow-control.md
+- content/telefonie/Functionaliteiten/prefix.md
+- content/telefonie/Functionaliteiten/test.md
+- content/telefonie/Functionaliteiten/tijdsconditie.md
+- content/telefonie/Functionaliteiten/voicemail.md
+- content/telefonie/Functionaliteiten/voorwaarde-filter.md
+- content/telefonie/Functionaliteiten/wachtrij-queue.md
+- content/telefonie/bedrijfstelefoonboek.md
+- content/telefonie/conference-service.md
+- content/telefonie/gesprekskosten.md
+- content/telefonie/realtime-api.md
+- content/telefonie/telefoonnummers.md

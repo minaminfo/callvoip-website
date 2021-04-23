@@ -1,0 +1,10 @@
+
+{{ $name := default "formulier" (.Get 0) }}
+{{ $redirect := default "/" (.Get 1) }}
+
+<form class="mb-6" name="{{ $name | urlize }}" action="{{ $redirect | urlize }}" accept-charset="UTF-8" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+  <p class="hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
+  {{.Inner | markdownify }}
+</form>

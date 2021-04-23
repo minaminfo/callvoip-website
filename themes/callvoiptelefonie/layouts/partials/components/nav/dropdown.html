@@ -1,0 +1,13 @@
+{{ $page := .page }}
+{{ $site := .site }}
+{{ $parent := .parent }}
+
+<div class="absolute px-4 z-40 hidden is-dropdown w-80 -ml-24 mt-12">
+  <div class="bg-white shadow rounded-lg py-4">
+    {{ range .menu }}
+    <a href="{{ .Page.Permalink }}" class="block py-3 px-6 text-grey-dark {{ if eq .Page.Permalink .URL }} text-blue {{ end }} no-underline hover:text-blue">
+      {{ .Name }}
+    </a>
+    {{ end }}
+  </div>
+</div>

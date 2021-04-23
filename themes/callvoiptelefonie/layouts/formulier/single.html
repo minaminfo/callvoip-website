@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="mb-8 md:mb-24">
+  {{- partial "components/hero.html" . -}}
+  <div class="container px-4 {{ if not .Params.hero.image}} pt-8 {{ end }}">
+    <div class="border border-grey-lightest max-w-lg mx-auto pt-12 px-12 pb-6">
+      {{ with .Title }}
+      <h1 class="text-3xl lg:text-4xl font-medium mb-4 leading-tight text-center">{{ . }}</h1>
+      {{ end }}
+      {{ with .Content }}
+      <div class="user-content lg:text-lg font-medium leading-loose">
+        {{ . }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</article>
+{{ end }}

@@ -1,0 +1,14 @@
+{{ $name := default "Provide input name" (.Get 0) }}
+{{ $group := default "group" (.Get 1) }}
+
+<div class=" mr-4 ">
+<label for="{{ $name | urlize }}" class="blockcursor-pointer">
+  <input
+  type="checkbox"
+  id="{{ $name | urlize }}"
+  value="{{ $name | urlize }}"
+  name="{{ $group | urlize }}"
+  class="">
+  {{ $name }}
+</label>
+</div>

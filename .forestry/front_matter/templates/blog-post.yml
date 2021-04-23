@@ -1,0 +1,106 @@
+---
+label: Blog Post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Ttle
+- name: seo
+  type: include
+  config: {}
+  template: seo
+  label: Seo
+  description: SEO
+- type: boolean
+  name: featured
+  label: Featured
+- type: boolean
+  name: hideinsearch
+  label: Hide in Search
+- type: boolean
+  name: hideingoogle
+  label: Hide in Google
+- type: boolean
+  name: hidesocialshare
+  label: Hide Social Share options
+- type: file
+  name: image_uitgelicht
+  label: Image uitgelicht
+- type: field_group
+  name: hero
+  label: Hero
+  fields:
+  - type: file
+    name: image
+    label: image
+  - type: file
+    name: mobile
+    label: Mobile image
+  - type: text
+    name: link
+    label: Link
+  - name: disable_image_on_mobile
+    type: boolean
+    label: Disable image on mobile
+    default: false
+- type: text
+  name: author
+  label: Author
+  hidden: true
+- type: text
+  name: type
+  label: type
+  hidden: true
+  default: nieuws
+- type: datetime
+  name: date
+  label: Date
+- type: text
+  name: url
+  label: Url
+- type: list
+  name: contactpersoon
+  label: contactpersoon
+  hidden: true
+- type: list
+  name: categories
+  label: categories
+- type: list
+  name: tags
+  label: tags
+pages:
+- content/nieuws/better-safe-than-sorry-hoe-callvoip-jou-helpt-veilig-te-telefoneren.md
+- content/nieuws/blijf-verbonden-met-callvoip.md
+- content/nieuws/bèta-testers-gezocht.md
+- content/nieuws/callvoip-click-to-dial-van-nummer-naar-slimme-toepassingen.md
+- content/nieuws/callvoip-feature-update-januari-2020.md
+- content/nieuws/callvoip-heeft-progress-events-uitverkozen-tot-kerst-klant-kees-2019.md
+- content/nieuws/callvoip-in-a28-magazine.md
+- content/nieuws/click-to-dial-verbeterd-nu-ook-koppeling-met-je-crm.md
+- content/nieuws/de-5-grootste-mythen-rondom-bellen-via-internet.md
+- content/nieuws/feature-update-november-2020-veel-nieuws.md
+- content/nieuws/interview-ab-trik.md
+- content/nieuws/interview-eric.md
+- content/nieuws/interview-raymond-stuk.md
+- content/nieuws/marieke-en-tom-over-webcalls.md
+- content/nieuws/nieuw-webcalls-probeer-tot-1-april-2021-gratis-uit.md
+- content/nieuws/nieuwe-website.md
+- content/nieuws/onze-marieke-spreekt-prins-carnaval.md
+- content/nieuws/partner-interview-lydis.md
+- content/nieuws/qaller-android-update-nu-beschikbaar.md
+- content/nieuws/sorteer-uw-klanten-op-postcode-gebied.md
+- content/nieuws/team-op-met-callvoip-en-microsoft-teams.md
+- content/nieuws/thuiswerk-tools-een-kijkje-in-de-cockpit-van-de-thuiswerker.md
+- content/nieuws/tijdlijn2.md
+- content/nieuws/tim-s-tools-whatsapp-business.md
+- content/nieuws/toekomstige-communicatie-de-top-5-flexibel-mobiel-verbonden-zijn.md
+- content/nieuws/update-platform-05-07-19.md
+- content/nieuws/voip-oplossing-voor-startende-ondernemers-7-tips.md
+- content/nieuws/voip-telefoon-special-waarom-vroeger-niet-alles-beter-was.md
+- content/nieuws/we-maken-telefonie-leuk-en-gemakkelijk.md
+- content/nieuws/wij-presenteren-met-gepaste-trots-callvoip-webcalls.md
+- content/nieuws/wij-spraken-mark-minnaard-mede-eigenaar-van-red-cactus-over-onze-samenwerking.md
+- content/nieuws/yealink-ruggedized.md
+- content/nieuws/yealink-w59r-ruggedized-magazijn.md
+- content/nieuws/yealink-w59r-ruggedized-water-en-stoftest.md
+- content/nieuws/yealinkmeeting-blog.md

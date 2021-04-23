@@ -1,0 +1,111 @@
+---
+newclient:
+  title: 'Klant worden? Bel ons dan op:'
+  phonenumber:
+    pretty: 050 – 820 00 00
+    number: "31508200000"
+  subtitle: 'Of stuur ons een e-mail:'
+  emailaddress:
+    pretty: callvoip@callvoip.nl
+    email: callvoip@callvoip.nl
+helpdesk:
+  title: Ben je ergens specifiek naar op zoek?<br> Gebruik onze zoekfunctie
+  content: Zoeken in de website
+social:
+  title: Natuurlijk kun je ons ook <br />volgen op je favoriete social kanaal
+  items:
+  - title: Volg Callvoip op YouTube
+    link: https://www.youtube.com/channel/UCG7dLA7YIqALqrIMwyHmMiw
+    icon: fa-youtube
+  - title: Volg Callvoip op LinkedIn
+    link: https://www.linkedin.com/company/callvoip-telefonie/
+    icon: fa-linkedin-in
+  - title: Volg Callvoip op Twitter
+    link: https://twitter.com/callvoip
+    icon: fa-twitter
+blocks:
+  - title: VoIP telefonie
+    links:
+      - title: Hosted VoIP
+        url: /telefonie/hostedvoip/
+      - title: VoIP Trunk
+        url: /oplossingen/trunk/
+      - title: Vast Mobiel integratie
+        url: /telefonie/vastmobiel/
+      - title: Click-to-Dial
+        url: /telefonie/clicktodial/
+      - title: Software integratie
+        url: /telefonie/integratie/
+      - title: Videobellen
+        url: /yealinkmeeting/
+  - title: Alles over...
+    links:
+      - title: Nummers
+        url: /telefonie/nummers/
+      - title: Vast Mobiel
+        url: /telefonie/vastmobiel/
+      - title: Integratie
+        url: /telefonie/integratie/
+      - title: Beveiliging
+        url: /telefonie/beveiliging/
+      - title: Overstappen
+        url: /overstappen/
+      - title: Thuiswerken
+        url: /telefonie/thuiswerken/
+      - title: Internet
+        url: /internet/overzicht/
+      - title: Branche oplossingen
+        url: /oplossingen/branches/
+  - title: Onze tarieven
+    links:
+      - title: Kostencalculator
+        url: /calculator/
+      - title: Gesprekskosten
+        url: /telefonie/gesprekskosten/
+      - title: Nederlandse nummers
+        url: /telefonie/nederlandse-nummers
+      - title: Internationale nummers
+        url: /telefonie/internationale-nummers/
+      - title: DSL internet
+        url: /internet/dsl/
+  - title: Kenniscentrum
+    links:
+      - title: Status
+        url: /status/
+      - title: Login
+        url: /login/
+      - title: Support
+        url: /ondersteuning/
+      - title: Nieuws
+        url: /nieuws/
+      - title: Nieuwsbrieven
+        url: /ondersteuning/algemeen/nieuwsbrieven-overzicht/
+      - title: Callvoip Casts
+        url: /casts/
+      - title: Mijn Callvoip (formulieren)
+        url: /mijncallvoip/
+      - title: Blog - 10 Thuiswerktools
+        url: /top-10-thuiswerk-tools-voor-zorgeloos-thuiswerken/
+      - title: Blog - VoIP starter? 7 tips!
+        url: /nieuws/voip-oplossing-voor-startende-ondernemers-7-tips/
+      - title: Blog - Videobellen
+        url: /yealinkmeeting-blog/
+      - title: Blog - Veiligheid
+        url: /blog-veiligheid/
+  - title: Callvoip
+    links:
+      - title: Team
+        url: /overons/team/
+      - title: Contact
+        url: /contact/
+      - title: Over ons
+        url: /overons/hetbedrijf/
+      - title: Webshop
+        url: /pages/webshop/
+      - title: Succesverhalen
+        url: /testimonials/
+      - title: Vacature Sales/Support
+        url: /vacatures/support/
+      - title: Aanmelden Nieuwsbrief
+        url: /aanmelden/nieuwsbrief/
+    content: <p class="mb-4"><br><b>Callvoip</b><br>Koldingweg 19-1 <br> 9723 HL Groningen</p><p><a href="tel:+31508200000">050 - 820 00 00</a> <br> <a href="mailto:callvoip@callvoip.nl">callvoip@callvoip.nl</a> </p>

@@ -1,0 +1,183 @@
+<BosmaverschuurIPPhoneDirectory>
+
+<DirectoryEntry>
+	<Name>Aegon, Den Haag</Name>
+	<Telephone>0703443210</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Aegon, Leeuwarden</Name>
+	<Telephone>0582443210</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Aegon, Nabestaanden</Name>
+	<Telephone>09000506</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Allianz, Nieuwegein</Name>
+	<Telephone>0306077911</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Allianz, Rotterdam</Name>
+	<Telephone>0104541555</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Allianz, Zwolle</Name>
+	<Telephone>0384676700</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Amedia </Name>
+	<Telephone>09002025082</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Amersfoorts</Name>
+	<Telephone>0334642911</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>AON</Name>
+	<Telephone>0204305500</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Arag</Name>
+	<Telephone>0334342801</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Ardanta</Name>
+	<Telephone>0534881122</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>ASR</Name>
+	<Telephone>0302579111</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Avero/Achmea</Name>
+	<Telephone>0334344444</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>AXA</Name>
+	<Telephone>0302197000</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Blue system</Name>
+	<Telephone>0653117181</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Bontsema, Klaas</Name>
+	<Telephone>0793204204</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Bontsema, Klaas Mobiel</Name>
+	<Telephone>0620604370</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Boog</Name>
+	<Telephone>0598390193</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Bos, Henk</Name>
+	<Telephone>0615209336</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Bousma, Siep</Name>
+	<Telephone>0204305596</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>CallVoip</Name>
+	<Telephone>0505264933</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>CED/Nomex</Name>
+	<Telephone>0102843601</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Centraal Beheer</Name>
+	<Telephone>0555798000</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Crawford</Name>
+	<Telephone>0900040089</Telephone>
+</DirectoryEntry>
+
+<SoftKeyItem>
+	<Name>1</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>2</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-ac.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>3</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-df.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>4</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-gi.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>5</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-jl.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>6</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-mo.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>7</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-ps.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>8</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-tv.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>9</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-wz.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>*</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>0</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-09.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>#</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact.xml</URL>
+</SoftKeyItem>
+
+</BosmaverschuurIPPhoneDirectory>

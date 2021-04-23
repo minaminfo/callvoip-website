@@ -1,0 +1,46 @@
+---
+label: Mijn callvoip
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+- type: text
+  name: url
+  label: url
+- type: text
+  name: type
+  label: type
+- type: field_group_list
+  name: usps
+  label: usps
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: content
+    label: content
+  - type: field_group_list
+    name: items
+    label: items
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: field_group_list
+      name: items
+      label: items
+      fields:
+      - type: text
+        name: title
+        label: title
+      - type: text
+        name: link
+        label: link
+pages:
+- content/pages/mijncallvoip.md

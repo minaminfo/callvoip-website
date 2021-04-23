@@ -1,0 +1,92 @@
+{{ define "main" }}
+<article class="my-8">
+  <div class="container space-y-8">
+    <div class="lg:flex justify-end"
+      style="background: url(https://res.cloudinary.com/callvoip/image/upload/c_scale,f_auto,q_auto/v1571400615/icons_home_tvjvye.png) no-repeat center left;">
+      <div class="bg-blue-lightest shadow max-w-screen-md lg:w-1/2 p-16 py-20" style="background: #f6f6f6;">
+        <h1 class="text-3xl lg:text-4xl xxl:text-4xl font-bold leading-tight mb-4 md:mb-6"> {{ .Title }}
+          <br><span class="text-blue">{{ .Params.subtitle }}</span>
+        </h1>
+        <div class="text-grey">
+          {{.Content | replaceRE "<ul>" "<ul class='text-blue-light list-disc list-inside'>" | safeHTML}}
+        </div>
+        <div class="mt-12 text-sm space-y-2">
+          <div class="">
+            {{ range .Params.testimonial}}
+            <div class="slide">
+              <p class="text-grey">
+                “{{.text | markdownify }}”
+              </p>
+              <div class="text-yellow text-2xl mt-2 leading-none font-serif">{{.rating}}</div>
+              <span>
+                {{- .name -}}
+              </span>
+            </div>
+          </div>
+          <div class="">
+            {{ end }}
+            <div class="flex space-x-2">
+              {{ range .Params.testimonial}}
+              <svg width="8" height="8" class="dot">
+                <rect width="8" height="8" fill="currentColor" />
+              </svg>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center max-w-screen-md mx-auto">
+      <h2 class="text-3xl lg:text-4xl xxl:text-4xl font-bold mb-4">FORMULIER START</h2>
+      <form class="mb-6" name="tourformulier" action="/bedank/tour/" accept-charset="UTF-8" method="POST"
+        data-netlify-recaptcha="true" data-netlify="true">
+        <input type="hidden" name="form-name" value="tourformulier" />
+        <p class="hidden"> <label>Don’t fill this out if human <input name="bot-field"> </label> </p>
+        <p> <input type="hidden" id="formlayout" name="formlayout" value="d-948a1897e5e645e5b41ed33ccdd3d8bb"
+            class="hidden">
+        </p>
+        <p> <input type="hidden" id="formto" name="formto" value="offerte" class="hidden"> </p>
+        <div class="layout-split">
+          <div class="mb-4"> <label for="bedrijfsnaam" class="block">Bedrijfsnaam</label> <input type="text"
+              id="bedrijfsnaam" name="bedrijfsnaam"
+              class="w-full border border-grey-light bg-white px-3 py-2 text-base">
+          </div>
+          <div class="mb-4"> <label for="email" class="block">Email <span class="text-red">*</span></label> <input
+              type="email" id="email" name="email" class="w-full border border-grey-light bg-white px-3 py-2 text-base"
+              required=""> </div>
+        </div>
+        <div class="layout-split">
+          <div class="mb-4"> <label for="telefoonnummer" class="block">Telefoonnummer</label> <input type="text"
+              id="telefoonnummer" name="telefoonnummer"
+              class="w-full border border-grey-light bg-white px-3 py-2 text-base">
+          </div>
+          <div class="mb-4"> <label for="terugbelmoment" class="block">Wensen of vragen</label> <input type="text"
+              id="wensenvragen" name="wensenvragen"
+              class="w-full border border-grey-light bg-white px-3 py-2 text-base">
+          </div>
+        </div>
+        <center>
+          <div data-netlify-recaptcha="true"></div>
+        </center>
+        <br>
+        <p> <button type="submit" class="button">Neem contact met mij op</button> </p>
+      </form>
+    </div>
+  </div>
+</article>
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i, slides = document.querySelectorAll(".slide"), dots = document.querySelectorAll(".dot");
+    slides.forEach(e => e.classList.add('hidden'))
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    dots.forEach(e => e.style.color = '#bbb')
+    slides[slideIndex - 1].classList.remove('hidden')
+    dots[slideIndex - 1].style.color = '#2069f3'
+    setTimeout(showSlides, 5000);
+  }
+</script>
+{{ end }}

@@ -1,0 +1,8 @@
+Changelog:
+
+Public Release v1.1:
+-Removed Callvoip Logo
+-Changed header text to "Demo Callvoip"
+-Added new background image
+-Updated information text
+-Removed Arrow + Text to reminder users to drag-and-drop

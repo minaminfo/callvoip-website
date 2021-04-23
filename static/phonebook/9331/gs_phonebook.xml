@@ -1,0 +1,891 @@
+<?xml version="1.0"?>
+<AddressBook>
+<Contact>
+<LastName>Peppelman</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0622833880</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Preuter Epse</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0575491558</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Accon Zutphen</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0575585230</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Brinkman Almen</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0575431297</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Visser Zutphen</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0575540128</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>AB oost</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>09009896</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>TTT</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0630470152</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Combi</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0570630555</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>WTV</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0575431566</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Timing</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0570615707</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Huisman</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0575492055</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>AB asbest</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0575438855</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Euromaster Deventer</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0570607099</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Sturris</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0573401303</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Boschloo</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0575491447</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Wissels</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0575526748</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Enderink</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0575494179</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Woningstichting</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0575492773</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Gemeente Lochem</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0573289222</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Hekkelman</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0575491891</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Rabobank</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0575439999</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Kamphuis Epse</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0575491308</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Wildkamp</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0882288480</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Middeldorp Heeten</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0572380955</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Cosmo Service</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0573297100</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>N-m</LastName>
+<FirstName></FirstName>
+<Phone>
+<phonenumber>0575514065</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Netters</LastName>
+<FirstName> Alfons (m)</FirstName>
+<Phone>
+<phonenumber>0614100896</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Almat laren</LastName>
+<FirstName> Almat</FirstName>
+<Phone>
+<phonenumber>0573448080</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Sturris</LastName>
+<FirstName> Arjan (m)</FirstName>
+<Phone>
+<phonenumber>0653836622</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>PHB</LastName>
+<FirstName> Arnoud Freek (m)</FirstName>
+<Phone>
+<phonenumber>0627650687</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Strooi</LastName>
+<FirstName> Auto (m)</FirstName>
+<Phone>
+<phonenumber>0651787149</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Dommerholt</LastName>
+<FirstName> Bart (m)</FirstName>
+<Phone>
+<phonenumber>0613076045</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Combi</LastName>
+<FirstName> Ben (m)</FirstName>
+<Phone>
+<phonenumber>0653215570</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Brummelman</LastName>
+<FirstName> Bennie (m)</FirstName>
+<Phone>
+<phonenumber>0653401939</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Brinkman</LastName>
+<FirstName> Bernard (m)</FirstName>
+<Phone>
+<phonenumber>0653124616</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Hoetink</LastName>
+<FirstName> Bernd (m)</FirstName>
+<Phone>
+<phonenumber>0641046519</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Wiltink</LastName>
+<FirstName> Bert (m)</FirstName>
+<Phone>
+<phonenumber>0623561222</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>B en S</LastName>
+<FirstName> Bert (m)</FirstName>
+<Phone>
+<phonenumber>0621891260</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Slagman</LastName>
+<FirstName> Bertus (m)</FirstName>
+<Phone>
+<phonenumber>0621653725</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Haarman</LastName>
+<FirstName> Bertus (m)</FirstName>
+<Phone>
+<phonenumber>0630490308</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>TSB</LastName>
+<FirstName> Bonte</FirstName>
+<Phone>
+<phonenumber>0575491217</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Wildkamp</LastName>
+<FirstName> Colmschate</FirstName>
+<Phone>
+<phonenumber>0570543102</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Schonewille</LastName>
+<FirstName> Dave (m)</FirstName>
+<Phone>
+<phonenumber>0630272242</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Venhuis</LastName>
+<FirstName> Dennis (m)</FirstName>
+<Phone>
+<phonenumber>0653534133</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Vrielink</LastName>
+<FirstName> Derk (m)</FirstName>
+<Phone>
+<phonenumber>0622957183</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Dyka</LastName>
+<FirstName> Deventer</FirstName>
+<Phone>
+<phonenumber>0570634999</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Boels</LastName>
+<FirstName> Deventer</FirstName>
+<Phone>
+<phonenumber>0570635755</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Atop</LastName>
+<FirstName> Dinant (m)</FirstName>
+<Phone>
+<phonenumber>0653578512</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>van Helvoort</LastName>
+<FirstName> Dirk (m)</FirstName>
+<Phone>
+<phonenumber>0620392225</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>N-m</LastName>
+<FirstName> Dirk (m)</FirstName>
+<Phone>
+<phonenumber>0651260877</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Eefting</LastName>
+<FirstName> Epse</FirstName>
+<Phone>
+<phonenumber>0575492958</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Peters</LastName>
+<FirstName> Eric (m)</FirstName>
+<Phone>
+<phonenumber>0613019983</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Vrielink</LastName>
+<FirstName> Erwin (m)</FirstName>
+<Phone>
+<phonenumber>0651777290</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>WTV</LastName>
+<FirstName> Freddy (m)</FirstName>
+<Phone>
+<phonenumber>0651813378</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Huisman</LastName>
+<FirstName> Gerard (m)</FirstName>
+<Phone>
+<phonenumber>0620960750</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Combi</LastName>
+<FirstName> Gerard (m)</FirstName>
+<Phone>
+<phonenumber>0646314725</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Bos</LastName>
+<FirstName> Gerjan (m)</FirstName>
+<Phone>
+<phonenumber>0622151602</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Boschloo</LastName>
+<FirstName> Gerrit (m)</FirstName>
+<Phone>
+<phonenumber>0651283581</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Bos</LastName>
+<FirstName> Gerrit (m)</FirstName>
+<Phone>
+<phonenumber>0651607273</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Enderink</LastName>
+<FirstName> Gerrit (m)</FirstName>
+<Phone>
+<phonenumber>0653288988</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Brummelman</LastName>
+<FirstName> Gertie (m)</FirstName>
+<Phone>
+<phonenumber>0613635778</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Pelgrum</LastName>
+<FirstName> Gerwin (m)</FirstName>
+<Phone>
+<phonenumber>0653682770</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Woningstichting</LastName>
+<FirstName> Hamberg (m)</FirstName>
+<Phone>
+<phonenumber>0622462731</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Donderwinkel</LastName>
+<FirstName> Han (m)</FirstName>
+<Phone>
+<phonenumber>0623361383</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Hekkelman</LastName>
+<FirstName> Hans (m)</FirstName>
+<Phone>
+<phonenumber>0650930107</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Netters</LastName>
+<FirstName> Hans (m)</FirstName>
+<Phone>
+<phonenumber>0622495030</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Bruin en kwast</LastName>
+<FirstName> Harm (m)</FirstName>
+<Phone>
+<phonenumber>0620544951</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Eggink</LastName>
+<FirstName> Hendri (m)</FirstName>
+<Phone>
+<phonenumber>0612616129</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Wensink</LastName>
+<FirstName> Henk (m)</FirstName>
+<Phone>
+<phonenumber>0620130356</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Schutte</LastName>
+<FirstName> Henk (m)</FirstName>
+<Phone>
+<phonenumber>0657346308</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Hietbrink</LastName>
+<FirstName> Henk (m)</FirstName>
+<Phone>
+<phonenumber>0613673153</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Sligman</LastName>
+<FirstName> Henk (m)</FirstName>
+<Phone>
+<phonenumber>0620727191</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Hakvoort</LastName>
+<FirstName> Henny (m)</FirstName>
+<Phone>
+<phonenumber>0630589739</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Gemeente</LastName>
+<FirstName> Henny (m)</FirstName>
+<Phone>
+<phonenumber>0622833430</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Bieleman</LastName>
+<FirstName> Herman (m)</FirstName>
+<Phone>
+<phonenumber>0630708851</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Kruitbosch</LastName>
+<FirstName> Herman (m)</FirstName>
+<Phone>
+<phonenumber>0616046423</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Wissels</LastName>
+<FirstName> Immenkamp (m)</FirstName>
+<Phone>
+<phonenumber>0652502055</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>van Ommen</LastName>
+<FirstName> Jan (m)</FirstName>
+<Phone>
+<phonenumber>0623070795</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Oranjewoud</LastName>
+<FirstName> Janneke (m)</FirstName>
+<Phone>
+<phonenumber>0651818270</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Kwint</LastName>
+<FirstName> Jelle (m)</FirstName>
+<Phone>
+<phonenumber>0648968839</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Dolleman</LastName>
+<FirstName> Johan (m)</FirstName>
+<Phone>
+<phonenumber>0653171420</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Streek Beton</LastName>
+<FirstName> Lochem</FirstName>
+<Phone>
+<phonenumber>0573222111</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Hoftijzer</LastName>
+<FirstName> Lochem</FirstName>
+<Phone>
+<phonenumber>0573441777</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Sturris</LastName>
+<FirstName> Lucas (m)</FirstName>
+<Phone>
+<phonenumber>0610546363</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Dyka</LastName>
+<FirstName> Luchtmeijer</FirstName>
+<Phone>
+<phonenumber>0521534480</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Gemeente</LastName>
+<FirstName> Macro (m)</FirstName>
+<Phone>
+<phonenumber>0613792116</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Bos</LastName>
+<FirstName> Marcel (m)</FirstName>
+<Phone>
+<phonenumber>0613669901</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Dusseldorp</LastName>
+<FirstName> Marcel (m)</FirstName>
+<Phone>
+<phonenumber>0620018992</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Gotink</LastName>
+<FirstName> Mark (m)</FirstName>
+<Phone>
+<phonenumber>0651955483</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Flameling</LastName>
+<FirstName> Menno (m)</FirstName>
+<Phone>
+<phonenumber>0628472006</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Praktima</LastName>
+<FirstName> Nico (m)</FirstName>
+<Phone>
+<phonenumber>0651719769</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>de Jong</LastName>
+<FirstName> Patrcik (m)</FirstName>
+<Phone>
+<phonenumber>0629585879</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Lowik</LastName>
+<FirstName> Peter (m)</FirstName>
+<Phone>
+<phonenumber>0651609159</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Winkels</LastName>
+<FirstName> Remi (m)</FirstName>
+<Phone>
+<phonenumber>0620566035</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Kamperman</LastName>
+<FirstName> Rene (m)</FirstName>
+<Phone>
+<phonenumber>0618319201</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>ten Have</LastName>
+<FirstName> Rene (m)</FirstName>
+<Phone>
+<phonenumber>0622843399</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Netters</LastName>
+<FirstName> Rene (m)</FirstName>
+<Phone>
+<phonenumber>0622566171</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Middeldorp</LastName>
+<FirstName> Ronny (m)</FirstName>
+<Phone>
+<phonenumber>0651360385</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>B en S</LastName>
+<FirstName> Stefan (m)</FirstName>
+<Phone>
+<phonenumber>0627000680</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Temmink</LastName>
+<FirstName> ten Hove (m)</FirstName>
+<Phone>
+<phonenumber>0641347659</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>B en S</LastName>
+<FirstName> Thijs (m)</FirstName>
+<Phone>
+<phonenumber>0653677969</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>B en S</LastName>
+<FirstName> Tjerk (m)</FirstName>
+<Phone>
+<phonenumber>0615829392</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Schoneveld</LastName>
+<FirstName> Tonny (m)</FirstName>
+<Phone>
+<phonenumber>0653790441</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Markvoort</LastName>
+<FirstName> Tonny (m)</FirstName>
+<Phone>
+<phonenumber>0630366795</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>B en S</LastName>
+<FirstName> Wiebe (m)</FirstName>
+<Phone>
+<phonenumber>0651679198</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Jansen</LastName>
+<FirstName> Wilfred (m)</FirstName>
+<Phone>
+<phonenumber>0620130357</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Bokkinga</LastName>
+<FirstName> Willem (m)</FirstName>
+<Phone>
+<phonenumber>0653140282</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Huisman</LastName>
+<FirstName> Willem Jan (m)</FirstName>
+<Phone>
+<phonenumber>0653182788</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>N-m</LastName>
+<FirstName> Willy (m)</FirstName>
+<Phone>
+<phonenumber>0653930456</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Jansen</LastName>
+<FirstName> Wim (m)</FirstName>
+<Phone>
+<phonenumber>0622448327</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+<Contact>
+<LastName>Kraus</LastName>
+<FirstName> Zutphen</FirstName>
+<Phone>
+<phonenumber>0575513931</phonenumber>
+<accountindex>0</accountindex>
+</Phone>
+</Contact>
+</AddressBook>

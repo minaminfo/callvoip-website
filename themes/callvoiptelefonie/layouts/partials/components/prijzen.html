@@ -1,0 +1,57 @@
+{{ with .Params.prijzen }}
+{{ range . }}
+<div class="container px-4 mb-12 md:mb-16 pt-8">
+
+  <div class="max-w-lg mx-auto border-b-2 border-grey-lightest pb-8 md:pb-12">
+    <div class="flex flex-col md:flex-row md:-mx-8">
+      <div class="md:w-1/2 md:px-8 mb-8">
+        {{ with .tarieven }}
+        <div class="bg-grey-lightest rounded-lg shadow">
+          {{ with .title }}
+          <div class="uppercase px-6 py-4 font-medium opacity-75  border-b border-grey-light mb-4">
+            {{ . }}
+          </div>
+          {{ end }}
+          <div class="px-6 clearfix">
+          {{ with .items }}
+              {{ range . }}
+                <div class="flex justify-between mb-3 clearfix items-end">
+                  {{ with .title }}
+                  <span class="text-base md:text-lg font-medium opacity-50 flex-1"> {{ . }}</span>
+                  {{ end }}
+                  {{ with .price }}
+                  <span class="text-lg md:text-2xl font-medium opacity-75">&euro;{{ . }}</span>
+                  {{ end }}
+                </div>
+              {{ end }}
+              {{ end }}
+            </div>
+            {{ with .footer }}
+            <div class="text-right px-6 text-sm pb-6 italic">
+              {{ .}}
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+      </div>
+      <div class="md:w-1/2 md:px-8">
+        {{ with .title }}
+        <h4 class="text-lg lg:text-2xl font-medium mb-2">{{ . }} </h4>
+        {{ end }}
+        {{ with .content }}
+        <p class="font-medium opacity-75 leading-large lg:text-lg mb-8">
+          {{ . | markdownify }}
+        </p>
+        {{ end }}
+        {{ with .button }}
+        <a href="{{ .link }}" class="button md:text-lg">{{ .title }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{{ end }}
+
+{{ end }}

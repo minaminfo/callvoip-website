@@ -1,0 +1,105 @@
+﻿<BloemparticulierenIPPhoneDirectory>
+
+<DirectoryEntry>
+	<Name>Dikkenberg, G.C.</Name>
+	<Telephone>0633141565</Telephone>
+	<Telephone></Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Dingemans, E.M.</Name>
+	<Telephone>0616790915</Telephone>
+	<Telephone></Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Dinulescu, C.N.S.A.</Name>
+	<Telephone>0622696873</Telephone>
+	<Telephone></Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Dussen, van der C.</Name>
+	<Telephone>0612088728</Telephone>
+	<Telephone></Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Emmerik, M.M.A.</Name>
+	<Telephone>0642287401</Telephone>
+	<Telephone></Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Evers, M.C.</Name>
+	<Telephone>0623515632</Telephone>
+	<Telephone></Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Farissi, A.</Name>
+	<Telephone>06266624018</Telephone>
+	<Telephone></Telephone>
+</DirectoryEntry>
+
+<SoftKeyItem>
+	<Name>1</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-particulieren.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>2</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-particulieren-ac.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>3</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-particulieren-df.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>4</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-particulieren-gi.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>5</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-particulieren-jl.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>6</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-particulieren-mo.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>7</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-particulieren-ps.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>8</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-particulieren-tv.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>9</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-particulieren-wz.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>*</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-particulieren.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>0</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-particulieren-09.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>#</Name>
+	<URL>http://www.callvoip.nl/phonebook/20229/contact-particulieren.xml</URL>
+</SoftKeyItem>
+
+</BloemparticulierenIPPhoneDirectory>

@@ -1,0 +1,9 @@
+{{ with .Site.Data.general.social }}
+<nav class="flex flex-row text-whtie mb-10">
+  {{ range . }}
+  <a class="w-12 h-12 text-xl mr-2 bg-white-25 rounded-full text-white no-underline flex items-center justify-center" href="">
+    <i class="{{.icon}}"></i>
+  </a>
+  {{ end }}
+</nav>
+{{ end }}

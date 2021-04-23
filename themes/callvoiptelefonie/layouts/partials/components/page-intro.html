@@ -1,0 +1,10 @@
+{{ with .Params.intro }}
+<div class="text-center pb-8 md:pb-4 xl:mb-16 pt-12 md:pt-16">
+  {{ with .title }}
+  <h1 class="text-3xl lg:text-4xl font-medium mb-4 leading-tight">{{ . | markdownify }}</h1>
+  {{ end }}
+  {{ with .content }}
+  <div class="mx-auto max-w-xl lg:text-lg xl:text-xl font-medium text-grey-medium">{{ . | markdownify }}</div>
+  {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,15 @@
+{{ define "main" }}
+<article class="mb-8 md:mb-24">
+  {{- partial "components/hero.html" . -}}
+  {{- partial "components/page-intro-top.html" . -}}
+  {{- partial "components/page-intro.html" . -}}
+  {{- partial "components/double-content-overstappen.html" . -}}
+  <!-- FAQ -->
+  {{ .Content }}
+  <!-- End FAQ -->
+  {{- partial "components/content-blocks.html" . -}}
+  {{- partial "components/text-blocks.html" . -}}
+  {{- partial "components/text-blocks-footer.html" . -}}
+  {{- partial "components/double-footer.html" . -}}
+</article>
+{{ end }}

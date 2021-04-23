@@ -1,0 +1,18 @@
+# Redirects from what the browser requests to what we serve
+/login            https://panel.callvoip.nl/login/panel
+/review           https://search.google.com/local/writereview?placeid=ChIJf9BEWcbSyUcRUZsaQLzFikk
+/help            http://support.callvoip.nl:8040/
+/hulp            http://support.callvoip.nl:8040/
+/linkedin             https://www.linkedin.com/company/callvoip-telefonie
+/email-whatsapp            https://mailchi.mp/callvoip/dec19-tijdlijn-eindejaar-317281
+/ondersteuning/algemeen/storing/            https://www.callvoip.nl/status/
+/videotutorials          https://www.callvoip.nl/casts/
+/qallerpdf           https://files.callvoip.nl/downloads/Callvoip_handleiding_Qaller_Plus_30.pdf
+/qaller-pdf           https://files.callvoip.nl/downloads/Callvoip_handleiding_Qaller_Plus_30.pdf
+/Handleiding-Conference           https://www.callvoip.nl/ondersteuning/extra-features/conferencing-service-handleiding/
+/meldtekst-instellen           https://www.callvoip.nl/ondersteuning/instructie-videos/meldteksten/
+/email-app          https://www.callvoip.nl/telefonie/functionaliteiten/e-mail/
+/Handleiding-wachtrij          https://www.callvoip.nl/ondersteuning/simmpl-functionaliteiten/wachtrij-app/
+/support          https://www.callvoip.nl/ondersteuning/
+/koppelcode          http://files.callvoip.nl/downloads/Callvoip_handleiding_Qaller_inloggen-met-koppelcode.pdf
+/youtube          https://www.youtube.com/channel/UCG7dLA7YIqALqrIMwyHmMiw

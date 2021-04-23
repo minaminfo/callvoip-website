@@ -1,0 +1,103 @@
+<BosmaverschuurIPPhoneDirectory>
+
+<DirectoryEntry>
+	<Name>Trippel AAA</Name>
+	<Telephone>0598636561</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Turien en co Auto</Name>
+	<Telephone>0725181205</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Turien en co</Name>
+	<Telephone>0725181181</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Unigarant</Name>
+	<Telephone>0528299662</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Unive Assen n schade</Name>
+	<Telephone>0592348399</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Unive Assen</Name>
+	<Telephone>0592349340</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>VKG</Name>
+	<Telephone>0229287877</Telephone>
+</DirectoryEntry>
+
+<DirectoryEntry>
+	<Name>Vries, de, Gerrit</Name>
+	<Telephone>0384676721</Telephone>
+</DirectoryEntry>
+
+<SoftKeyItem>
+	<Name>1</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>2</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-ac.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>3</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-df.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>4</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-gi.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>5</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-jl.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>6</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-mo.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>7</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-ps.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>8</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-tv.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>9</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-wz.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>*</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>0</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact-09.xml</URL>
+</SoftKeyItem>
+
+<SoftKeyItem>
+	<Name>#</Name>
+	<URL>http://www.callvoip.nl/phonebook/5240/contact.xml</URL>
+</SoftKeyItem>
+
+</BosmaverschuurIPPhoneDirectory>

@@ -1,0 +1,431 @@
+backend:
+  name: git-gateway
+  branch: master
+# publish_mode: editorial_workflow
+media_folder: content/uploads
+public_folder: uploads
+logo_url: "https://callvoiptelefoniewebsite.netlify.com/images/callvoip-logo.svg"
+collections:
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: blog
+      - label: Title
+        name: title
+        widget: string
+      - label: "Publish Date"
+        name: date
+        widget: datetime
+      - label: "Featured Image"
+        name: thumbnail
+        widget: image
+      - label: "Rating (scale of 1-5)"
+        name: rating
+        widget: number
+      - label: Body
+        name: body
+        widget: markdown
+  - name: nieuws
+    label: Nieuws
+    folder: content/nieuws
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "nieuws/{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: nieuws
+      - label: Title
+        name: title
+        widget: string
+      - label: "Publish Date"
+        name: date
+        widget: datetime
+      - label: Body
+        name: body
+        widget: markdown
+  - label: "Pages"
+    name: pages
+    preview_path: "pages/{{slug}}"
+    editor:
+      preview: false
+    files:
+      - label: "Het bedrijf"
+        name: hetbedrijf
+        file: content/overons/hetbedrijf.md
+        fields:
+          - label: Layout
+            name: layout
+            widget: hidden
+            default: hetbedrijf
+          - label: Title
+            name: title
+            widget: string
+          - label: Menu
+            name: menu
+            widget: object
+            fields:
+              - label: Main Menu
+                name: main
+                widget: object
+                fields:
+                  - label: Position
+                    name: weight
+                    widget: number
+                  - label: Name
+                    name: name
+                    widget: string
+                  - label: Parent
+                    name: parent
+                    widget: string
+              - label: Over ons Menu
+                name: overons
+                widget: object
+                fields:
+                  - label: Position
+                    name: weight
+                    widget: number
+                  - label: Name
+                    name: name
+                    widget: string
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - label: Image
+                name: image
+                widget: image
+          - label: Intro
+            name: intro
+            widget: object
+            fields:
+              - label: Titel
+                name: title
+                widget: string
+              - label: Content
+                name: content
+                widget: text
+          - label: "Content blocks"
+            name: blocks
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Content
+                name: content
+                widget: markdown
+              - label: Image
+                name: image
+                widget: image
+              - label: "Image Position"
+                name: position
+                widget: select
+                default: image_left
+                options:
+                  - label: Left
+                    value: image_left
+                  - label: Right
+                    value: image_right
+      - label: "Werken bij"
+        name: werkenbij
+        file: content/overons/werkenbij.md
+        fields:
+          - label: Layout
+            name: layout
+            widget: hidden
+            default: werkenbij
+          - label: Title
+            name: title
+            widget: string
+          - label: Menu
+            name: menu
+            widget: object
+            fields:
+              - label: Main Menu
+                name: main
+                widget: object
+                fields:
+                  - label: Position
+                    name: weight
+                    widget: number
+                  - label: Name
+                    name: name
+                    widget: string
+                  - label: Parent
+                    name: parent
+                    widget: string
+              - label: Over ons Menu
+                name: overons
+                widget: object
+                fields:
+                  - label: Position
+                    name: weight
+                    widget: number
+                  - label: Name
+                    name: name
+                    widget: string
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - label: Image
+                name: image
+                widget: image
+          - label: Intro
+            name: intro
+            widget: object
+            fields:
+              - label: Titel
+                name: title
+                widget: string
+              - label: Content
+                name: content
+                widget: text
+          - label: "Content blocks"
+            name: blocks
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Content
+                name: content
+                widget: markdown
+              - label: Image
+                name: image
+                widget: image
+              - label: "Image Position"
+                name: position
+                widget: select
+                default: image_left
+                options:
+                  - label: Left
+                    value: image_left
+                  - label: Right
+                    value: image_right
+      - label: "Het team"
+        name: team
+        file: content/overons/team.md
+        fields:
+          - label: Layout
+            name: layout
+            widget: hidden
+            default: team
+          - label: Title
+            name: title
+            widget: string
+          - label: Menu
+            name: menu
+            widget: object
+            fields:
+              - label: Main Menu
+                name: main
+                widget: object
+                fields:
+                  - label: Position
+                    name: weight
+                    widget: number
+                  - label: Name
+                    name: name
+                    widget: string
+                  - label: Parent
+                    name: parent
+                    widget: string
+              - label: Over ons Menu
+                name: overons
+                widget: object
+                fields:
+                  - label: Position
+                    name: weight
+                    widget: number
+                  - label: Name
+                    name: name
+                    widget: string
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - label: Image
+                name: image
+                widget: image
+          - label: Intro
+            name: intro
+            widget: object
+            fields:
+              - label: Titel
+                name: title
+                widget: string
+              - label: Content
+                name: content
+                widget: text
+          - label: "Team blocks"
+            name: team
+            widget: list
+            fields:
+              - label: Name
+                name: name
+                widget: string
+              - label: Function
+                name: function
+                widget: string
+              - label: Content
+                name: content
+                widget: markdown
+              - label: Image
+                name: image
+                widget: image
+      - label: "Nieuws"
+        name: nieuws
+        file: content/nieuws/_index.md
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Menu
+            name: menu
+            widget: object
+            fields:
+              - label: Main Menu
+                name: main
+                widget: object
+                fields:
+                  - label: Position
+                    name: weight
+                    widget: number
+                  - label: Name
+                    name: name
+                    widget: string
+                  - label: Parent
+                    name: parent
+                    widget: string
+              - label: Over ons Menu
+                name: overons
+                widget: object
+                fields:
+                  - label: Position
+                    name: weight
+                    widget: number
+                  - label: Name
+                    name: name
+                    widget: string
+          - label: Intro
+            name: intro
+            widget: object
+            fields:
+              - label: Titel
+                name: title
+                widget: string
+              - label: Content
+                name: content
+                widget: text
+      - label: "Testimonials"
+        name: testimonials
+        file: content/testimonials/_index.md
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Menu
+            name: menu
+            widget: object
+            fields:
+              - label: Main Menu
+                name: main
+                widget: object
+                fields:
+                  - label: Position
+                    name: weight
+                    widget: number
+                  - label: Name
+                    name: name
+                    widget: string
+                  - label: Parent
+                    name: parent
+                    widget: string
+              - label: Over ons Menu
+                name: overons
+                widget: object
+                fields:
+                  - label: Position
+                    name: weight
+                    widget: number
+                  - label: Name
+                    name: name
+                    widget: string
+          - label: Intro
+            name: intro
+            widget: object
+            fields:
+              - label: Titel
+                name: title
+                widget: string
+              - label: Content
+                name: content
+                widget: text
+  - label: "Settings"
+    name: settings
+    preview_path: "setting/{{slug}}"
+    editor:
+      preview: false
+    files:
+      - label: "General"
+        name: general
+        file: data/general.yaml
+        fields:
+          - label: Social
+            name: social
+            widget: list
+            fields:
+              - label: Name
+                name: name
+                widget: string
+              - label: Link
+                name: link
+                widget: string
+              - label: Icon
+                name: icon
+                widget: string
+      - label: "Footer"
+        name: footer
+        file: data/footer.yaml
+        fields:
+          - label: New Client
+            name: newclient
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Phone number
+                name: phonenumber
+                widget: object
+                fields:
+                  - label: Number
+                    name: number
+                    widget: string
+                  - label: Pretty
+                    name: pretty
+                    widget: string
+              - label: Subtitle
+                name: subtitle
+                widget: string
+              - label: Email Address
+                name: emailaddress
+                widget: object
+                fields:
+                  - label: Email
+                    name: email
+                    widget: string
+                  - label: Pretty
+                    name: pretty
+                    widget: string

@@ -1,0 +1,18 @@
+{{ $page := .page }}
+{{ $site := .site }}
+
+{{ with $site.Menus.footer }}
+<nav class="md:flex md:flex-wrap lg:justify-between items-cener">
+
+  {{ range . }}
+  {{ $pre := printf "%s" .Pre }}
+  {{ $post := printf "%s" .Post }}
+  <a {{ if eq $pre "external" }} target="_blank" {{ end }} class="no-underline mr-6 mb-2 lg:mb-0 inline-block md:mr-0 md:ml-6 text-sm  hover:text-blue  text-grey-dark " href="{{.URL}}">
+      {{ if $post }}
+      <i class="fal {{ $post }} {{ if eq $pre "external" }} text-red {{ end}}" ></i>
+      {{ end }}
+    <span class="ml-1 {{ if $post }} text-red {{ end }}">{{.Name}}</span>
+  </a>
+  {{ end }}
+</nav>
+{{ end }}

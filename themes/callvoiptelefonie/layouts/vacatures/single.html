@@ -1,0 +1,35 @@
+{{ define "main" }}
+<article class="mb-8 md:mb-24">
+  {{- partial "components/hero.html" . -}}
+  <div class="container px-4 {{ if not .Params.hero.image}} pt-8 {{ end }}">
+    {{ with .Title }}
+    <h1 class="text-3xl lg:text-4xl font-medium mb-4 leading-tight">{{ . }}</h1>
+    {{ end }}
+    <div class="lg:flex lg:-mx-4 xl:-mx-8">
+      <div class="lg:w-2/3 lg:px-4 xl:px-8">
+        {{ with .Content }}
+        <div class="user-content opacity-75 lg:text-lg font-medium leading-loose">
+          {{ . }}
+        </div>
+        {{ end }}
+      </div>
+      <div class="lg:w-1/3 lg:px-4 xl:px-8">
+        {{ with .Params.card }}
+        <div class="flex flex-col items-start bg-white font-medium  shadow no-underline py-6 lg:py-12 px-6 lg:px-8 xl:px-10 rounded-lg text-grey-dark">
+          <span class="block opacity-50 text-grey-dark no-underline lg:text-lg mb-4 lg:mb-6">Vacature</span>
+          {{ with .title }}
+          <h4 class="block font-medium text-lg xxl:text-2xl block mb-2">{{ . }}</h4>
+          {{ end }}
+          {{ with .content }}
+          <div class="block opacity-75 lg:text-lg mb-4 lg:mb-8 user-content">Denk jij dat deze functie bij jou past en wil je graag bij ons komen werken? Vul dan het formulier in en geef  je motivatie!</div>
+          {{ end }}
+          {{ with .link }}
+          <a href="/sollicitatiebrief" class="button">{{.content}}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</article>
+{{ end }}
