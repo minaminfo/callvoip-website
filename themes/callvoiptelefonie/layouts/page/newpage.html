@@ -2,7 +2,7 @@
 <article class="my-8">
   <div class="container space-y-8">
     <div class="lg:flex justify-end"
-      style="background: url(https://res.cloudinary.com/callvoip/image/upload/c_scale,f_auto,q_auto/v1571400615/icons_home_tvjvye.png) no-repeat center left;">
+      style="background: url({{ .Params.mainSecBG.url }}) no-repeat center left;background-size: {{ .Params.mainSecBG.size }};">
       <div class="bg-blue-lightest shadow max-w-screen-md lg:w-1/2 p-16 py-20" style="background: #f6f6f6;">
         <h1 class="text-3xl lg:text-4xl xxl:text-4xl font-bold leading-tight mb-4 md:mb-6"> {{ .Title }}
           <br><span class="text-blue">{{ .Params.subtitle }}</span>
@@ -72,7 +72,17 @@
         <p> <button type="submit" class="button">Neem contact met mij op</button> </p>
       </form>
     </div>
-  </div>
+    <div class="text-center">
+      <h3 class="text-3xl lg:text-4xl font-medium mb-4 leading-tight">
+        <div id="formulier">{{ .Params.bottomSec.title }}</div>
+      </h3>
+      <div class="mx-auto max-w-xl lg:text-lg xl:text-xl font-medium text-grey-medium">
+        <p>{{ .Params.bottomSec.text }}<br><br><a href="{{ .Params.bottomSec.link.url }}" class="button">{{
+            .Params.bottomSec.link.text }}</a></p>
+        <div>
+        </div>
+      </div>
+    </div>
 </article>
 <script>
   var slideIndex = 0;

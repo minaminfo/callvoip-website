@@ -2,7 +2,9 @@
 layout: newpage
 title: SUCCESS BEGINT
 subtitle: SLIMME TELEFONIE
-
+mainSecBG:
+  url: https://res.cloudinary.com/callvoip/image/upload/c_scale,f_auto,q_auto/v1571400615/icons_home_tvjvye.png
+  size: 50%
 testimonial:
   - name: Carlo Galliam - Alpha Labs
     text:
@@ -28,6 +30,13 @@ testimonial:
       perferendis qui sequi ad distinctio! Velit sequi hic fuga quisquam minus ut necessitatibus magnam. Debitis
       velit inventore quaerat."
     rating: ★★★★★
+
+bottomSec:
+  title: Meer weten?
+  text: Benieuwd wat Callvoip telefonie allemaal te bieden heeft voor je een afspraak maakt? Dat kan in één oogopslag...
+  link:
+    url: /toolkit/
+    text: Bekijk de Callvoip Toolkit
 ---
 
 Nesciunt adipisci explicabo alias velit consequuntur illum similique nisi perspiciatis ratione officia fuga fugit suscipit cum aliquam sed soluta, dolor sequi.
