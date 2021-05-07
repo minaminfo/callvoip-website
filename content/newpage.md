@@ -4,7 +4,7 @@ title: SUCCESS BEGINT
 subtitle: SLIMME TELEFONIE
 mainSecBG:
   url: https://res.cloudinary.com/callvoip/image/upload/c_scale,f_auto,q_auto/v1571400615/icons_home_tvjvye.png
-  size: 50%
+  size: 5%
 testimonial:
   - name: Carlo Galliam - Alpha Labs
     text:

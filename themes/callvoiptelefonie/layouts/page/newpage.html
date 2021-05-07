@@ -77,8 +77,12 @@
         <div id="formulier">{{ .Params.bottomSec.title }}</div>
       </h3>
       <div class="mx-auto max-w-xl lg:text-lg xl:text-xl font-medium text-grey-medium">
-        <p>{{ .Params.bottomSec.text }}<br><br><a href="{{ .Params.bottomSec.link.url }}" class="button">{{
-            .Params.bottomSec.link.text }}</a></p>
+        <p>
+        	{{ .Params.bottomSec.text }}
+        	<br><br>
+        	<a href="{{ .Params.bottomSec.link.url }}" class="button">
+        	{{ .Params.bottomSec.link.text }}
+        </a></p>
         <div>
         </div>
       </div>
