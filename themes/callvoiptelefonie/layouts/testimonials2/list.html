@@ -9,9 +9,7 @@
     <div class="mx-4 mb-8">
       <div class="bg-grey-dark mx-auto p-4 py-8 md:px-8 rounded-lg">
         <ul class="text-white flex-wrap flex mb-4">
-          <li class="w-full"><b>Zoek op uw branche, bijvoorbeeld:</b>
-            <p>Tandarts, Huisarts, Makelaar etc.</p>
-          </li>
+          <li class="w-full"><b>Zoek op uw branche, bijvoorbeeld:</b></li><br>
           {{ range $i,$d := .Params.selected_tags }}
           {{ if not (eq $i 0) -}}
           , &nbsp;
@@ -51,7 +49,8 @@
     <div style="width: 2000px" class="mx-auto">
       {{ $pageVar := . }}
       {{ $cloudinary := .Site.Params.cloudinary_base_url }}
-      {{ $paginator := .Paginate .Pages 60 }}
+      {{$pg := .Site.GetPage "testimonials2"}}
+      {{ $paginator := .Paginate $pg.Pages 60 }}
       {{ range $i, $item := $paginator.Pages -}}
       {{ $title := .Title }}
       <div
