@@ -4,7 +4,7 @@ logo: "/v1561639239/callvoip-website-branches-advocatuur-groot.png"
 link:
   url: /oplossingen/branches/advocatuur/
   text: "Bekijk de oplossing"
-testimonial:
+reviews:
   - "Advocaat"
 ---
 

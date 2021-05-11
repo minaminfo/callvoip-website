@@ -14,7 +14,7 @@
           {{ if not (eq $i 0) -}}
           , &nbsp;
           {{ end -}}
-          <li><a href="/testimonial/{{.}}" class="text-white">{{humanize .}}</a></li>
+          <li><a href="/reviews/{{.}}" class="text-white">{{humanize .}}</a></li>
           {{ end }}
         </ul>
         <div class="relative">
@@ -24,10 +24,11 @@
             <ul class="bg-white shadow-lg">
             </ul>
           </div>
+          {{ $t := where .Site.Taxonomies.reviews ".Page.Section" "testimonials2" }}
           <script>
             var input = document.getElementById("tags-search"),
               rlist = input.nextElementSibling.querySelector('ul'),
-              tags = `{{ $t := where .Site.Taxonomies.testimonial ".Page.Section" "testimonials2" }}{{ range $t }}{{ .Page.Title  }}{{ end }}`,
+              tags = `{{ range $t }}{{ .Page.Title  }}{{ end }}`,
               arr = tags.replaceAll('"', ' ').trim();
 
             input.addEventListener("keyup", function (e) {
@@ -37,7 +38,7 @@
               if (input.value.length > 0) {
                 result.forEach(e => {
                   var newli = document.createElement('li');
-                  newli.innerHTML = '<a href="/testimonial/' + e.toLowerCase() + '" class="p-4 hover:bg-grey-lightest block capitalize">' + e + '</a>';
+                  newli.innerHTML = '<a href="/reviews/' + e.toLowerCase() + '" class="p-4 hover:bg-grey-lightest block capitalize">' + e + '</a>';
                   rlist.appendChild(newli)
                 })
               }

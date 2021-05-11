@@ -12,7 +12,7 @@ taxonomies:
   category: categories
   onderdeel: onderdelen
   tag: tags
-  testimonial: testimonial
+  review: reviews
 menu:
   top:
     - url: "/ondersteuning"
