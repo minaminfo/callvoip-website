@@ -13,6 +13,7 @@ taxonomies:
   onderdeel: onderdelen
   tag: tags
   review: reviews
+  pro: pros
 menu:
   top:
     - url: "/ondersteuning"

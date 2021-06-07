@@ -1,0 +1,102 @@
+{{ define "main" }}
+<article>
+  {{ $sec := .Section }}
+  {{- partial "components/hero.html" . -}}
+  <div class="mb-4">
+    <div class="container px-4">
+      {{- partial "components/page-introroy.html" . -}}
+    </div>
+    <div class="mb-8 container">
+      <div class="bg-grey-dark mx-auto p-4 md:p-8 rounded-lg">
+        <div class="relative">
+          <input type="text" class="w-full focus:outline-none bg-white rounded-lg py-2 md:py-4 p-4 relative z-30"
+            placeholder="Search for tags" id="tags-search">
+          <div class="absolute z-30 w-full">
+            <ul class="bg-white shadow-lg">
+            </ul>
+          </div>
+          <script>
+            var input = document.getElementById("tags-search"),
+              rlist = input.nextElementSibling.querySelector('ul'),
+              tags = `{{ $t := where .Site.Taxonomies.tags ".Page.Section" "programs" }}{{ range $t }}{{ .Page.Title  }}{{ end }}`,
+              arr = tags.replaceAll('"', ' ').trim();
+
+            input.addEventListener("keyup", function (e) {
+              var pat = new RegExp('\\w*' + e.target.value + '\\w*', 'gi'),
+                result = arr.match(pat);
+              rlist.innerHTML = ''
+              if (input.value.length > 0) {
+                result.forEach(e => {
+                  var newli = document.createElement('li');
+                  newli.innerHTML = '<a href="/tags/' + e + '" class="p-4 hover:bg-grey-lightest block capitalize">' + e + '</a>';
+                  rlist.appendChild(newli)
+                })
+              }
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+    <div class="container lg:flex space-y-8 lg:space-y-0 lg:space-x-8">
+      {{ $pageVar := . }}
+      {{ $cloudinary := .Site.Params.cloudinary_base_url }}
+      {{ $paginator := .Paginate .Pages 6 }}
+      <aside class="lg:p-4 lg:border-r border-t border-b border-grey-lightest lg:w-56 flex-shrink-0 space-y-6 pb-4">
+        <button
+          class="flex justify-between w-full items-center lg:hidden border-b lg:border-b border-grey-lightest text-grey py-4"
+          type="button" onclick="this.nextElementSibling.classList.toggle('hidden')">
+          <span>Kies een categorie</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width='18' fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="space-y-6 hidden lg:block">
+          <div class="space-y-2">
+            <h3 class="text-black"><b>Uitgelicht</b></h3>
+            <ul class="space-y-2">
+              {{ range $i,$d := .Params.selected_tags }}
+              <li><a href="/tags/{{.}}" class="">{{humanize .}}</a></li>
+              {{ end }}
+            </ul>
+          </div>
+          <div class="space-y-2">
+            <h3 class="text-black"><b>Alle categorieën</b></h3>
+            <ul class="space-y-2">
+              {{ range .Pages }}
+              {{ range .Params.categories }}
+              <li><a href="/categories/{{.}}" class="">{{humanize .}}</a></li>
+              {{ end }}
+              {{ end }}
+            </ul>
+            {{.Data.Terms}}
+            {{ range .Data.Terms.Alphabetical }}
+            <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+            {{ end }}
+          </div>
+        </div>
+      </aside>
+      <div class="md:flex flex-wrap justify-evenly items-start w-full text-center">
+        {{ range $i, $item := $paginator.Pages -}}
+        {{ $title := .Title }}
+        <a href="{{.Permalink}}"
+          class="block border border-grey-lightest rounded-md overflow-hidden md:w-64 mb-4 text-grey">
+          <div class="bg-grey-lightest flex items-center justify-center p-4 h-40">
+            {{ with .Params.logo -}}
+            <img src="{{ $cloudinary }}/c_scale,f_auto,q_auto{{.}}" class="cld-responsiveb" alt="logo of {{$title}}" />
+            {{ end -}}
+          </div>
+          <div class="p-4 space-y-2">
+            <h3 class="text-lg font-medium text-blue-light">{{.Title}}</h3>
+            <p class="text-sm max-w-sm mx-auto px-4 lg:p-0">{{ $item.Description }}</p>
+            <p class="text-xs bg-grey-lightest uppercase opacity-75 p-2 py-1 rounded-full inline-block">
+              {{- range $item.Params.tags }}
+              {{.}} {{ end }}</p>
+          </div>
+        </a>
+        {{ end -}}
+      </div>
+    </div>
+    {{ template "_internal/pagination.html" . -}}
+  </div>
+</article>
+{{ end }}
