@@ -2,42 +2,20 @@
 <article>
   {{ $sec := .Section }}
   <div class="mb-4">
-    {{/* <div class="mb-8 container">
-      <div class="bg-grey-dark mx-auto p-4 md:p-8 rounded-lg">
-        <div class="relative">
-          <input type="text" class="w-full focus:outline-none bg-white rounded-lg py-2 md:py-4 p-4 relative z-30"
-            placeholder="Search for tags" id="tags-search">
-          <div class="absolute z-30 w-full">
-            <ul class="bg-white shadow-lg">
-            </ul>
-          </div>
-          <script>
-            var input = document.getElementById("tags-search"),
-              rlist = input.nextElementSibling.querySelector('ul'),
-              tags = `{{ $t := where .Site.Taxonomies.tags ".Page.Section" "programs" }}{{ range $t }}{{ .Page.Title  }}{{ end }}`,
-              arr = tags.replaceAll('"', ' ').trim();
-
-            input.addEventListener("keyup", function (e) {
-              var pat = new RegExp('\\w*' + e.target.value + '\\w*', 'gi'),
-                result = arr.match(pat);
-              rlist.innerHTML = ''
-              if (input.value.length > 0) {
-                result.forEach(e => {
-                  var newli = document.createElement('li');
-                  newli.innerHTML = '<a href="/tags/' + e + '" class="p-4 hover:bg-grey-lightest block capitalize">' + e + '</a>';
-                  rlist.appendChild(newli)
-                })
-              }
-            });
-          </script>
-        </div>
-      </div>
-    </div> */}}
     <div class="container lg:flex space-y-4 lg:space-y-0 lg:mt-8">
       {{ $pageVar := . }}
       {{ $cloudinary := .Site.Params.cloudinary_base_url }}
       {{ $paginator := .Paginate .Pages 6 }}
       <aside class="lg:px-4 lg:border-r border-grey-lightest lg:w-56 flex-shrink-0">
+        <div class="relative mb-8">
+          <label for="search_input">Search for a program</label>
+          <input type="text" class="w-full focus:outline-none bg-grey-lightest rounded py-2 p-4 relative z-30"
+            placeholder="Search for programs" id="search_input">
+          <div class="absolute z-30 w-full">
+            <ul class="bg-white shadow-lg" id="search_result">
+            </ul>
+          </div>
+        </div>
         <button
           class="flex justify-between w-full mb-4 items-center lg:hidden border-b lg:border-b border-grey-lightest text-grey py-4"
           type="button" onclick="this.nextElementSibling.classList.toggle('hidden')">
@@ -126,4 +104,44 @@
     </div>
   </div>
 </article>
+{{ $searchFile := (.CurrentSection.OutputFormats.Get "json") }}
+<script>
+  function Get(yourUrl) {
+    var Httpreq = new XMLHttpRequest();
+    Httpreq.open("GET", yourUrl, false);
+    Httpreq.send(null);
+    return Httpreq.responseText;
+  }
+  function search(source, name) {
+    var results = [],
+      index,
+      entry;
+
+    name = name.toUpperCase();
+    for (index = 0; index < source.length; ++index) {
+      entry = source[index];
+      if (entry && entry.title && entry.title.toUpperCase().indexOf(name) !== -1) {
+        results.push(entry);
+      }
+    }
+    return results;
+  }
+
+  var json_obj = JSON.parse(Get('{{$searchFile.Permalink }}'));
+
+  var input = document.getElementById("search_input"),
+    rlist = input.nextElementSibling.querySelector('ul');
+
+  input.addEventListener("keyup", function (e) {
+    rlist.innerHTML = ''
+    if (input.value.length > 0) {
+      var result = search(json_obj, input.value);
+      result.forEach(e => {
+        var newli = document.createElement('li');
+        newli.innerHTML = '<a href=\"' + e.url + '\" class="p-4 hover:bg-grey-lightest block capitalize">' + e.title + '</a>';
+        rlist.appendChild(newli)
+      })
+    }
+  });
+</script>
 {{ end }}

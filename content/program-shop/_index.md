@@ -10,7 +10,10 @@ hero:
 selected_tags:
   - new
   - morning
-
+outputs:
+  - HTML
+  - JSON
+  - RSS
 menu:
   main:
     weight: 5
