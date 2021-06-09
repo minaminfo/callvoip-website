@@ -7,7 +7,7 @@
       {{ $cloudinary := .Site.Params.cloudinary_base_url }}
       {{ $paginator := .Paginate .Pages 6 }}
       <aside class="lg:px-4 lg:border-r border-grey-lightest lg:w-56 flex-shrink-0">
-        <div class="relative mb-8">
+        <div class="relative mt-8">
           <label for="search_input">Search for a program</label>
           <input type="text" class="w-full focus:outline-none bg-grey-lightest rounded py-2 p-4 relative z-30"
             placeholder="Search for programs" id="search_input">
@@ -28,26 +28,21 @@
           <div class="space-y-2">
             <h3 class="text-black"><b>Uitgelicht</b></h3>
             <ul class="space-y-2">
-              {{ range $i,$d := .Params.selected_tags }}
-              <li><a href="/tags/{{.}}" class="">{{humanize .}}</a></li>
+              {{ $topCat := where .Site.Taxonomies.categories ".Page.Section" "program-shop" }}
+              {{ range first 3 $topCat.ByCount }}
+              <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
               {{ end }}
             </ul>
           </div>
           <div class="space-y-2">
             <h3 class="text-black"><b>Alle categorieën</b></h3>
             <ul class="space-y-2">
-              {{ range .Pages }}
-              {{ range .Params.categories }}
-              <li><a href="/categories/{{.}}" class="">{{humanize .}}</a></li>
-              {{ end }}
+              {{ $t := where .Site.Taxonomies.categories ".Page.Section" "program-shop" }}
+              {{ range $t }}
+              <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
               {{ end }}
             </ul>
-            {{.Data.Terms}}
-            {{ range .Data.Terms.Alphabetical }}
-            <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
-            {{ end }}
           </div>
-        </div>
       </aside>
       <div class="w-full space-y-8">
         <header class="bg-grey-lightest lg:flex items-center border border-grey-lightest">
