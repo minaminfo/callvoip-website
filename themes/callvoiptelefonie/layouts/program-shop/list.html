@@ -37,7 +37,9 @@
             <ul class="space-y-2">
               {{ $topCat := where .Site.Taxonomies.categories ".Page.Section" "program-shop" }}
               {{ range first 3 $topCat.ByCount }}
-              <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+              <li><button type="button"
+                  onclick="document.querySelectorAll('.item-card').forEach(function (e){e.classList.add('hidden');if(e.classList.contains('{{urlize .Page.Title }}')){e.classList.remove('hidden');}});">
+                  {{- .Page.Title }}</button></li>
               {{ end }}
             </ul>
           </div>
@@ -45,8 +47,10 @@
             <h3 class="text-black"><b>Alle categorieën</b></h3>
             <ul class="space-y-2">
               {{ $t := where .Site.Taxonomies.categories ".Page.Section" "program-shop" }}
-              {{ range $t }}
-              <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+              {{ range $t -}}
+              <li><button type="button"
+                  onclick="document.querySelectorAll('.item-card').forEach(function (e){e.classList.add('hidden');if(e.classList.contains('{{urlize .Page.Title }}')){e.classList.remove('hidden');}});">
+                  {{- .Page.Title }}</button></li>
               {{ end }}
             </ul>
           </div>
@@ -56,7 +60,7 @@
         {{ range $i, $item := $paginator.Pages -}}
         {{ $title := .Title }}
         <a href="{{.Permalink}}"
-          class="block border border-grey-lightest rounded-md overflow-hidden md:w-64 mb-4 text-grey">
+          class="block border border-grey-lightest rounded-md overflow-hidden md:w-64 mb-4 text-grey item-card {{- range $item.Params.categories }} {{urlize .}}{{ end }}{{ if gt $i 20 }} hidden{{ end }}">
           <div class="bg-grey-lightest flex items-center justify-center p-4 h-40">
             {{ with .Params.logo -}}
             <img src="{{ $cloudinary }}/c_scale,f_auto,q_auto{{.}}" class="cld-responsiveb h-12"
