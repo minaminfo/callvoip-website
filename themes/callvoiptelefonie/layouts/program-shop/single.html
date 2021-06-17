@@ -3,30 +3,34 @@
   {{ $sec := .Section }}
   {{ $cloudinary := .Site.Params.cloudinary_base_url }}
   <div class="mb-4">
-    <div class="container lg:mt-8">
-      <a href="{{.CurrentSection.Permalink}}" class="p-2 inline-block border my-8">&lt;&lt; Terug
-        naar
-        overzicht</a>
-      <div class="bg-grey-dark mx-auto p-4 md:p-8">
-        <div class="relative">
-          <input type="text" class="w-full focus:outline-none bg-white rounded-lg py-2 md:py-4 p-4 relative z-30"
-            placeholder="Search for programs" id="search_input">
-          <div class="absolute z-30 w-full">
-            <ul class="bg-white shadow-lg" id="search_result">
-            </ul>
+    <div class="container px-0 lg:mt-8">
+      <div class="bg-grey-lightest mx-auto p-4 md:p-8">
+        <div class="flex items-start space-x-2 md:space-x-4">
+          <a href="{{.CurrentSection.Permalink}}"
+            class="py-2 md:py-4 p-4 rounded-lg bg-grey-dark shadow-md text-white whitespace-no-wrap">&lt;&lt;
+            <span class="hidden md:inline"> Terug naar overzicht</span>
+          </a>
+          <div class="relative w-full">
+            <input type="text"
+              class="w-full focus:outline-none bg-white shadow-md rounded-lg py-2 md:py-4 p-4 relative z-30"
+              placeholder="Search for programs" id="search_input">
+            <div class="absolute z-30 w-full">
+              <ul class="bg-white shadow-lg" id="search_result">
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container lg:flex space-y-4 lg:space-y-0">
+    <div class="container px-0 lg:flex space-y-4 lg:space-y-0">
       <div class="w-full space-y-8">
         <header class="bg-grey-lightest lg:flex items-center border border-grey-lightest">
-          <div class="lg:w-64 p-8 flex flex-col items-center justify-center lg:border- border-blue-light space-y-8">
+          <div class="lg:w-64 p-8 flex flex-col items-center justify-between border-blue-light space-y-8">
             <img src="{{ $cloudinary }}/c_scale,f_auto,q_auto{{.Params.logo}}" class="cld-responsiveb max-w-xs"
               alt="logo of {{.Title}}" />
-            <p class="text-xs bg-white uppercase p-2 rounded-full text-center w-full max-w-xs">
+            <p class="text-xs uppercase p-2 bg-grey-dark rounded-full text-center w-full max-w-xs">
               {{- range .Params.tags }}
-              <a href="/tags/{{.}}" class="text-grey-dark">{{.}}</a>
+              <a href="/tags/{{.}}" class="text-white">{{.}}</a>
               {{- end }}
             </p>
           </div>

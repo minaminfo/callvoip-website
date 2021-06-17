@@ -7,9 +7,10 @@
       {{- partial "components/page-introroy.html" . -}}
     </div>
     <div class="mb-8 container">
-      <div class="bg-grey-dark mx-auto p-4 md:p-8 rounded-lg">
+      <div class="bg-grey-lightest mx-auto p-4 md:p-8 rounded-lg">
         <div class="relative">
-          <input type="text" class="w-full focus:outline-none bg-white rounded-lg py-2 md:py-4 p-4 relative z-30"
+          <input type="text"
+            class="w-full focus:outline-none bg-white shadow-md rounded-lg py-2 md:py-4 p-4 relative z-30"
             placeholder="Search for programs" id="search_input">
           <div class="absolute z-30 w-full">
             <ul class="bg-white shadow-lg" id="search_result">
@@ -33,12 +34,15 @@
         </button>
         <div class="space-y-6 hidden lg:block">
           <div class="space-y-2">
+            <button type="button" id="reset" hidden
+              onclick="document.querySelectorAll('.item-card').forEach(function (e,i){e.classList.add('hidden');if(i<20){e.classList.remove('hidden');}});this.hidden=true">
+              Reset filters</button>
             <h3 class="text-black"><b>Uitgelicht</b></h3>
             <ul class="space-y-2">
               {{ $topCat := where .Site.Taxonomies.categories ".Page.Section" "program-shop" }}
               {{ range first 3 $topCat.ByCount }}
               <li><button type="button"
-                  onclick="document.querySelectorAll('.item-card').forEach(function (e){e.classList.add('hidden');if(e.classList.contains('{{urlize .Page.Title }}')){e.classList.remove('hidden');}});">
+                  onclick="document.querySelectorAll('.item-card').forEach(function (e){e.classList.add('hidden');if(e.classList.contains('{{urlize .Page.Title }}')){e.classList.remove('hidden');}});reset.hidden=false">
                   {{- .Page.Title }}</button></li>
               {{ end }}
             </ul>
@@ -49,7 +53,7 @@
               {{ $t := where .Site.Taxonomies.categories ".Page.Section" "program-shop" }}
               {{ range $t -}}
               <li><button type="button"
-                  onclick="document.querySelectorAll('.item-card').forEach(function (e){e.classList.add('hidden');if(e.classList.contains('{{urlize .Page.Title }}')){e.classList.remove('hidden');}});">
+                  onclick="document.querySelectorAll('.item-card').forEach(function (e){e.classList.add('hidden');if(e.classList.contains('{{urlize .Page.Title }}')){e.classList.remove('hidden');}});reset.hidden=false">
                   {{- .Page.Title }}</button></li>
               {{ end }}
             </ul>
@@ -57,7 +61,7 @@
         </div>
       </aside>
       <div class="md:flex flex-wrap justify-evenly items-start w-full text-center">
-        {{ range $i, $item := $paginator.Pages -}}
+        {{ range $i, $item := .Pages.ByWeight -}}
         {{ $title := .Title }}
         <a href="{{.Permalink}}"
           class="block border border-grey-lightest rounded-md overflow-hidden md:w-64 mb-4 text-grey item-card {{- range $item.Params.categories }} {{urlize .}}{{ end }}{{ if gt $i 20 }} hidden{{ end }}">
@@ -81,7 +85,6 @@
         {{ end -}}
       </div>
     </div>
-    {{ template "_internal/pagination.html" . -}}
   </div>
 </article>
 {{ $searchFile := (.OutputFormats.Get "json") }}
