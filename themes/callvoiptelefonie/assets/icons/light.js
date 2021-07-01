@@ -1,4 +1,4 @@
-import { library, dom } from '@fortawesome/fontawesome-svg-core'
+import { library, dom } from "@fortawesome/fontawesome-svg-core";
 
 import { faCloud } from "@fortawesome/pro-light-svg-icons/faCloud";
 import { faAngleRight } from "@fortawesome/pro-light-svg-icons/faAngleRight";

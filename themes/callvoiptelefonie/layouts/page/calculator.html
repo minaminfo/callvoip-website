@@ -10,20 +10,21 @@
         {{ end }}
         {{ with .Content }}
         <div class="user-content text-grey-medium lg:text-lg font-medium leading-loose">
-          {{ .  }}
+          {{ . }}
         </div>
         {{ end }}
 
         <div id="calculator" class="opacity-85 lg:text-lg font-medium leading-loose">
 
-          <form class="mb-6" name="calculator-formulier" action="/calculator/verzonden" accept-charset="UTF-8" method="POST"
-            netlify-honeypot="bot-field" data-netlify="true">
+          <form class="mb-6" name="calculator-formulier" action="/calculator/verzonden" accept-charset="UTF-8"
+            method="POST" netlify-honeypot="bot-field" data-netlify="true">
             <p class="hidden">
               <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
             </p>
 
             <input type="hidden" name="form-name" value="calculator-formulier">
-            <input type="hidden" id="formlayout" name="formlayout" value="d-5f1602c68c8a42919ddf340e285386e3" class="hidden">
+            <input type="hidden" id="formlayout" name="formlayout" value="d-5f1602c68c8a42919ddf340e285386e3"
+              class="hidden">
             <input type="hidden" id="formto" name="formto" value="offerte" class="hidden">
 
             <input type="hidden" id="formto" name="formto" value="offerte" class="hidden">
@@ -36,16 +37,16 @@
               {{ range $index, $item := .Params.basic }}
               <div class="mb-4 xl:flex xl:items-center xl:-mx-4">
                 <div class="xl:w-1/2 xl:px-4">
-                  <label for="{{ $item.name | urlize }}"
-                    class="block text-base lg:text-xl font-medium mb-2 ">{{ $item.name }} {{ if $item.required }} <span
-                      class="text-red">*</span> {{ end }}</label>
+                  <label for="{{ $item.name | urlize }}" class="block text-base lg:text-xl font-medium mb-2 ">{{
+                    $item.name }} {{ if $item.required }} <span class="text-red">*</span> {{ end }}</label>
                   {{ with $item.description }}
                   <p class="opacity-75 -mt-3 mb-2">{{ . }}</p>
                   {{ end }}
                 </div>
                 <div class="xl:w-1/2 xl:px-4">
-                  <input type="number" data-name={{$item.name}} autocomplete="false" data-price_monthly="{{$item.price_monthly}}"
-                    data-price_onetime="{{$item.price_onetime}}" {{ if eq $item.min $item.max }} disabled {{ end }}
+                  <input type="number" data-name={{$item.name}} autocomplete="false"
+                    data-price_monthly="{{$item.price_monthly}}" data-price_onetime="{{$item.price_onetime}}" {{ if eq
+                    $item.min $item.max }} disabled {{ end }}
                     class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded" min="{{ $item.min }}"
                     max="{{ $item.max }}" value="{{ $item.min }}" name="{{ $item.name | urlize }}"
                     id="{{ $item.name | urlize }}" {{ if $item.required }} required {{ end }}>
@@ -70,7 +71,7 @@
                     {{ range $index, $item := .items }}
                     <option data-name={{$item.name}} data-price_monthly="{{$item.price_monthly}}"
                       data-price_onetime="{{$item.price_onetime}}" value="{{ $item.value}}"
-                       id="{{ $item.name | urlize }}">{{$item.name}}</option>
+                      id="{{ $item.name | urlize }}">{{$item.name}}</option>
                     {{ end }}
                   </select>
                 </div>
@@ -89,9 +90,8 @@
               {{ range $index, $item := .items }}
               <div class="mb-4 xl:flex xl:items-center xl:-mx-4">
                 <div class="xl:w-1/2 xl:px-4">
-                  <label for="{{ $item.name | urlize }}"
-                    class="block text-base lg:text-xl font-medium mb-2 ">{{ $item.name }} {{ if $item.required }} <span
-                      class="text-red">*</span> {{ end }}</label>
+                  <label for="{{ $item.name | urlize }}" class="block text-base lg:text-xl font-medium mb-2 ">{{
+                    $item.name }} {{ if $item.required }} <span class="text-red">*</span> {{ end }}</label>
                   {{ with $item.description }}
                   <p class="opacity-75 -mt-3 mb-2">{{ . }}</p>
                   {{ end }}
@@ -120,9 +120,8 @@
               {{ range $index, $item := .items }}
               <div class="mb-4 xl:flex xl:items-center xl:-mx-4">
                 <div class="xl:w-1/2 xl:px-4">
-                  <label for="{{ $item.name | urlize }}"
-                    class="block text-base lg:text-xl font-medium mb-2 ">{{ $item.name }} {{ if $item.required }} <span
-                      class="text-red">*</span> {{ end }}</label>
+                  <label for="{{ $item.name | urlize }}" class="block text-base lg:text-xl font-medium mb-2 ">{{
+                    $item.name }} {{ if $item.required }} <span class="text-red">*</span> {{ end }}</label>
                   {{ with $item.description }}
                   <p class="opacity-75 -mt-3 mb-2">{{ . }}</p>
                   {{ end }}
@@ -151,11 +150,12 @@
                   {{ end }}
                 </div>
                 <div class="xl:w-1/2 xl:px-4">
-                  <select name="security" id="security" class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded">
+                  <select name="security" id="security"
+                    class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded">
                     {{ range $index, $item := .items }}
                     <option data-name={{$item.name}} data-price_monthly="{{$item.price_monthly}}"
                       data-price_onetime="{{$item.price_onetime}}" value="{{ $item.value}}"
-                       id="{{ $item.name | urlize }}">{{$item.name}}</option>
+                      id="{{ $item.name | urlize }}">{{$item.name}}</option>
                     {{ end }}
                   </select>
                 </div>
@@ -167,9 +167,8 @@
               {{ range $index, $item := .Params.crm }}
               <div class="mb-4 xl:flex xl:items-center xl:-mx-4">
                 <div class="xl:w-1/2 xl:px-4">
-                  <label for="{{ $item.name | urlize }}"
-                    class="block text-base lg:text-xl font-medium mb-2 ">{{ $item.name }} {{ if $item.required }} <span
-                      class="text-red">*</span> {{ end }}</label>
+                  <label for="{{ $item.name | urlize }}" class="block text-base lg:text-xl font-medium mb-2 ">{{
+                    $item.name }} {{ if $item.required }} <span class="text-red">*</span> {{ end }}</label>
                   {{ with $item.description }}
                   <p class="opacity-75 -mt-3 mb-2">{{ . }}</p>
                   {{ end }}
@@ -185,12 +184,12 @@
               {{ end}}
             </div>
             {{ with .Params.offerte }}
-              {{ with .title }}
-              <h3 class="text-2xl lg:text-3xl font-medium mt-12 mb-2 xxl:mb-2 leading-tight">{{ . }}</h3>
-              {{ end }}
-              {{ with .description }}
-              <p class="xl:mx-auto max-w-xl lg:text-lg xl:text-xl font-medium opacity-75 mb-4 lg:mb-8">{{ . }} </p>
-              {{ end }}
+            {{ with .title }}
+            <h3 class="text-2xl lg:text-3xl font-medium mt-12 mb-2 xxl:mb-2 leading-tight">{{ . }}</h3>
+            {{ end }}
+            {{ with .description }}
+            <p class="xl:mx-auto max-w-xl lg:text-lg xl:text-xl font-medium opacity-75 mb-4 lg:mb-8">{{ . }} </p>
+            {{ end }}
             {{ end }}
             <div class="layout-split">
               <div class="mb-4">
@@ -218,7 +217,7 @@
               </div>
               <div class="mb-4">
                 <label for="telefoonnummer_client" class="block">Telefoonnummer </label>
-                <input type="text" id="telefoonnummer_client"  name="telefoonnummer_client"
+                <input type="text" id="telefoonnummer_client" name="telefoonnummer_client"
                   class="w-full border border-grey-light bg-grey-lightest px-3 py-3">
               </div>
             </div>
@@ -227,7 +226,7 @@
               <textarea id="je-wensen" name="je-wensen"
                 class="w-full border border-grey-light bg-grey-lightest px-3 py-3" cols="30" rows="10"></textarea>
             </div>
-            
+
 
             <button type="submit" class="button">Verstuur formulier</button>
           </form>
@@ -288,6 +287,44 @@
               <div id="total-fields-onetime">
                 &nbsp;
               </div>
+            </div>
+            <div class="mt-4">
+              <form name="calculator-formulier" action="/calculator/verzonden" accept-charset="UTF-8" method="POST"
+                netlify-honeypot="bot-field" data-netlify="true" class="space-y-4 pt-4 border-t border-grey-light">
+                <p class="hidden">
+                  <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                </p>
+
+                <input type="hidden" name="form-name" value="calculator-formulier-small">
+                <input type="hidden" id="formlayout" name="formlayout" value="d-5f1602c68c8a42919ddf340e285386e3"
+                  class="hidden">
+                <input type="hidden" id="formto" name="formto" value="offerte" class="hidden">
+                <input type="hidden" id="formto" name="formto" value="offerte" class="hidden">
+                <input type="hidden" id="totaalpermaand-2" name="Totaal per maand" class="hidden">
+                <input type="hidden" id="totaaleenmalig-2" name="Totaal éénmalig" class="hidden">
+
+                <div class="space-y-4 hidden">
+                  <div class="flex flex-col space-y-2">
+                    <label for="Voor-en-achternaam">Voor-en achternaam <span class="text-red">*</span></label>
+                    <input type="text" required name="Voor-en-achternaam"
+                      class="px-4 py-2 rounded-md focus:outline-none focus:shadow-md border border-grey-medium">
+                  </div>
+                  <div class="flex flex-col space-y-2">
+                    <label for="E-mailadres">E-mailadres <span class="text-red">*</span></label>
+                    <input type="email" required name="E-mailadres" autocomplete="off"
+                      class="px-4 py-2 rounded-md focus:outline-none focus:shadow-md border border-grey-medium">
+                  </div>
+                </div>
+                <button type="button"
+                  onclick="this.previousElementSibling.classList.remove('hidden');this.nextElementSibling.classList.remove('hidden');this.classList.add('hidden')"
+                  class="bg-grey-dark hover:shadow-lg text-white rounded-md block text-center w-full px-4 py-2">
+                  Kosten opvragen?
+                </button>
+                <button type="submit"
+                  class="bg-grey-dark hover:shadow-lg text-white rounded-md block text-center w-full px-4 py-2 hidden">
+                  Gegevens versturen
+                </button>
+              </form>
             </div>
           </div>
         </div>
