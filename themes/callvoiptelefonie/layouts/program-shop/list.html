@@ -78,8 +78,7 @@
             <h3 class="text-lg font-medium text-blue-light">{{.Title}}</h3>
             <p class="text-sm max-w-sm mx-auto px-4 lg:p-0">{{ $item.Description }}</p>
             <p class="text-xs bg-grey-lightest uppercase opacity-75 p-2 py-1 rounded-full inline-block">
-              {{- range $item.Params.tags }}
-              {{.}} {{ end }}</p>
+              {{- .Params.button.title}}</p>
           </div>
         </a>
         {{ end -}}

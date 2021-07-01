@@ -28,11 +28,10 @@
           <div class="lg:w-64 p-8 flex flex-col items-center justify-between border-blue-light space-y-8">
             <img src="{{ $cloudinary }}/c_scale,f_auto,q_auto{{.Params.logo}}" class="cld-responsiveb max-w-xs"
               alt="logo of {{.Title}}" />
-            <p class="text-xs uppercase p-2 bg-grey-dark rounded-full text-center w-full max-w-xs">
-              {{- range .Params.tags }}
-              <a href="/tags/{{.}}" class="text-white">{{.}}</a>
-              {{- end }}
-            </p>
+            <a href="{{ .Params.button.link}}"
+              class="text-xs text-white uppercase p-2 bg-grey-dark rounded-full text-center w-full max-w-xs block">
+              {{- .Params.button.title -}}
+            </a>
           </div>
           <div class="space-y-6 lg:p-8 p-4">
             <div class="text-sm space-y-5 text-center lg:text-left">
