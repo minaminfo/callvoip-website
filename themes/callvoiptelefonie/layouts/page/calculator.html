@@ -37,8 +37,9 @@
               {{ range $index, $item := .Params.basic }}
               <div class="mb-4 xl:flex xl:items-center xl:-mx-4">
                 <div class="xl:w-1/2 xl:px-4">
-                  <label for="{{ $item.name | urlize }}" class="block text-base lg:text-xl font-medium mb-2 ">{{
-                    $item.name }} {{ if $item.required }} <span class="text-red">*</span> {{ end }}</label>
+                  <label for="{{ $item.name | urlize }}" class="block text-base lg:text-xl font-medium mb-2 ">
+                 
+{{$item.name }} {{ if $item.required }} <span class="text-red">*</span> {{ end }}</label>
                   {{ with $item.description }}
                   <p class="opacity-75 -mt-3 mb-2">{{ . }}</p>
                   {{ end }}
