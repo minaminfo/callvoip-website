@@ -42,12 +42,11 @@
                   {{ end }}
                 </div>
                 <div class="xl:w-1/2 xl:px-4">
-                  <input type="number" data-name={{$item.name}} autocomplete="false"
-                    data-price_monthly="{{$item.price_monthly}}" data-price_onetime="{{$item.price_onetime}}" {{ if eq
-                    $item.min $item.max }} disabled {{ end }}
+                  <input type="number" data-name={{$item.name}} autocomplete="false" value="{{ $item.min }}"
+                    data-price_monthly="{{$item.price_monthly}}" {{ if eq $item.min $item.max }} disabled {{ end }}
+                    data-price_onetime="{{$item.price_onetime}}" id="{{ $item.name | urlize }}" max="{{ $item.max }}"
                     class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded" min="{{ $item.min }}"
-                    max="{{ $item.max }}" value="{{ $item.min }}" name="{{ $item.name | urlize }}"
-                    id="{{ $item.name | urlize }}" {{ if $item.required }} required {{ end }}>
+                    name="{{ $item.name | urlize }}" {{ if $item.required }} required {{ end }}>
                 </div>
               </div>
               {{ end}}
@@ -95,7 +94,7 @@
                   {{ end }}
                 </div>
                 <div class="xl:w-1/2 xl:px-4">
-                  <input type="number" data-name={{$item.name}} data-price_monthly="{{$item.price_monthly}}"
+                  <input type="number" data-name='{{$item.name}}' data-price_monthly="{{$item.price_monthly}}"
                     data-price_onetime="{{$item.price_onetime}}" {{ if eq $item.min $item.max }} disabled {{ end }}
                     class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded" min="{{ $item.min }}"
                     max="{{ $item.max }}" value="{{ $item.min }}" name="{{ $item.name | urlize }}"
@@ -111,7 +110,7 @@
             <h3 class="text-2xl lg:text-3xl font-medium mt-12 mb-2 xxl:mb-2 leading-tight">{{ . }}</h3>
             {{ end }}
             {{ with .description }}
-            <p class="xl:mx-auto max-w-xl lg:text-lg xl:text-xl font-medium opacity-75 mb-4 lg:mb-8">{{ . }} </p>
+            <p class="xl:mx-auto max-w-xl lg:text-lg xl:text-xl font-medium opacity-75 mb-4 lg:mb-8">{{ . }}</p>
             {{ end }}
 
             <div id="options-fields">
