@@ -29,7 +29,6 @@
             <input type="hidden" id="totaalpermaand" name="Totaal per maand" class="hidden">
             <input type="hidden" id="totaaleenmalig" name="Totaal éénmalig" class="hidden">
 
-
             <div id="basic-fields">
               {{ range $index, $item := .Params.basic }}
               <div class="mb-4 xl:flex xl:items-center xl:-mx-4">
@@ -313,10 +312,10 @@
                 </div>
                 <button type="button"
                   onclick="this.previousElementSibling.classList.remove('hidden');this.nextElementSibling.classList.remove('hidden');this.classList.add('hidden')"
-                  class="bg-grey-dark hover:shadow-lg text-white rounded-md block text-center w-full px-4 py-2 opacity-0">
+                  class="bg-grey-dark hover:shadow-lg text-white rounded-md block text-center w-full px-4 py-2">
                   Kosten opvragen?
                 </button>
-                <button type="submit"
+                <button type="submit" id="submit-small-form"
                   class="bg-grey-dark hover:shadow-lg text-white rounded-md block text-center w-full px-4 py-2 hidden">
                   Gegevens versturen
                 </button>

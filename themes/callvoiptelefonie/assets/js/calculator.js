@@ -476,3 +476,32 @@ document.addEventListener(
   },
   false
 );
+
+// This code is written by Inam
+const form = document.querySelector('[name="calculator-formulier-small"]');
+form.onsubmit = function (e) {
+  e.preventDefault();
+};
+function handleSmallForm(el) {
+  const elements = [];
+  [
+    "basic-fields",
+    "callminutes-fields",
+    "callrecording-fields",
+    "options-fields",
+    "security-fields",
+    "crm-fields",
+  ].forEach((e) => elements.push(document.getElementById(e)));
+  elements.forEach((e) => {
+    e.classList.add("hidden");
+    const c = e.cloneNode(true);
+    form.append(c);
+  });
+}
+const submitSmallForm = document.getElementById("submit-small-form");
+if (submitSmallForm) {
+  submitSmallForm.onclick = function () {
+    handleSmallForm();
+    form.submit();
+  };
+}
