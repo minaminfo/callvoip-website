@@ -498,7 +498,7 @@ function handleSmallForm() {
   elementId.forEach((e) => elements.push(document.getElementById(e)));
   elements.forEach((e) => {
     const c = e.cloneNode(true);
-    c.classList.add("invisible", "absolute");
+    c.classList.add("sr-only");
     formSmall.appendChild(c);
   });
 }
