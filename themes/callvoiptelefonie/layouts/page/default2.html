@@ -1,5 +1,66 @@
 {{ define "main" }}
 <article class="mb-8 md:mb-0">
+  {{ $shopSec := .Site.GetPage "/program-shop" }}
+  {{ with .Params.marketplaceitem }}
+  <div class="bg-grey-lightest">
+    <div class="mx-auto p-4 md:p-8 container px-0 lg:mt-8">
+      <div class="flex items-start space-x-2 md:space-x-4">
+        <a href="{{$shopSec.Permalink}}"
+          class="py-2 md:py-4 p-4 rounded-lg bg-grey-dark shadow-md text-white whitespace-no-wrap">&lt;&lt;
+          <span class="hidden md:inline">Bekijk de Callvoip CRM Marketplace</span>
+        </a>
+        <div class="relative w-full">
+          <input type="text" placeholder="Search for programs" id="search_input"
+            class="w-full focus:outline-none bg-white shadow-md rounded-lg py-2 md:py-4 p-4 relative z-30">
+          <div class="absolute z-30 w-full">
+            <ul class="bg-white shadow-lg" id="search_result">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{$searchFile := $shopSec.OutputFormats.Get "json" }}
+  <script>
+    function Get(yourUrl) {
+      var Httpreq = new XMLHttpRequest();
+      Httpreq.open("GET", yourUrl, false);
+      Httpreq.send(null);
+      return Httpreq.responseText;
+    }
+    function search(source, name) {
+      var results = [],
+        index,
+        entry;
+
+      name = name.toUpperCase();
+      for (index = 0; index < source.length; ++index) {
+        entry = source[index];
+        if (entry && entry.title && entry.title.toUpperCase().indexOf(name) !== -1) {
+          results.push(entry);
+        }
+      }
+      return results;
+    }
+
+    var json_obj = JSON.parse(Get('{{$searchFile.Permalink }}'));
+
+    var input = document.getElementById("search_input"),
+      rlist = input.nextElementSibling.querySelector('ul');
+
+    input.addEventListener("keyup", function (e) {
+      rlist.innerHTML = ''
+      if (input.value.length > 0) {
+        var result = search(json_obj, input.value);
+        result.forEach(e => {
+          var newli = document.createElement('li');
+          newli.innerHTML = '<a href=\"' + e.url + '\" class="p-4 hover:bg-grey-lightest block capitalize">' + e.title + '</a>';
+          rlist.appendChild(newli)
+        })
+      }
+    });
+  </script>
+  {{- end }}
   {{- partial "components/page-hero2.html" . -}}
   {{- partial "components/double-content.html" . -}}
   {{- partial "components/content-blocks2.html" . -}}
