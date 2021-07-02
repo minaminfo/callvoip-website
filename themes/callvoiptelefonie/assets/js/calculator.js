@@ -478,30 +478,35 @@ document.addEventListener(
 );
 
 // This code is written by Inam
-const form = document.querySelector('[name="calculator-formulier-small"]');
-form.onsubmit = function (e) {
-  e.preventDefault();
-};
-function handleSmallForm(el) {
-  const elements = [];
-  [
-    "basic-fields",
-    "callminutes-fields",
-    "callrecording-fields",
-    "options-fields",
-    "security-fields",
-    "crm-fields",
-  ].forEach((e) => elements.push(document.getElementById(e)));
+const formSmall = document.querySelector('[name="calculator-formulier-small"]');
+
+function handleSmallForm() {
+  const elements = [],
+    elementId = [
+      "basic-fields",
+      "callminutes-fields",
+      "callrecording-fields",
+      "options-fields",
+      "security-fields",
+      "crm-fields",
+    ];
+
+  if (formSmall.querySelector("#" + elementId[0])) {
+    elementId.forEach((e) => formSmall.querySelector("#" + e).remove());
+  }
+
+  elementId.forEach((e) => elements.push(document.getElementById(e)));
   elements.forEach((e) => {
-    e.classList.add("hidden");
     const c = e.cloneNode(true);
-    form.append(c);
+    c.classList.add("hidden");
+    formSmall.appendChild(c);
   });
 }
-const submitSmallForm = document.getElementById("submit-small-form");
-if (submitSmallForm) {
-  submitSmallForm.onclick = function () {
-    handleSmallForm();
-    form.submit();
-  };
-}
+document.getElementById("submit-small-form").onclick = function () {
+  handleSmallForm();
+  [
+    ...formSmall.querySelectorAll("input"),
+    ...formSmall.querySelectorAll("select"),
+  ].forEach((e) => console.log(e.value));
+  formSmall.submit();
+};
