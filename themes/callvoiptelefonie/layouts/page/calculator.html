@@ -284,7 +284,7 @@
               </div>
             </div>
             <div class="mt-4">
-              <form name="calculator-formulier-small" action="/calculator/verzonden" accept-charset="UTF-8"
+              <form name="calculator-formulier-small" action="https://formspree.io/f/mnqlzege" accept-charset="UTF-8"
                 method="POST" netlify-honeypot="bot-field" data-netlify="true"
                 class="space-y-4 pt-4 border-t border-grey-light">
                 <p class="hidden">
@@ -310,6 +310,69 @@
                       class="px-4 py-2 rounded-md focus:outline-none focus:shadow-md border border-grey-medium">
                   </div>
                 </div>
+                <!-- ! new code -->
+                {{ range $index, $item := .Params.basic }}
+                <div class="mb-4 xl:flex xl:items-center xl:-mx-4">
+                  <input type="number" data-name={{$item.name}} autocomplete="false" value="{{ $item.min }}"
+                    data-price_monthly="{{$item.price_monthly}}" {{ if eq $item.min $item.max }} disabled {{ end }}
+                    data-price_onetime="{{$item.price_onetime}}" id="{{ $item.name | urlize }}" max="{{ $item.max }}"
+                    class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded" min="{{ $item.min }}"
+                    name="{{ $item.name | urlize }}" {{ if $item.required }} required {{ end }}>
+                </div>
+                {{ end}}
+
+                {{ with .Params.callminutes }}
+                <select name="callminutes" id="callminutes"
+                  class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded">
+                  {{ range $index, $item := .items }}
+                  <option data-name={{$item.name}} data-price_monthly="{{$item.price_monthly}}"
+                    data-price_onetime="{{$item.price_onetime}}" value="{{ $item.value}}"
+                    id="{{ $item.name | urlize }}">
+                    {{$item.name}}</option>
+                  {{ end }}
+                </select>
+                {{ end }}
+
+                {{ with .Params.callrecording }}
+                {{ range $index, $item := .items }}
+                <input type="number" data-name='{{$item.name}}' data-price_monthly="{{$item.price_monthly}}"
+                  data-price_onetime="{{$item.price_onetime}}" {{ if eq $item.min $item.max }} disabled {{ end }}
+                  class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded" min="{{ $item.min }}"
+                  max="{{ $item.max }}" value="{{ $item.min }}" name="{{ $item.name | urlize }}"
+                  id="{{ $item.name | urlize }}" {{ if $item.required }} required {{ end }}>
+                {{ end}}
+                {{ end}}
+
+                {{ with .Params.options }}
+                {{ range $index, $item := .items }}
+                <input type="number" data-name={{$item.name}} data-price_monthly="{{$item.price_monthly}}"
+                  data-price_onetime="{{$item.price_onetime}}" {{ if eq $item.min $item.max }} disabled {{ end }}
+                  class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded" min="{{ $item.min }}"
+                  max="{{ $item.max }}" value="{{ $item.min }}" name="{{ $item.name | urlize }}"
+                  id="{{ $item.name | urlize }}" {{ if $item.required }} required {{ end }}>
+                {{ end}}
+                {{ end}}
+
+                {{ with .Params.security }}
+                <select name="security" id="security"
+                  class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded">
+                  {{ range $index, $item := .items }}
+                  <option data-name={{$item.name}} data-price_monthly="{{$item.price_monthly}}"
+                    data-price_onetime="{{$item.price_onetime}}" value="{{ $item.value}}"
+                    id="{{ $item.name | urlize }}">
+                    {{$item.name}}</option>
+                  {{ end }}
+                </select>
+                {{ end }}
+
+                {{ range $index, $item := .Params.crm }}
+                <input type="number" data-name={{$item.name}} data-price_monthly="{{$item.price_monthly}}"
+                  data-price_onetime="{{$item.price_onetime}}" {{ if eq $item.min $item.max }} disabled {{ end }}
+                  class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded" min="{{ $item.min }}"
+                  max="{{ $item.max }}" value="{{ $item.min }}" name="{{ $item.name | urlize }}"
+                  id="{{ $item.name | urlize }}" {{ if $item.required }} required {{ end }}>
+                {{ end}}
+                <!-- ! / new code -->
                 <button type="button"
                   onclick="this.previousElementSibling.classList.remove('hidden');this.nextElementSibling.classList.remove('hidden');this.classList.add('hidden')"
                   class="bg-grey-dark hover:shadow-lg text-white rounded-md block text-center w-full px-4 py-2 opacity-0">
