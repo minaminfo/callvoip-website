@@ -12,11 +12,19 @@ exports.handler =  async (event, context, callback) => {
 
   console.log('-------------------- FORMULIER NIEUW -----------------------')
 
+  console.log(1);
+
   const data = JSON.parse(event.body).payload.data;
+
+console.log(2);
+
   const form_name = JSON.parse(event.body).payload.form_name;
+
+console.log(3);
+
   const fields = JSON.parse(event.body).payload.ordered_human_fields;
 
-
+console.log(5);
 
   const sgMail = require('@sendgrid/mail');
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
