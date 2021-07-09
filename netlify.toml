@@ -1,57 +1,57 @@
 [build]
   command = "hugo"
   publish = "public"
-#   functions= "functions"
+  functions= "functions"
 
-# [context.production.environment]
-# # HUGO_VERSION = "0.67.1"
-# HUGO_ENV = "production"
-# HUGO_ENABLEGITINFO = "true"
+[context.production.environment]
+HUGO_VERSION = "0.67.1"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
 
-# [context.split1]
-# command = "hugo --enableGitInfo"
+[context.split1]
+command = "hugo --enableGitInfo"
 
-# [context.split1.environment]
-# # HUGO_VERSION = "0.67.1"
-# HUGO_ENV = "production"
+[context.split1.environment]
+HUGO_VERSION = "0.67.1"
+HUGO_ENV = "production"
 
-# [context.deploy-preview]
-# command = "hugo --buildFuture -b $DEPLOY_PRIME_URL"
+[context.deploy-preview]
+command = "hugo --buildFuture -b $DEPLOY_PRIME_URL"
 
-# [context.deploy-preview.environment]
-# # HUGO_VERSION = "0.67.1"
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.67.1"
 
-# [context.branch-deploy]
-# command = "hugo -b $DEPLOY_PRIME_URL"
+[context.branch-deploy]
+command = "hugo -b $DEPLOY_PRIME_URL"
 
-# [context.branch-deploy.environment]
-# # HUGO_VERSION = "0.67.1"
+[context.branch-deploy.environment]
+HUGO_VERSION = "0.67.1"
 
-# [context.next.environment]
-# HUGO_ENABLEGITINFO = "true"
+[context.next.environment]
+HUGO_ENABLEGITINFO = "true"
 
-# [[redirects]]
-#   from = "/ondersteuning/instructie-videos/meer-videos/"
-#   to = "/cast/"
-#   status = 301
-#   force = true
-# [[redirects]]
-#   from = "/ondersteuning/algemeen/storing/"
-#   to = "/status/"
-#   status = 301
-#   force = true
-# [[redirects]]
-#   from = "/ondersteuning/simmpl-instellen/snelstart-handleiding-telefooncentrale/"
-#   to = "https://www.simmpl.nl/downloads/Welkom_op_de_Simmpl_telefooncentrale.pdf"
-#   status = 301
-#   force = true
-# [[redirects]]
-#   from = "/ondersteuning/instructie-videos/"
-#   to = "/cast/"
-#   status = 301
-#   force = true
-# [[redirects]]
-#   from = "/ondersteuning/integraties/voipcti-koppeling-herstellen/"
-#   to = "http://files.callvoip.nl/downloads/Callvoip_handleiding_VoIP_CTI_login.pdf"
-#   status = 301
-#   force = true
+[[redirects]]
+  from = "/ondersteuning/instructie-videos/meer-videos/"
+  to = "/cast/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/ondersteuning/algemeen/storing/"
+  to = "/status/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/ondersteuning/simmpl-instellen/snelstart-handleiding-telefooncentrale/"
+  to = "https://www.simmpl.nl/downloads/Welkom_op_de_Simmpl_telefooncentrale.pdf"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/ondersteuning/instructie-videos/"
+  to = "/cast/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/ondersteuning/integraties/voipcti-koppeling-herstellen/"
+  to = "http://files.callvoip.nl/downloads/Callvoip_handleiding_VoIP_CTI_login.pdf"
+  status = 301
+  force = true
