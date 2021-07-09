@@ -321,77 +321,65 @@
                 </button>
                 <!-- ! new code -->
                 <div id="allspecialfields" class="sr-only">
-                  <div id="basic-fields">
-                    {{ range $index, $item := .Params.basic }}
-                    <input type="number" data-name={{$item.name}} autocomplete="false" value="{{ $item.min }}"
-                      data-price_monthly="{{$item.price_monthly}}" {{ if eq $item.min $item.max }} disabled {{ end }}
-                      data-price_onetime="{{$item.price_onetime}}" id="{{ $item.name | urlize }}" max="{{ $item.max }}"
-                      class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded" min="{{ $item.min }}"
-                      name="{{ $item.name | urlize }}" {{ if $item.required }} required {{ end }}>
-                    {{ end}}
-                  </div>
+                  {{ range $index, $item := .Params.basic }}
+                  <input type="number" data-name={{$item.name}} autocomplete="false" value="{{ $item.min }}"
+                    data-price_monthly="{{$item.price_monthly}}" {{ if eq $item.min $item.max }} disabled {{ end }}
+                    data-price_onetime="{{$item.price_onetime}}" id="{{ $item.name | urlize }}" max="{{ $item.max }}"
+                    class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded" min="{{ $item.min }}"
+                    name="{{ $item.name | urlize }}" {{ if $item.required }} required {{ end }}>
+                  {{ end}}
 
-                  <div id="callminutes-fields">
-                    {{ with .Params.callminutes }}
-                    <select name="callminutes" id="callminutes"
-                      class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded">
-                      {{ range $index, $item := .items }}
-                      <option data-name={{$item.name}} data-price_monthly="{{$item.price_monthly}}"
-                        data-price_onetime="{{$item.price_onetime}}" value="{{ $item.value}}"
-                        id="{{ $item.name | urlize }}">
-                        {{$item.name}}</option>
-                      {{ end }}
-                    </select>
-                    {{ end }}
-                  </div>
-
-                  <div id="callrecording-fields">
-                    {{ with .Params.callrecording }}
+                  {{ with .Params.callminutes }}
+                  <select name="callminutes" id="callminutes"
+                    class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded">
                     {{ range $index, $item := .items }}
-                    <input type="number" data-name='{{$item.name}}' data-price_monthly="{{$item.price_monthly}}"
-                      data-price_onetime="{{$item.price_onetime}}" {{ if eq $item.min $item.max }} disabled {{ end }}
-                      class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded" min="{{ $item.min }}"
-                      max="{{ $item.max }}" value="{{ $item.min }}" name="{{ $item.name | urlize }}"
-                      id="{{ $item.name | urlize }}" {{ if $item.required }} required {{ end }}>
-                    {{ end}}
-                    {{ end}}
-                  </div>
-
-                  <div id="options-fields">
-                    {{ with .Params.options }}
-                    {{ range $index, $item := .items }}
-                    <input type="number" data-name={{$item.name}} data-price_monthly="{{$item.price_monthly}}"
-                      data-price_onetime="{{$item.price_onetime}}" {{ if eq $item.min $item.max }} disabled {{ end }}
-                      class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded" min="{{ $item.min }}"
-                      max="{{ $item.max }}" value="{{ $item.min }}" name="{{ $item.name | urlize }}"
-                      id="{{ $item.name | urlize }}" {{ if $item.required }} required {{ end }}>
-                    {{ end}}
-                    {{ end}}
-                  </div>
-
-                  <div id="security-fields">
-                    {{ with .Params.security }}
-                    <select name="security" id="security"
-                      class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded">
-                      {{ range $index, $item := .items }}
-                      <option data-name={{$item.name}} data-price_monthly="{{$item.price_monthly}}"
-                        data-price_onetime="{{$item.price_onetime}}" value="{{ $item.value}}"
-                        id="{{ $item.name | urlize }}">
-                        {{$item.name}}</option>
-                      {{ end }}
-                    </select>
+                    <option data-name={{$item.name}} data-price_monthly="{{$item.price_monthly}}"
+                      data-price_onetime="{{$item.price_onetime}}" value="{{ $item.value}}"
+                      id="{{ $item.name | urlize }}">
+                      {{$item.name}}</option>
                     {{ end }}
-                  </div>
+                  </select>
+                  {{ end }}
 
-                  <div id="crm-fields">
-                    {{ range $index, $item := .Params.crm }}
-                    <input type="number" data-name={{$item.name}} data-price_monthly="{{$item.price_monthly}}"
-                      data-price_onetime="{{$item.price_onetime}}" {{ if eq $item.min $item.max }} disabled {{ end }}
-                      class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded" min="{{ $item.min }}"
-                      max="{{ $item.max }}" value="{{ $item.min }}" name="{{ $item.name | urlize }}"
-                      id="{{ $item.name | urlize }}" {{ if $item.required }} required {{ end }}>
-                    {{ end}}
-                  </div>
+                  {{ with .Params.callrecording }}
+                  {{ range $index, $item := .items }}
+                  <input type="number" data-name='{{$item.name}}' data-price_monthly="{{$item.price_monthly}}"
+                    data-price_onetime="{{$item.price_onetime}}" {{ if eq $item.min $item.max }} disabled {{ end }}
+                    class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded" min="{{ $item.min }}"
+                    max="{{ $item.max }}" value="{{ $item.min }}" name="{{ $item.name | urlize }}"
+                    id="{{ $item.name | urlize }}" {{ if $item.required }} required {{ end }}>
+                  {{ end}}
+                  {{ end}}
+
+                  {{ with .Params.options }}
+                  {{ range $index, $item := .items }}
+                  <input type="number" data-name={{$item.name}} data-price_monthly="{{$item.price_monthly}}"
+                    data-price_onetime="{{$item.price_onetime}}" {{ if eq $item.min $item.max }} disabled {{ end }}
+                    class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded" min="{{ $item.min }}"
+                    max="{{ $item.max }}" value="{{ $item.min }}" name="{{ $item.name | urlize }}"
+                    id="{{ $item.name | urlize }}" {{ if $item.required }} required {{ end }}>
+                  {{ end}}
+                  {{ end}}
+
+                  {{ with .Params.security }}
+                  <select name="security" id="security"
+                    class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded">
+                    {{ range $index, $item := .items }}
+                    <option data-name={{$item.name}} data-price_monthly="{{$item.price_monthly}}"
+                      data-price_onetime="{{$item.price_onetime}}" value="{{ $item.value}}"
+                      id="{{ $item.name | urlize }}">
+                      {{$item.name}}</option>
+                    {{ end }}
+                  </select>
+                  {{ end }}
+
+                  {{ range $index, $item := .Params.crm }}
+                  <input type="number" data-name={{$item.name}} data-price_monthly="{{$item.price_monthly}}"
+                    data-price_onetime="{{$item.price_onetime}}" {{ if eq $item.min $item.max }} disabled {{ end }}
+                    class="w-full border border-grey-light bg-grey-lightest px-4 py-2 rounded" min="{{ $item.min }}"
+                    max="{{ $item.max }}" value="{{ $item.min }}" name="{{ $item.name | urlize }}"
+                    id="{{ $item.name | urlize }}" {{ if $item.required }} required {{ end }}>
+                  {{ end}}
                 </div>
                 <!-- ! / new code -->
               </form>

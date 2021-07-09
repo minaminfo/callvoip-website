@@ -478,8 +478,7 @@ document.addEventListener(
 );
 
 // This code is written by Inam
-const formSmall = document.querySelector('[name="calculator-formulier-small"]'),
-  allspecialfields = document.getElementById("allspecialfields");
+const allspecialfields = document.getElementById("allspecialfields");
 
 function handleSmallForm() {
   const elements = [],
@@ -492,10 +491,9 @@ function handleSmallForm() {
       "crm-fields",
     ];
 
-  allspecialfields.innerHTML = "";
-  // elementId.forEach((e) => formSmall.querySelector("#" + e).remove());
-
   elementId.forEach((e) => elements.push(document.getElementById(e)));
+  allspecialfields.innerHTML = "";
+
   elements.forEach((e) => {
     const c = e.cloneNode(true);
     allspecialfields.appendChild(c);
@@ -503,9 +501,5 @@ function handleSmallForm() {
 }
 document.getElementById("submit-small-form").onclick = function () {
   handleSmallForm();
-  [
-    ...allspecialfields.querySelectorAll("input"),
-    ...allspecialfields.querySelectorAll("select"),
-  ].forEach((e) => console.log(e.value));
-  // document.querySelector('[name="calculator-formulier-small"]').submit();
+  document.querySelector('[name="calculator-formulier-small"]').submit();
 };
