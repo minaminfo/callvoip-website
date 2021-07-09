@@ -11,7 +11,7 @@
 <meta name="description" content="{{ if .IsHome }}{{ $.Site.Params.description }}{{ else }}{{ .Description }}{{ end }}">
 
 {{ if .Params.hideingoogle }}
-	<meta name="robots" content="noindex">
+<meta name="robots" content="noindex">
 {{ end }}
 
 {{- with .Keywords -}}
@@ -24,11 +24,13 @@
 
 
 {{ if .Site.IsServer }}
-  {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./themes/callvoiptelefonie/assets/css/dev/postcss.config.js") | fingerprint }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}" data>
+{{ $style := resources.Get "css/styles.css" | postCSS (dict "config"
+"./themes/callvoiptelefonie/assets/css/dev/postcss.config.js") | fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" data>
 {{ else }}
-  {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./themes/callvoiptelefonie/assets/css/postcss.config.js") | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+{{ $style := resources.Get "css/styles.css" | postCSS (dict "config"
+"./themes/callvoiptelefonie/assets/css/postcss.config.js") | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
 {{ end }}
 
 
@@ -39,46 +41,54 @@
 {{- range .Site.AllPages -}}
 {{- $section := .Section -}}
 {{- with .OutputFormats.Get "opensearch" -}}
-<link rel="search" type="application/opensearchdescription+xml" title="{{ $title }}{{ with $section }} {{ . }}{{ end }} search" href="{{ .RelPermalink | safeURL }}" />
+<link rel="search" type="application/opensearchdescription+xml"
+  title="{{ $title }}{{ with $section }} {{ . }}{{ end }} search" href="{{ .RelPermalink | safeURL }}" />
 {{- end -}}
 {{- end -}}
 {{- end -}}
 
 
 
-<link rel="apple-touch-icon" sizes="180x180" href="{{ "/favicons/apple-touch-icon.png?v=2" | absURL }}">
-<link rel="icon" href="{{ "/favicons/favicon.ico?v=2" | absURL }}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicons/favicon-32x32.png?v=2" | absURL }}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ "/favicons/favicon-16x16.png?v=2" | absURL }}">
-<link rel="manifest" href="{{ "/favicons/site.webmanifest?v=2" | absURL }}">
-<link rel="mask-icon" href="{{ "/favicons/safari-pinned-tab.svg?v=2" | absURL }}" color="#5bbad5">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ " /favicons/apple-touch-icon.png?v=2" | absURL }}">
+<link rel="icon" href="{{ " /favicons/favicon.ico?v=2" | absURL }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ " /favicons/favicon-32x32.png?v=2" | absURL }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ " /favicons/favicon-16x16.png?v=2" | absURL }}">
+<link rel="manifest" href="{{ " /favicons/site.webmanifest?v=2" | absURL }}">
+<link rel="mask-icon" href="{{ " /favicons/safari-pinned-tab.svg?v=2" | absURL }}" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#1e3b78">
 <meta name="theme-color" content="#ffffff">
 
 {{ with .OutputFormats.Get "RSS" }}
-  <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $title }}" />
-  <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $title }}" />
+<link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $title }}" />
+<link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $title }}" />
 {{- end -}}
 
-<style>.async-hide { opacity: 0 !important} </style>
+<style>
+  .async-hide {
+    opacity: 0 !important
+  }
+</style>
 
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NK98RJ5');</script>
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-NK98RJ5');</script>
 <!-- End Google Tag Manager -->
 
 
 <!-- Smartsupp Live Chat script -->
 <script type="text/javascript">
-var _smartsupp = _smartsupp || {};
-_smartsupp.key = '6e5be5d089f703e4e2748d4c0e810e7d0beb1ffb';
-window.smartsupp||(function(d) {
-  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-  c.type='text/javascript';c.charset='utf-8';c.async=true;
-  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-})(document);
+  var _smartsupp = _smartsupp || {};
+  _smartsupp.key = '6e5be5d089f703e4e2748d4c0e810e7d0beb1ffb';
+  window.smartsupp || (function (d) {
+    var s, c, o = smartsupp = function () { o._.push(arguments) }; o._ = [];
+    s = d.getElementsByTagName('script')[0]; c = d.createElement('script');
+    c.type = 'text/javascript'; c.charset = 'utf-8'; c.async = true;
+    c.src = 'https://www.smartsuppchat.com/loader.js?'; s.parentNode.insertBefore(c, s);
+  })(document);
 </script>
