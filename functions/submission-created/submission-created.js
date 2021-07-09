@@ -1,72 +1,66 @@
 // Docs on event and context https://www.netlify.com/docs/functions/#the-handler-method
-exports.handler =  async (event, context, callback) => {
-  console.log('called', event)
-  console.log('----------------DATA--------------')
+exports.handler = async (event, context, callback) => {
+  console.log("called", event);
+  console.log("----------------DATA--------------");
   console.log(JSON.parse(event.body).payload.data);
-  console.log('----------------Human Fields--------------')
+  console.log("----------------Human Fields--------------");
   console.log(JSON.parse(event.body).payload.human_fields);
-  console.log('----------------Ordered Human Fields--------------')
+  console.log("----------------Ordered Human Fields--------------");
   console.log(JSON.parse(event.body).payload.ordered_human_fields);
-  console.log('----------------Form Name--------------')
+  console.log("----------------Form Name--------------");
   console.log(JSON.parse(event.body).payload.form_name);
 
-  console.log('-------------------- FORMULIER NIEUW -----------------------')
+  console.log("-------------------- FORMULIER NIEUW -----------------------");
+
+  const data = JSON.parse(event.body).payload.data;
+  const form_name = JSON.parse(event.body).payload.form_name;
+  const fields = JSON.parse(event.body).payload.ordered_human_fields;
+
+  const sgMail = require("@sendgrid/mail");
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
+  const defaultTemplate = "d-5f1602c68c8a42919ddf340e285386e3";
+  const internalTemplate = "d-b8915fd3b5f149ccbbcb6b469aecc71d";
 
   console.log(1);
 
-  const data = JSON.parse(event.body).payload.data;
+  let fromEmail = "";
 
-console.log(2);
-
-  const form_name = JSON.parse(event.body).payload.form_name;
-
-console.log(3);
-
-  const fields = JSON.parse(event.body).payload.ordered_human_fields;
-
-console.log(5);
-
-  const sgMail = require('@sendgrid/mail');
-  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-
-  const defaultTemplate = 'd-5f1602c68c8a42919ddf340e285386e3';
-  const internalTemplate = 'd-b8915fd3b5f149ccbbcb6b469aecc71d';
-
-  let fromEmail = '';
-
-  if (data.formto == 'dev') {
-    fromEmail = 'info@spinme.nl'
+  if (data.formto == "dev") {
+    fromEmail = "info@spinme.nl";
   }
 
-  if (data.formto == 'info') {
-    fromEmail = 'info@callvoip.nl'
+  if (data.formto == "info") {
+    fromEmail = "info@callvoip.nl";
   }
 
-  if (data.formto == 'offerte') {
-    fromEmail = 'offerte@callvoip.nl'
+  if (data.formto == "offerte") {
+    fromEmail = "offerte@callvoip.nl";
   }
 
-  if (data.formto == 'aanvragen') {
-    fromEmail = 'aanvragen@callvoip.nl'
+  if (data.formto == "aanvragen") {
+    fromEmail = "aanvragen@callvoip.nl";
   }
 
-  if (data.formto == 'vacature') {
-    fromEmail = 'vacature@callvoip.nl'
+  if (data.formto == "vacature") {
+    fromEmail = "vacature@callvoip.nl";
   }
 
-  let clientFieldsTemp = fields.filter(function( obj ) {
-    return obj.name !== 'formlayout';
+  console.log(2);
+
+  let clientFieldsTemp = fields.filter(function (obj) {
+    return obj.name !== "formlayout";
   });
 
-  let clientFields = clientFieldsTemp.filter(function( obj ) {
-    return obj.name !== 'formto';
+  let clientFields = clientFieldsTemp.filter(function (obj) {
+    return obj.name !== "formto";
   });
 
   const clientmsg = {
     to: data.email,
     from: {
-      email: fromEmail || 'aanvragen@callvoip.nl',
-      name: 'Callvoip'
+      email: fromEmail || "aanvragen@callvoip.nl",
+      name: "Callvoip",
     },
     subject: "Inzending formulier: " + " " + form_name,
     templateId: data.formlayout || defaultTemplate,
@@ -75,14 +69,14 @@ console.log(5);
       form_name: form_name,
       fields: clientFields,
       subject: "Inzending formulier: " + " " + form_name,
-    }
+    },
   };
 
   const internalmsg = {
-    to: fromEmail || 'aanvragen@callvoip.nl',
+    to: fromEmail || "aanvragen@callvoip.nl",
     from: {
       email: data.email,
-      name: data.bedrijfsnaam || data.voornaam + " " + data.achternaam
+      name: data.bedrijfsnaam || data.voornaam + " " + data.achternaam,
     },
     subject: "Nieuwe inzending formulier: " + " " + form_name,
     templateId: internalTemplate,
@@ -91,19 +85,19 @@ console.log(5);
       form_name: form_name,
       fields: clientFields,
       subject: "Nieuwe inzending formulier: " + " " + form_name,
-    }
+    },
   };
 
   try {
     sgMail.send(clientmsg);
-  } catch(error) {
-    console.log('error', error)
+  } catch (error) {
+    console.log("error", error);
   }
 
   try {
     sgMail.send(internalmsg);
-  } catch(error) {
-    console.log('error', error)
+  } catch (error) {
+    console.log("error", error);
   }
 
   // if everything was fine we send status code 200
@@ -113,6 +107,4 @@ console.log(5);
       message: "Message sent successfully!",
     }),
   });
-
-
 };
