@@ -29,7 +29,7 @@
             <img src="{{ $cloudinary }}/c_scale,f_auto,q_auto{{.Params.logo}}" class="cld-responsiveb max-w-xs"
               alt="logo of {{.Title}}" />
             <a href="{{ .Params.button.link}}"
-              class="text-xs text-white uppercase p-2 bg-grey-dark rounded-full text-center w-full max-w-xs block">
+              class="text-xs text-white uppercase p-2 bg-grey-dark rounded-full text-center w-full max-w-xs block  hover:shadow-md">
               {{- .Params.button.title -}}
             </a>
           </div>
@@ -47,30 +47,34 @@
             </div>
             <hr class="border-blue-light border-t">
             <div class="md:flex justify-center lg:justify-start md:space-x-16 space-y-4 md:space-y-0 text-grey">
+              {{ with .Params.ontwikkelaar }}
               <div class="space-y-2">
                 <span>Ontwikkelaar</span>
                 <ul class="text-sm">
-                  {{ range .Params.ontwikkelaar -}}
+                  {{ range . -}}
                   <li>
                     <a href="{{.url}}">{{.title}}</a>
                   </li>
                   {{ end }}
                 </ul>
               </div>
+              {{ end }}
+              {{ with .Params.meer_info }}
               <div class="space-y-2">
                 <span>Meer info</span>
                 <ul class="text-sm">
-                  {{ range .Params.meer_info -}}
+                  {{ range . -}}
                   <li>
                     <a href="{{.url}}">{{.title}}</a>
                   </li>
                   {{ end }}
                 </ul>
               </div>
+              {{ end }}
             </div>
           </div>
         </header>
-        <div class="user-content text-grey-medium lg:text-lg font-medium leading-loose lg:p-4 max-w-screen-md">
+        <div class="user-content text-grey-medium lg:text-lg font-medium leading-loose lg:p-4 max-w-screen-lg">
           {{.Content}}
         </div>
       </div>
