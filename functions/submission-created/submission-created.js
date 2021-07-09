@@ -22,8 +22,6 @@ exports.handler = async (event, context, callback) => {
   const defaultTemplate = "d-5f1602c68c8a42919ddf340e285386e3";
   const internalTemplate = "d-b8915fd3b5f149ccbbcb6b469aecc71d";
 
-  console.log(1);
-
   let fromEmail = "";
 
   if (data.formto == "dev") {
@@ -46,8 +44,6 @@ exports.handler = async (event, context, callback) => {
     fromEmail = "vacature@callvoip.nl";
   }
 
-  console.log(2);
-
   let clientFieldsTemp = fields.filter(function (obj) {
     return obj.name !== "formlayout";
   });
@@ -55,6 +51,8 @@ exports.handler = async (event, context, callback) => {
   let clientFields = clientFieldsTemp.filter(function (obj) {
     return obj.name !== "formto";
   });
+
+  console.log(1);
 
   const clientmsg = {
     to: data.email,
@@ -71,7 +69,7 @@ exports.handler = async (event, context, callback) => {
       subject: "Inzending formulier: " + " " + form_name,
     },
   };
-
+  console.log(2);
   const internalmsg = {
     to: fromEmail || "aanvragen@callvoip.nl",
     from: {
