@@ -24,8 +24,9 @@
 
 
 {{ if .Site.IsServer }}
-{{ $style := resources.Get "css/styles.css" | postCSS (dict "config"
-"./themes/callvoiptelefonie/assets/css/dev/postcss.config.js") | fingerprint }}
+{{ $style := resources.Get "css/styles.css" }}
+{{ $style = $style | postCSS (dict "config" "./themes/callvoiptelefonie/assets/css/dev/postcss.config.js") }}
+{{ $style = $style | fingerprint}}
 <link rel="stylesheet" href="{{ $style.Permalink }}" data>
 {{ else }}
 {{ $style := resources.Get "css/styles.css" }}
