@@ -32,7 +32,7 @@
 {{ $style := resources.Get "css/styles.css" }}
 {{ $style = $style | postCSS (dict "config" "./themes/callvoiptelefonie/assets/css/postcss.config.js") }}
 {{ $style = $style | minify | fingerprint}}
-<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
 {{ end }}
 
 
