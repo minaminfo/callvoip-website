@@ -55,3 +55,8 @@ HUGO_ENABLEGITINFO = "true"
   to = "http://files.callvoip.nl/downloads/Callvoip_handleiding_VoIP_CTI_login.pdf"
   status = 301
   force = true
+[[redirects]]
+  from = "/program-shop/"
+  to = "/marketplace/"
+  status = 301
+  force = true
